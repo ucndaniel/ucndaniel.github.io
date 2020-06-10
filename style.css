@@ -1,0 +1,13 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    line-height: 5;
+}
