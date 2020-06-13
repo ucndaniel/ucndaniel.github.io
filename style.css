@@ -27,11 +27,13 @@ p, li, a {
     padding: 0;
 }
 
-
+/* header start */
 header {
-    width: 100%;
+    width: 60%;
     display: grid;
     grid-template-areas: 'a b';
+    border-bottom: 0.01vw solid #000;
+    margin: auto;
 } 
 
 .logo {
@@ -89,37 +91,64 @@ nav li a {
                           2px 2px #ff1f8f,
                           3px 3px #000000;
                          transition: ease-in-out 0.1s;
-                         text-decoration: underline;
   }
   nav li a:hover {
     transition: ease-in-out 0.1s;
     color: #ff1f8f;
     -webkit-text-stroke-color: #42393e;
   }
+/* header end */
 
+
+
+/* site content start */
 
 section p {
     padding: 0.5vw;
     padding-left: 0;
 }
-  
 
-#welcome {
-    font-size: 100px;
-    text-align: center;
-    line-height: 3;
-    margin: 0;
+ #welcome { /* inspired by https://codepen.io/mandymichael/pen/PaBraK*/
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+    font-size: 6vw;
+    letter-spacing: 0.5vw;
+	background: linear-gradient(
+		120deg, 
+		#ff1f8f 25%, 
+		#272627 25%, 
+		#272727 50%, 
+		#272727 50%, 
+		#272727 75%, 
+		#272727 75%, 
+		#272727);
+    -webkit-background-clip: text;
+    background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 5px 5px;
+	background-position: 0 0;
+    animation: stripes 10s linear infinite;
+    -webkit-text-stroke: #CCE0D1 1px;
+    margin-top: 2vw;
+}	
+@keyframes stripes {
+	100% { 
+		background-position: 5px 0;
+	}
 }
+
 .boxLeft {
     position: absolute;
     height: auto;
     width: 24vw;
-    top: 26vw;
+    top: 18vw;
     left: 3vw;
     background-color: #627C74;
     color: white;
     padding: 2vw;
     padding-top: 0.7vw;
+    border: 2px #000 solid;
 }
 .boxLeft div h1 { 
         font-size: 1.6vw;
@@ -138,13 +167,16 @@ section p {
     position: absolute;
     height: auto;
     width: 26vw;
-    top: 34vw;
+    top: 26vw;
     right: 49vw;
     background-color: #627C74;
     color: white;
     display: grid;
     padding: 2vw;
     padding-top: 0.7vw;
+    border: 2px solid #000;
+    border-left: 0;
+    border-top: 0;
 }
 .boxMiddle div {
     display: grid;
@@ -162,18 +194,24 @@ section p {
                           3px 3px #000000;
                          transition: ease-in-out 0.1s;
 }
+.boxMiddle div h1 a:hover {
+    border: solid 1px black;
+    padding: 0.3vw;
+}
 
 .boxMiddle2 {
     position: absolute;
     height: auto;
     width: 26vw;
-    top: 40vw;
+    top: 32vw;
     right: 25vw;
     background-color: #627C74;
     color: white;
     display: grid;
     padding: 2vw;
-
+    border: 2px solid #000;
+    border-left: 0;
+    border-top: 0;
     padding-top: 0.7vw;
 }
 .boxMiddle2 div {
@@ -193,19 +231,27 @@ section p {
                          transition: ease-in-out 0.1s;
 }
 
+.boxMiddle2 div h1 a:hover {
+    border: solid 1px black;
+    padding: 0.3vw;
+}
+
 
 .boxRight {
     position: absolute;
     height: auto;
     width: 22vw;
     right: 5vw;
-    top: 46vw;
+    top: 38vw;
     background-color: #627C74;
     color: white;
     display: grid;
     padding: 2vw;
     padding-top: 0.7vw;
     margin-bottom: 2vw;
+    border: 2px solid #000;
+    border-left: 0;
+    border-top: 0;
 }
 
 .boxRight ul {
@@ -225,3 +271,15 @@ section p {
                           3px 3px #000000;
                          transition: ease-in-out 0.1s;
 }
+/* site content end */
+
+/* footer start */
+footer {
+    position: absolute;
+    bottom: -10vw;margin: auto;
+    margin-bottom: 1vw;
+    text-align: center;
+    width: 100%;
+    
+}
+/* footer end */
