@@ -2,12 +2,41 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
-    background-color: black;
-    color: white;
+    background-color: #343A42;
+    color: #CCE0D1;
+    margin: 0;
+}
+
+
+header {
+    background-color: #5BB7AA;
+    width: 100%;
+} 
+nav {
+    height: min-content;
+    display: grid;
+    align-self: center;
+}
+
+ul {
+    display: grid;
+    grid-template-areas: 'a b';
+    margin: 0;
+}
+nav li {
+    display: grid;
+    color: #343A42;
+    align-items: center;
+}
+
+nav li a {
+    text-align: center;
+    margin: 5px;
 }
 
 h1 {
     font-size: 100px;
     text-align: center;
     line-height: 5;
+    margin: 0;
 }
