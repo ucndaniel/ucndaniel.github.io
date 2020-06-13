@@ -1,42 +1,80 @@
+* {
+    box-sizing: border-box;
+}
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* colors: #343A42 - #CCE0D1 - #5BB7AA */
 body {
-    background-color: #343A42;
+    background: linear-gradient(#5BB7AA, #343A42) center no-repeat fixed;
+    background-size: cover;
     color: #CCE0D1;
     margin: 0;
 }
 
+h1, h2, h3, h4, h5 {
+    font-size: 1.6vw;
+    margin: 0;
+}
+p, li, a {
+    font-size: 1.1vw;
+    margin: 0;
+    padding: 0;
+}
+
 
 header {
-    background-color: #5BB7AA;
     width: 100%;
 } 
 nav {
     height: min-content;
     display: grid;
-    align-self: center;
+    align-self: center; 
+    height: 5vw;
 }
 
 ul {
     display: grid;
     grid-template-areas: 'a b';
     margin: 0;
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
 }
 nav li {
     display: grid;
+    opacity: 1;
     color: #343A42;
     align-items: center;
+    justify-self: center;
+    background: linear-gradient(#627C74, #343A42);
+    width: 65px;
 }
 
 nav li a {
-    text-align: center;
+    width: max-content;
     margin: 5px;
+    opacity: 1;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
 }
 
-h1 {
+#welcome {
     font-size: 100px;
     text-align: center;
-    line-height: 5;
+    line-height: 3;
     margin: 0;
+}
+.boxLeft {
+    position: absolute;
+    height: 10vw;
+    width: 30vw;
+    left: 3vw;
+    background-color: #627C74;
+    color: white;
+
+}
+
+.boxLeft p {
+    padding: 2vw;
 }
