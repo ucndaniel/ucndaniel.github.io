@@ -16,6 +16,11 @@ h1, h2, h3, h4, h5 {
     font-size: 1.6vw;
     margin: 0;
 }
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 p, li, a {
     font-size: 1.1vw;
     margin: 0;
@@ -25,7 +30,16 @@ p, li, a {
 
 header {
     width: 100%;
+    display: grid;
+    grid-template-areas: 'a b';
 } 
+
+.logo {
+    width: 60px;
+    align-self: center;
+    margin-left: 4vw;
+}
+
 nav {
     height: min-content;
     display: grid;
@@ -33,12 +47,25 @@ nav {
     height: 5vw;
 }
 
-ul {
+nav ul {
     display: grid;
-    grid-template-areas: 'a b';
+    grid-template-areas: 'a b c';
     margin: 0;
+    width: max-content;
     padding: 0;
-    grid-template-columns: 1fr 1fr;
+    margin-right: 4vw;
+    justify-self: end;
+    grid-gap: 1vw;
+}
+.divider{
+    align-self: center;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #272627;
+    text-shadow: 
+                          2px 2px #ff1f8f,
+                          3px 3px #000000;
+                         transition: ease-in-out 0.1s;
 }
 nav li {
     display: grid;
@@ -46,8 +73,6 @@ nav li {
     color: #343A42;
     align-items: center;
     justify-self: center;
-    background: linear-gradient(#627C74, #343A42);
-    width: 65px;
 }
 
 nav li a {
@@ -56,8 +81,28 @@ nav li a {
     opacity: 1;
     font-size: 1.5em;
     text-decoration: none;
-    color: black;
+    letter-spacing:0.2em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #272627;
+    text-shadow: 
+                          2px 2px #ff1f8f,
+                          3px 3px #000000;
+                         transition: ease-in-out 0.1s;
+                         text-decoration: underline;
+  }
+  nav li a:hover {
+    transition: ease-in-out 0.1s;
+    color: #ff1f8f;
+    -webkit-text-stroke-color: #42393e;
+  }
+
+
+section p {
+    padding: 0.5vw;
+    padding-left: 0;
 }
+  
 
 #welcome {
     font-size: 100px;
@@ -67,14 +112,116 @@ nav li a {
 }
 .boxLeft {
     position: absolute;
-    height: 10vw;
-    width: 30vw;
+    height: auto;
+    width: 24vw;
+    top: 26vw;
     left: 3vw;
     background-color: #627C74;
     color: white;
-
+    padding: 2vw;
+    padding-top: 0.7vw;
+}
+.boxLeft div h1 { 
+        font-size: 1.6vw;
+        text-decoration: none;
+        letter-spacing:0.2em;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #272627;
+        text-shadow: 
+                              2px 2px #ff1f8f,
+                              3px 3px #000000;
+                             transition: ease-in-out 0.1s;
 }
 
-.boxLeft p {
+.boxMiddle {
+    position: absolute;
+    height: auto;
+    width: 26vw;
+    top: 34vw;
+    right: 49vw;
+    background-color: #627C74;
+    color: white;
+    display: grid;
     padding: 2vw;
+    padding-top: 0.7vw;
+}
+.boxMiddle div {
+    display: grid;
+    grid-template-areas: 'a b';
+}
+.boxMiddle div h1 a {
+    font-size: 1.6vw;
+    text-decoration: none;
+    letter-spacing:0.2em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #272627;
+    text-shadow: 
+                          2px 2px #ff1f8f,
+                          3px 3px #000000;
+                         transition: ease-in-out 0.1s;
+}
+
+.boxMiddle2 {
+    position: absolute;
+    height: auto;
+    width: 26vw;
+    top: 40vw;
+    right: 25vw;
+    background-color: #627C74;
+    color: white;
+    display: grid;
+    padding: 2vw;
+
+    padding-top: 0.7vw;
+}
+.boxMiddle2 div {
+    display: grid;
+    grid-template-areas: 'a b';
+}
+.boxMiddle2 div h1 a {
+    font-size: 1.6vw;
+    text-decoration: none;
+    letter-spacing:0.2em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #272627;
+    text-shadow: 
+                          2px 2px #ff1f8f,
+                          3px 3px #000000;
+                         transition: ease-in-out 0.1s;
+}
+
+
+.boxRight {
+    position: absolute;
+    height: auto;
+    width: 22vw;
+    right: 5vw;
+    top: 46vw;
+    background-color: #627C74;
+    color: white;
+    display: grid;
+    padding: 2vw;
+    padding-top: 0.7vw;
+    margin-bottom: 2vw;
+}
+
+.boxRight ul {
+    display: grid;
+    grid-template-areas: 'a b c';
+    padding: 0.5vw;
+    padding-left: 0;
+}
+.boxRight h1 {
+    text-decoration: none;
+    letter-spacing:0.2em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #272627;
+    text-shadow: 
+                          2px 2px #ff1f8f,
+                          3px 3px #000000;
+                         transition: ease-in-out 0.1s;
 }
