@@ -284,11 +284,11 @@ section p {
 
 .fly {
     position: absolute;
-    top: 40vw;
+    top: 20vw;
     left: 30vw;
     width: 4vw;
     height: 4vw;
-    background: #ff1f8f;
+    background: url(assets/images/SVG/Asset\ 1.svg) no-repeat;
 }
 /* site content end */
 
