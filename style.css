@@ -37,9 +37,14 @@ header {
 } 
 
 .logo {
-    width: 60px;
     align-self: center;
-    margin-left: 4vw;
+    color: #272727;
+    font-weight: normal;
+    letter-spacing: 0.5vw;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #272627;
+    text-shadow: 
+                          2px 2px #ff1f8f;
 }
 
 nav {
@@ -96,6 +101,7 @@ nav li a {
     transition: ease-in-out 0.1s;
     color: #ff1f8f;
     -webkit-text-stroke-color: #42393e;
+    text-decoration: underline;
   }
 /* header end */
 
@@ -128,7 +134,7 @@ section p {
 	-webkit-text-fill-color: transparent;
 	background-size: 5px 5px;
 	background-position: 0 0;
-    animation: stripes 10s linear infinite;
+    animation: stripes 5s linear infinite;
     -webkit-text-stroke: #CCE0D1 1px;
     margin-top: 2vw;
 }	
@@ -144,11 +150,13 @@ section p {
     width: 24vw;
     top: 18vw;
     left: 3vw;
-    background-color: #627C74;
-    color: white;
+    background-color: #2fdca7;
+    color: black;
     padding: 2vw;
     padding-top: 0.7vw;
     border: 2px #000 solid;
+    border-left: 0;
+    border-top: 0;
 }
 .boxLeft div h1 { 
         font-size: 1.6vw;
@@ -169,8 +177,8 @@ section p {
     width: 26vw;
     top: 26vw;
     right: 49vw;
-    background-color: #627C74;
-    color: white;
+    background-color: #2fdca7;
+    color: black;
     display: grid;
     padding: 2vw;
     padding-top: 0.7vw;
@@ -195,8 +203,8 @@ section p {
                          transition: ease-in-out 0.1s;
 }
 .boxMiddle div h1 a:hover {
-    border: solid 1px black;
-    padding: 0.3vw;
+    -webkit-text-stroke-color: #42393e;
+    border-bottom: 5px ridge #ff1f8f;
 }
 
 .boxMiddle2 {
@@ -205,8 +213,8 @@ section p {
     width: 26vw;
     top: 32vw;
     right: 25vw;
-    background-color: #627C74;
-    color: white;
+    background-color: #2fdca7;
+    color: black;
     display: grid;
     padding: 2vw;
     border: 2px solid #000;
@@ -232,8 +240,9 @@ section p {
 }
 
 .boxMiddle2 div h1 a:hover {
-    border: solid 1px black;
-    padding: 0.3vw;
+    transition: ease-in-out 0.1s;
+    -webkit-text-stroke-color: #42393e;
+    border-bottom: 5px ridge #ff1f8f;
 }
 
 
@@ -243,8 +252,8 @@ section p {
     width: 22vw;
     right: 5vw;
     top: 38vw;
-    background-color: #627C74;
-    color: white;
+    background-color: #2fdca7;
+    color: black;
     display: grid;
     padding: 2vw;
     padding-top: 0.7vw;
@@ -258,6 +267,7 @@ section p {
     display: grid;
     grid-template-areas: 'a b c';
     padding: 0.5vw;
+    justify-content: space-between;
     padding-left: 0;
 }
 .boxRight h1 {
@@ -270,6 +280,15 @@ section p {
                           2px 2px #ff1f8f,
                           3px 3px #000000;
                          transition: ease-in-out 0.1s;
+}
+
+.fly {
+    position: absolute;
+    top: 40vw;
+    left: 30vw;
+    width: 4vw;
+    height: 4vw;
+    background: #ff1f8f;
 }
 /* site content end */
 
