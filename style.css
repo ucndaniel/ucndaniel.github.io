@@ -6,7 +6,7 @@ html {
 }
 /* colors: #343A42 - #CCE0D1 - #5BB7AA */
 body {
-    background: linear-gradient(#5BB7AA, #343A42) center no-repeat fixed;
+    background: linear-gradient(#5BB7AA, #5BB7AA, #923777) center no-repeat fixed;
     background-size: cover;
     color: #CCE0D1;
     margin: 0;
@@ -38,6 +38,11 @@ header {
 
 .logo {
     align-self: center;
+}
+
+.logo a {
+    text-decoration: none;
+    align-self: center;
     color: #272727;
     font-weight: normal;
     letter-spacing: 0.5vw;
@@ -45,6 +50,13 @@ header {
     -webkit-text-stroke-color: #272627;
     text-shadow: 
                           2px 2px #ff1f8f;
+                          font-size: 1.6vw;
+}
+.logo a:hover {
+    transition: ease-in-out 0.1s;
+    color: #ff1f8f;
+    -webkit-text-stroke-color: #42393e;
+    text-decoration: underline;
 }
 
 nav {
@@ -107,7 +119,7 @@ nav li a {
 
 
 
-/* site content start */
+/* landing page start */
 
 section p {
     padding: 0.5vw;
@@ -121,7 +133,7 @@ section p {
     font-size: 6vw;
     letter-spacing: 0.5vw;
 	background: linear-gradient(
-		120deg, 
+		20deg, 
 		#ff1f8f 25%, 
 		#272627 25%, 
 		#272727 50%, 
@@ -291,7 +303,11 @@ section p {
     background: url(assets/images/SVG/Asset\ 1.svg) no-repeat;
     transform: rotate(-28deg)
 }
-/* site content end */
+/* landingpage end */
+
+/* projekter start */
+
+
 
 /* footer start */
 footer {
