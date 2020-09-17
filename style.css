@@ -3,10 +3,11 @@
 }
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
 }
 /* colors: #343A42 - #CCE0D1 - #5BB7AA */
 body {
-    background: linear-gradient(#5BB7AA, #5BB7AA, #923777) center no-repeat fixed;
+    background: linear-gradient(#5BB7AA, #5BB7AA, #923777a8) center no-repeat fixed;
     background-size: cover;
     color: #000;
     margin: 0;
@@ -25,11 +26,12 @@ p, li, a {
     font-size: 1.1vw;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 /* header start */
 header {
-    width: 60%;
+    width: 90%;
     display: grid;
     grid-template-areas: 'a b';
     border-bottom: 0.01vw solid #000;
@@ -109,6 +111,11 @@ nav li a {
                           3px 3px #000000;
                          transition: ease-in-out 0.1s;
   }
+
+  .activePage {
+    text-decoration: underline;
+}
+
   nav li a:hover {
     transition: ease-in-out 0.1s;
     color: #ff1f8f;
@@ -130,13 +137,11 @@ nav li a {
 
 /* landing page start */
 
-section p {
-    padding: 0.5vw;
-    padding-left: 0;
-}
+
 
  #welcome { /* inspired by https://codepen.io/mandymichael/pen/PaBraK*/
-	font-weight: bold;
+    grid-area: welcome;
+    font-weight: bold;
 	width: 100%;
 	text-align: center;
     font-size: 6vw;
@@ -157,7 +162,8 @@ section p {
 	background-position: 0 0;
     animation: stripes 8s linear infinite;
     -webkit-text-stroke: #CCE0D1 1px;
-    margin-top: 2vw;
+    margin-top: 6vw;
+    margin-bottom: 6vw;
 }	
 @keyframes stripes {
 	100% { 
@@ -165,21 +171,50 @@ section p {
 	}
 }
 
+.section1 {
+    display: grid;
+    grid-template-areas: 
+    'welcome welcome welcome welcome'
+    '1 2 3 4';
+    width: 90vw;
+    margin: auto;
+}
+
+section p {
+    padding: 0.5vw;
+    padding-left: 0;
+}
+
+
 .boxLeft {
-    position: absolute;
-    height: auto;
-    width: 24vw;
-    top: 18vw;
-    left: 3vw;
+    border: 1px #ff1f8f solid;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+
+
+
+.boxMiddle {
+    height: 10vw;
+    width: 22.5vw;
     background-color: #2fdca7;
     color: black;
-    padding: 2vw;
+    display: grid;
+    padding: 1vw;
     padding-top: 0.7vw;
-    border: 2px #000 solid;
+    border-right: 1px solid #ff1f8f;
     border-left: 0;
     border-top: 0;
 }
-.boxLeft div h1 { 
+.boxRight {
+    border-right: none;
+}
+.boxMiddle div {
+    display: grid;
+    grid-template-areas: 'a b';
+}
+.boxMiddle div h1 { 
         font-size: 1.6vw;
         text-decoration: none;
         letter-spacing:0.2em;
@@ -192,25 +227,6 @@ section p {
                              transition: ease-in-out 0.1s;
 }
 
-.boxMiddle {
-    position: absolute;
-    height: auto;
-    width: 26vw;
-    top: 26vw;
-    right: 49vw;
-    background-color: #2fdca7;
-    color: black;
-    display: grid;
-    padding: 2vw;
-    padding-top: 0.7vw;
-    border: 2px solid #000;
-    border-left: 0;
-    border-top: 0;
-}
-.boxMiddle div {
-    display: grid;
-    grid-template-areas: 'a b';
-}
 .boxMiddle div h1 a {
     font-size: 1.6vw;
     text-decoration: none;
@@ -223,75 +239,74 @@ section p {
                           3px 3px #000000;
                          transition: ease-in-out 0.1s;
 }
+
 .boxMiddle div h1 a:hover {
-    -webkit-text-stroke-color: #42393e;
-    border-bottom: 5px ridge #ff1f8f;
-}
-
-.boxMiddle2 {
-    position: absolute;
-    height: auto;
-    width: 26vw;
-    top: 32vw;
-    right: 25vw;
-    background-color: #2fdca7;
-    color: black;
-    display: grid;
-    padding: 2vw;
-    border: 2px solid #000;
-    border-left: 0;
-    border-top: 0;
-    padding-top: 0.7vw;
-}
-.boxMiddle2 div {
-    display: grid;
-    grid-template-areas: 'a b';
-}
-.boxMiddle2 div h1 a {
-    font-size: 1.6vw;
-    text-decoration: none;
-    letter-spacing:0.2em;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #272627;
-    text-shadow: 
-                          2px 2px #ff1f8f,
-                          3px 3px #000000;
-                         transition: ease-in-out 0.1s;
-}
-
-.boxMiddle2 div h1 a:hover {
     transition: ease-in-out 0.1s;
     -webkit-text-stroke-color: #42393e;
     border-bottom: 5px ridge #ff1f8f;
 }
 
-
-.boxRight {
-    position: absolute;
-    height: auto;
-    width: 22vw;
-    right: 5vw;
-    top: 38vw;
-    background-color: #2fdca7;
-    color: black;
-    display: grid;
-    padding: 2vw;
-    padding-top: 0.7vw;
-    margin-bottom: 2vw;
-    border: 2px solid #000;
-    border-left: 0;
-    border-top: 0;
-}
-
-.boxRight ul {
+.boxMiddle ul {
     display: grid;
     grid-template-areas: 'a b c';
     padding: 0.5vw;
     justify-content: space-between;
     padding-left: 0;
+    margin-bottom: 4vw;
 }
-.boxRight h1 {
+
+
+.section2 {
+    display: grid;
+    grid-template-areas: 
+    'a b'
+    'c d';
+    width: 90vw;
+    margin: auto;
+    margin-top: 13vw;
+}
+
+.contentBox {
+    padding: 26px;
+    margin: auto;
+}
+
+.contentBox img {
+    width: 40vw;
+}
+
+.fly {
+    position: absolute;
+    left: 39.6%;
+    display: flex;
+    margin: auto;
+    margin-top: 4vw;
+    justify-content: center;
+    width: max-content;
+    padding: 10px;
+    z-index: 2;
+}
+
+.hoverEffect {
+    position: absolute;
+    width: 25vw;
+    height: -webkit-fill-available;
+    left: -1.4vw;
+    top: 0vw;
+    padding: 10px;
+    z-index: 0.1;
+}
+.hoverEffect:hover {
+    transition: 0.1s;
+    opacity: 1;
+    border: #ff1f8f 2px solid;
+    z-index: 0.1;
+    background-color: #ff1f8f10;
+}
+
+
+.fly h1 {
+    font-size: 1.4vw;
     text-decoration: none;
     letter-spacing:0.2em;
     -webkit-text-fill-color: transparent;
@@ -301,17 +316,29 @@ section p {
                           2px 2px #ff1f8f,
                           3px 3px #000000;
                          transition: ease-in-out 0.1s;
+                        
+}
+/* .fly a h1:hover {
+    transition: ease-in-out 0.1s;
+    -webkit-text-stroke-color: #42393e;
+    border-bottom: 1px #ff1f8f solid;
+    padding: 10px;
+} */
+
+.arrowPointingDown{
+    width: 1vw;
+    margin: 0.7vw;   
 }
 
-.fly {
+#arrival {
     position: absolute;
-    top: 20vw;
-    left: 30vw;
-    width: 4vw;
-    height: 4vw;
-    background: url(assets/images/SVG/Asset\ 1.svg) no-repeat;
-    transform: rotate(-28deg)
+    width: 10vw;
+    height: 10vw;
+    top: 40vw;
+    z-index: -1;
 }
+
+
 /* landingpage end */
 
 
@@ -330,15 +357,17 @@ section p {
 
 
 /* projekter start */
+
 .projectsTextContainer {
     width: 52vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-left: 80px;
-    padding-left: 30px;
-    padding-top: 30px;
-    border-radius: 20px;
+    /* padding-left: 11px; */
+    padding-top: 89px;
+    /* border-radius: 21px; */
+    margin-bottom: 40px;
     position: relative;
 }
 
@@ -427,10 +456,10 @@ section p {
    text-decoration: none;
 }
 
-.box1 a:hover, .box2 a:hover, .box3 a:hover, .box4 a:hover {
-    text-decoration: none;
-    color: #ff1f8f;
-    text-decoration: underline;
+.box1 h2 a:hover, .box2 a:hover, .box3 a:hover, .box4 a:hover {
+    transition: ease-in-out 0.1s;
+    -webkit-text-stroke-color: #42393e;
+    border-bottom: 5px ridge #ff1f8f;
 }
  
 
@@ -454,13 +483,12 @@ section p {
 
 /* footer start */
 footer {
-    position: absolute;
-    bottom: -10vw;
     margin: auto;
     margin-bottom: 1vw;
     text-align: center;
     width: 100%;
     font-weight: bold;
+    margin-top: 10vw;
 }
 
 .footerPlacement {

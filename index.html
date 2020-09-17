@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Site</title>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -17,37 +14,40 @@
         <h1 class="logo"> <a href="index.html"> Daniel Grunnet</a></h1>
         <nav>
             <ul>
-                <li> <a href="pages/projects.html"> Projects</a></li>
+                <li> <a href="pages/projects.html"> Projekter</a></li>
                 <span class="divider">//</span>
-                <li> <a href="pages/about.html"> About Me</a></li>
+                <li> <a href="pages/about.html"> Om mig</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="section1">
             <h1 id="welcome">Portfolio</h1>
-            <div class="boxLeft">
+            <div class="boxMiddle boxLeft">
                 <div>
                     <h1>Hello</h1>
                 </div>
-                <p>Mit navn er Daniel Grunnet, <br>
-                    jeg studerer multimediedesign og er interesseret i implementering og redigering af
-                    multimedieproduktioner</p>
+                <p>
+                    Jeg studerer multimediedesign og er interesseret i implementering og redigering af
+                    multimedieproduktioner. </p>
             </div>
             <div class="boxMiddle">
                 <div>
-                    <h1><a href="pages/projects.html">Projects &#8618;</a></h1>
+                    <h1><a href="pages/projects.html">Projekter &#8618;</a></h1>
                 </div>
-                <p>Watch my projects or read more about me, by following these links </p>
+                <p> Se mine tidligere projekter, fra de første som jeg lavede på uddannelsen, til de seneste jeg har
+                    arbejdet med. </p>
             </div>
-            <div class="boxMiddle2">
+            <div class="boxMiddle">
                 <div>
-                    <h1><a href="pages/about.html">About Me &#8618;</a></h1>
+                    <h1><a href="pages/about.html">Om mig &#8618;</a></h1>
                 </div>
-                <p>Watch my projects or read more about me, by following these links </p>
+                <p> Se hvem jeg er og hvad der driver mig, samt lidt om mine interesser og andet spændende. </p>
             </div>
-            <div class="boxRight">
-                <h1>Links</h1>
+            <div class="boxMiddle boxRight">
+                <div>
+                    <h1>Links</h1>
+                </div>
                 <div>
                     <ul>
                         <li><a href="http://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
@@ -56,12 +56,33 @@
                     </ul>
                 </div>
             </div>
-            <div class="imageFP"></div>
-            <!-- ikon <div class="fly"> -->
-                
+        </section>
+<div class="fly">
+    <a href="#arrival"> <div class="hoverEffect"> </div></a>
+    <h1>Seneste projekter</h1>
+            <img src="assets/images/SVG/ic_expand_more_24px.svg" alt="arrow pointing down"
+                    class="arrowPointingDown">
+            </div>
+        
+            <section class="section2">
+            <div class="contentBox"> <a href="../pages/loop.html">
+                    <h2 class="textProject1"> Redesign af Solbyens gamle side ↪</h2>
+                    <img src="assets/images/solbyen.png" alt="project">
+                </a>
+            </div>
+            <div class="contentBox"> <a href="../pages/loop.html">
+                    <h2 class="textProject1"> Første version af Portfolio ↪</h2>
+                    <img src="assets/images/portfolio.PNG" alt="project">
+                </a> 
+            </div>
+            <div class="contentBox"> <a href="../pages/loop.html">
+                    <h2 class="textProject1"> Eksamensprojekt: Svalegaarden Mest ↪</h2>
+                    <img src="assets/images/sgm.png" alt="project">
+                </a>
             </div>
         </section>
 
+        <div id="arrival"></div>
 
     </main>
     <footer>
