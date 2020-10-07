@@ -1,0 +1,1666 @@
+@charset "UTF-8";
+/* Welcome to the start of the CSS*/
+
+/*Default stylings */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*Makes bg image attatched*/
+
+body {
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.masterGrid {
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+}
+
+main {
+    display: grid;
+    grid-template-areas: 'hero''cardSection''fredag';
+}
+
+i {
+    font-style: italic;
+}
+
+/*Sets default title font and size*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 3vw;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+}
+
+/* sets default text font and size*/
+
+p,
+li,
+button,
+a,
+legend {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4vw;
+    text-decoration: none;
+    line-height: 2vw;
+}
+
+label {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #fff;
+    padding: 0 0 1.5vw 0;
+}
+
+.logo {
+    width: 35vw;
+    display: block;
+    margin: auto;
+    padding-top: 1vw;
+}
+
+.line {
+    width: 80vw;
+    border: 1px solid #6e6e6e;
+    margin: 1.5vw auto 0 auto;
+    border-radius: 3px;
+}
+
+nav {
+    margin-top: 0.2vw;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 2vw;
+    text-align: start;
+}
+
+nav a {
+    letter-spacing: 1px;
+    color: #474747;
+    font-size: 1.5vw;
+    padding: 1vw;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown ul {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    z-index: 1;
+    box-shadow: 0 5px 10px 0 #0000004d;
+    border-radius: 5px;
+    margin-top: 1vw;
+    transform: translate(0%);
+}
+
+.dropdown ul a {
+    font-size: 1vw;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown ul li {
+    margin: 5px;
+    padding: 5px;
+}
+
+.dropdown:hover ul {
+    display: block;
+}
+
+li a:hover,
+.dropdown:hover,
+li a:focus,
+.dropdown:focus {
+    color: #96192b;
+}
+
+.hero {
+    grid-area: hero;
+    height: 40vw;
+    width: 100vw;
+    overflow: hidden;
+    margin-bottom: 4vw;
+    padding-top: 15vw;
+    padding-left: 10vw;
+    background: linear-gradient(#00000080, #00000080), url(img/web/Mad_med_mest_01.jpg) center center/cover no-repeat fixed;
+}
+
+.hero div {
+    width: 40vw;
+}
+
+.hero img,
+.heroText1 {
+    color: #fff;
+    margin-bottom: 1vw;
+    width: 70vw;
+}
+
+.heroText2 {
+    margin-bottom: 1vw;
+    color: #fff;
+}
+
+#submit,
+button {
+    display: block;
+    background-color: #96192b;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contactBtn {
+    margin-top: 1vw;
+}
+
+button:hover {
+    background-color: #b1172e;
+}
+
+/*Cards*/
+
+.cards {
+    grid-area: cardSection;
+    display: grid;
+    grid-template-areas: "card1 card2""card3 card4";
+    width: 76vw;
+    margin: auto;
+    margin-bottom: 5vw;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 2px 7px 20px 0px #7d7d7d;
+    margin: 2.5vw;
+    padding-bottom: 0.5vw;
+    transition: transform 0.1s ease-in-out;
+    width: 33vw;
+    cursor: pointer;
+}
+
+.card div {
+    width: 33vw;
+    height: 15vw;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.card:nth-child(1) div {
+    grid-area: card1;
+    background: linear-gradient(#00000080, #00000080), url(img/web/Tiger_41.jpg) center center/cover no-repeat;
+}
+
+.card:nth-child(2) div {
+    grid-area: card2;
+    background: linear-gradient(#00000080, #00000080), url(img/instagram/2018-03-17_BgbWbw2AaIu.jpg) center center/cover no-repeat;
+}
+
+.card:nth-child(3) div {
+    grid-area: card3;
+    background: linear-gradient(#00000080, #00000080), url(img/web/Lunde-Wedding-19052018-639.jpg) bottom center/cover no-repeat;
+}
+
+.card:nth-child(4) div {
+    grid-area: card4;
+    background: linear-gradient(#00000080, #00000080), url(img/web/kokketeam.jpg) center center/cover no-repeat;
+}
+
+.card h2 {
+    font-size: 2.5vw;
+    padding-top: 11vw;
+    text-align: center;
+    color: #fff;
+}
+
+.card p {
+    margin: 1vw;
+}
+
+.card a {
+    text-decoration: underline;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+/* Fredag */
+
+.fredag {
+    grid-area: fredag;
+}
+
+#fredag {
+    background-image: url(img/web/suppe003.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 30vw;
+    padding: 6vw 0 6vw 0;
+}
+
+.fredagContent {
+    color: #000;
+    width: 60%;
+    padding: 2vw;
+    margin: auto;
+    background-color: #eeeef5c4;
+}
+
+.fredagContent button {
+    margin: auto;
+    margin-top: 1.5vw;
+}
+
+.fredagContent a {
+    color: #fff;
+}
+
+.fredagContent p {
+    margin-top: 1vw;
+}
+
+/*Footer*/
+
+footer {
+    display: grid;
+    grid-template-areas: 'kontakt adresse social';
+    background-color: #191c27;
+    padding: 0;
+    color: white;
+    clear: both;
+    justify-items: start;
+}
+
+.footerBox {
+    background-color: #191c27;
+    padding: 1.5vw;
+}
+
+.footerBox ul li {
+    padding: 0.2vw;
+}
+
+.footerBox a {
+    color: #fff;
+    text-decoration-color: #008080;
+}
+
+.footerBoxOverskrift {
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-bottom: 0.5vw;
+    padding: 0;
+    color: #D76172;
+}
+
+.footerBox:nth-child(1) {
+    justify-self: center;
+    grid-area: adresse;
+}
+
+.footerBox:nth-child(2) {
+    justify-self: start;
+    grid-area: social;
+}
+
+.footerBox:nth-child(3) {
+    justify-self: end;
+    grid-area: kontakt;
+}
+
+/*grid for menus*/
+
+.menuGrid {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "menuHead menuHead""menu menuImgs";
+    width: 80vw;
+    margin: auto;
+}
+
+/*Header for the menu*/
+
+.menuHead {
+    grid-area: menuHead;
+    background: #fff;
+    text-align: center;
+    margin-top: 5vw;
+    padding: 2vw 2vw 1vw 2vw;
+}
+
+.menuHead p {
+    width: 35vw;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 0vw;
+}
+
+.menuHead button {
+    margin: auto;
+    margin-top: 1vw;
+}
+
+/*Menu card */
+
+.menu {
+    grid-area: menu;
+    background: #fff;
+    margin: 0.8vw 0.8vw 4vw 0;
+}
+
+.menu h2,
+.menu p {
+    padding: 1.2vw;
+    text-align: center;
+}
+
+/*mini gallery*/
+
+.menuImgs {
+    justify-items: center;
+    align-items: center;
+    background: #fff;
+    display: grid;
+    grid-area: menuImgs;
+    grid-template-areas: "img1 img2""img3 img4""img5 img6";
+    height: 42.2vw;
+    margin: 0.8vw 0 0 0;
+    width: 28.4vw;
+    padding: .4vw;
+}
+
+.menuImgs img {
+    width: 13vw;
+    height: 13vw;
+    overflow: hidden;
+    object-fit: cover;
+    background: #838383;
+    margin: .4vw;
+}
+
+/*Forces the images to sit where they should*/
+
+.menuImgs img:nth-child(1) {
+    grid-area: img1;
+}
+
+.menuImgs img:nth-child(2) {
+    grid-area: img2;
+}
+
+.menuImgs img:nth-child(3) {
+    grid-area: img3;
+}
+
+.menuImgs img:nth-child(4) {
+    grid-area: img4;
+}
+
+.menuImgs img:nth-child(5) {
+    grid-area: img5;
+}
+
+.menuImgs img:nth-child(6) {
+    grid-area: img6;
+}
+
+/*Makes the hr look nicer. Used in the menu*/
+
+hr {
+    height: 0.15vw;
+    width: 80%;
+    border: solid 1px #b8b8b8;
+    border-radius: 50vw;
+    background-color: #b8b8b8;
+}
+
+/*Adds spacing in top n bottom*/
+
+#forretter {
+    margin-top: 2vw;
+}
+
+section#desserter hr {
+    margin-bottom: 5vw;
+}
+
+/*Different classes for each menu page*/
+
+.spring {
+    background-image: url("img/pexels/close-up-photography-of-cherry-blossom-1172859.jpg");
+    /* https://www.pexels.com/photo/close-up-photography-of-cherry-blossom-1172859/  PEXELS */
+}
+
+.summer {
+    background-image: url("img/web/svalegaarden.jpg");
+}
+
+.fall {
+    background-image: url("img/instagram/2018-09-24_BoGp5ShgUWD.jpg");
+}
+
+.winter {
+    background-image: url("img/instagram/2018-01-29_BeihQF_FdBp.jpg");
+}
+
+/* WEDDING PAGE */
+
+.wedding {
+    background-image: url(img/web/Lunde-Wedding-19052018-627.jpg);
+}
+
+.partiesHead p {
+    margin: auto;
+    width: 80%;
+    margin-top: 1vw;
+    text-align: start;
+}
+
+.partiesHead button {
+    margin: auto;
+    margin-top: 1vw;
+}
+
+/*Bryllup card */
+
+.partiesInfo {
+    grid-area: menu;
+    background: #fff;
+    margin: 0.8vw 0.8vw 0 0;
+}
+
+.partiesInfo h2,
+.partiesInfo {
+    padding: 1.2vw;
+    text-align: center;
+    width: 50vw;
+    margin-bottom: 1vw;
+}
+
+.partiesInfo p {
+    margin: 2vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+.partiesBig {
+    font-size: 2vw;
+}
+
+.partiesInfo button {
+    margin: auto;
+}
+
+#partiesSpacing {
+    margin-top: 2vw;
+}
+
+/* CONFIRMATION PAGE */
+
+.konfirmation {
+    background-image: url(img/fb/facebook1.jpg);
+}
+
+.partiesHead {
+    grid-area: menuHead;
+    background: #fff;
+    text-align: center;
+    padding: 2vw 2vw 3vw 2vw;
+    margin-top: 5vw;
+}
+
+.partiesHead p {
+    margin: auto;
+    width: 65%;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+#partiesSpacing p:nth-child(2) {
+    text-align: start;
+    width: 70%;
+    margin: auto;
+}
+
+/*konfirmation card */
+
+.partiesInfo {
+    grid-area: menu;
+    background: #fff;
+    margin: 0.8vw 0.8vw 4vw 0;
+}
+
+.partiesInfo h2,
+.partiesInfo {
+    padding: 0vw;
+    /* fjern padding ved bryllupsiden også */
+    text-align: center;
+    width: 50vw;
+}
+
+.partiesInfo p {
+    margin-top: 0.5vw;
+    margin-bottom: 1vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+.extraInfo {
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+
+.partiesInfo h3 {
+    margin-bottom: 0vw;
+    margin-top: 2vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    font-size: calc(7px + 2vw) ;
+}
+
+#partiesSpacing {
+    margin-top: 2vw;
+}
+
+.partiesImgBox {
+    background: #fff;
+    height: 39vw;
+    margin: 0.8vw 0 0 0;
+    width: 30vw;
+    padding: 0.4vw;
+}
+
+.partiesImgBox img {
+    width: 28.5vw;
+    height: 37.8vw;
+    overflow: hidden;
+    object-fit: cover;
+    background: #838383;
+    margin: 0.4vw;
+    margin-top: 0.2vw;
+}
+
+.partiesInfo button {
+    margin-bottom: 1vw;
+}
+
+/* ABOUT US */
+
+.aboutusGrid {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "aboutus aboutImgs";
+    width: 80vw;
+    margin: auto;
+}
+
+.aboutus {
+    width: auto;
+    background-color: #eee8e8;
+    margin-top: 2vw;
+    padding: 2vw;
+}
+
+.aboutus h1 {
+    text-align: center;
+    margin-bottom: 1.5vw;
+    margin-top: 1.5vw;
+}
+
+.aboutus p {
+    margin-bottom: 0;
+    padding: 1vw;
+}
+
+.aboutImgs {
+    justify-items: center;
+    align-items: center;
+    background: #fff;
+    display: grid;
+    grid-area: aboutImgs;
+    grid-template-areas:
+        "img1 img2"
+        "img3 img4";
+    height: 28.4vw;
+    margin: 1.3vw 0 0 0;
+    width: 28.4vw;
+    padding: 0.4vw;
+}
+
+.aboutImgs img {
+    width: 13vw;
+    height: 13vw;
+    overflow: hidden;
+    object-fit: cover;
+    background: #838383;
+    margin: .4vw;
+}
+
+/*Forces the images to sit where they should*/
+
+.aboutImgs img:nth-child(1) {
+    grid-area: img1;
+}
+
+.aboutImgs img:nth-child(2) {
+    grid-area: img2;
+}
+
+.aboutImgs img:nth-child(3) {
+    grid-area: img3;
+}
+
+.aboutImgs img:nth-child(4) {
+    grid-area: img4;
+}
+
+
+/* RESTAURANT */
+
+/*GRID */
+
+.restaurantGrid {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "restaurantIntro restaurantIntro restaurantIntro""booking1 booking2 booking3""booking4 booking5 booking6";
+    width: 80%;
+    margin: auto;
+    justify-items: center;
+}
+
+/*INTRO RESTAURANT */
+
+.restaurantIntro {
+    grid-area: restaurantIntro;
+    text-align: center;
+    width: 80vw;
+    margin: auto;
+}
+
+.restaurantIntro h1 {
+    text-align: center;
+}
+
+.restaurantIntro p {
+    padding: 2vw;
+    width: 70vw;
+    text-align: start;
+    margin: auto;
+}
+
+.restaurantIntro button {
+    margin: auto;
+}
+
+.restaurantIntro a {
+    color: #fff;
+}
+
+.restaurantIntro img {
+    width: 15vw;
+    height: 15vw;
+    margin: 2vw 2vw 0vw 2vw;
+    text-align: center;
+}
+
+/* FREDAGS MENUER */
+
+.restaurant {
+    width: 23vw;
+    background-color: #fff;
+    box-shadow: 2px 7px 20px 0px #7d7d7d;
+    margin-top: 2vw;
+    text-align: center;
+    margin-bottom: 3vw;
+    transition: ease-in 0.1s;
+}
+
+.restaurant h2 {
+    font-size: 1.8vw;
+    margin-bottom: 1vw;
+    padding: 1vw;
+    text-transform: capitalize;
+}
+
+.restaurant p {
+    margin-top: 1vw;
+    text-transform: capitalize;
+    padding: 1vw;
+}
+
+.restaurant img {
+    width: 23vw;
+    height: 17vw;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.restaurant:hover {
+    box-shadow: 2px 10px 30px 0px #7d7d7d;
+}
+
+.restaurant button {
+    margin: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.booking1 {
+    grid-area: booking1;
+}
+
+.booking2 {
+    grid-area: booking2;
+}
+
+.booking3 {
+    grid-area: booking3;
+}
+
+.booking4 {
+    grid-area: booking4;
+}
+
+.booking5 {
+    grid-area: booking5;
+}
+
+.booking6 {
+    grid-area: booking6;
+}
+
+/* SCROLL BEHAVIOR */
+
+#menuer {
+    position: absolute;
+    bottom: -10%;
+}
+
+/* MENUSUBPAGE */
+
+.menusubGrid {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "menusubText menusubText"" menusubImage1 menusubImage2""menusubImage3 menusubImage4";
+    width: 80%;
+    margin: auto;
+    justify-items: center;
+}
+
+.menusubText {
+    grid-area: menusubText;
+    text-align: center;
+    width: 80vw;
+    margin: auto;
+}
+
+.menusubText h1 {
+    text-align: center;
+}
+
+.menusubText p {
+    padding: 2vw;
+    width: 60vw;
+    text-align: start;
+    margin: auto;
+}
+
+.menusubText button {
+    margin: auto;
+}
+
+/* Menu images */
+
+.menusubImg {
+    width: 20vw;
+    height: 20vw;
+    text-align: center;
+    padding-top: 16vw;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 2px 7px 20px 0px #7d7d7d;
+    transition: transform 0.1s ease-in-out;
+}
+
+.menusubImage1 {
+    grid-area: menusubImage1;
+    background: linear-gradient(#0000004d, #0000004d), url(img/pexels/close-up-photography-of-cherry-blossom-1172859.jpg) center center /cover;
+    /* https://www.pexels.com/photo/white-flowers-in-bloom-2101187/ FRA PEXELS  */
+    margin-left: 16.5vw;
+    margin-top: 3vw;
+}
+
+.menusubImage2 {
+    grid-area: menusubImage2;
+    background: linear-gradient(#0000004d, #0000004d), url(img/web/svalegaarden.jpg) center center /cover;
+    margin-right: 16.5vw;
+    margin-top: 3vw;
+}
+
+.menusubImage3 {
+    grid-area: menusubImage3;
+    background: linear-gradient(#0000004d, #0000004d), url(img/instagram/2018-09-24_BoGp5ShgUWD.jpg) center center /cover;
+    margin-left: 16.5vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.menusubImage4 {
+    grid-area: menusubImage4;
+    background: linear-gradient(#0000004d, #0000004d), url(img/instagram/2018-01-29_BeihQF_FdBp.jpg) center center /cover;
+    margin-right: 16.5vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+/* Images Hover */
+
+.menusubImage1:hover {
+    transform: scale(1.01);
+    background: linear-gradient(#0000001c, #0000001c), url(img/pexels/close-up-photography-of-cherry-blossom-1172859.jpg) center center /cover;
+}
+
+.menusubImage2:hover {
+    transform: scale(1.01);
+    background: linear-gradient(#0000001c, #0000001c), url(img/web/svalegaarden.jpg) center center /cover;
+}
+
+.menusubImage3:hover {
+    transform: scale(1.01);
+    background: linear-gradient(#0000001c, #0000001c), url(img/instagram/2018-09-24_BoGp5ShgUWD.jpg) center center /cover;
+}
+
+.menusubImage4:hover {
+    transform: scale(1.01);
+    background: linear-gradient(#0000001c, #0000001c), url(img/instagram/2018-01-29_BeihQF_FdBp.jpg) center center /cover;
+}
+
+/* PARTIESSUBPAGE */
+
+.partiessubGrid {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "menusubText menusubText"" menusubImage1 menusubImage2";
+    width: 80%;
+    margin: auto;
+    justify-items: center;
+}
+
+.partiessubText {
+    grid-area: menusubText;
+    text-align: center;
+    width: 80vw;
+    margin: auto;
+}
+
+.partiessubText h1 {
+    text-align: center;
+}
+
+.partiessubText p {
+    padding: 2vw;
+    width: 60vw;
+    text-align: start;
+    margin: auto;
+}
+
+.partiessubText button {
+    margin: auto;
+}
+
+/*Parties images */
+
+.partiessubImg {
+    width: 23vw;
+    height: 23vw;
+    text-align: center;
+    padding-top: 18vw;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 2px 7px 20px 0px #7d7d7d;
+    transition: transform 0.1s ease-in-out;
+}
+
+.partiessubImage1 {
+    grid-area: menusubImage1;
+    background: linear-gradient(#0000004d, #0000004d), url(img/web/Lunde-Wedding-19052018-627.jpg) center center /cover;
+    /* https://www.pexels.com/photo/white-flowers-in-bloom-2101187/ FRA PEXELS  */
+    margin-left: 13.5vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.partiessubImage2 {
+    grid-area: menusubImage2;
+    background: linear-gradient(#0000004d, #0000004d), url(img/web/Lunde-Wedding-19052018-639.jpg) center center /cover;
+    margin-right: 13.5vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+/* Images Hover */
+
+.partiessubImage1:hover {
+    transform: scale(1.01);
+    background: linear-gradient(#0000001c, #0000001c), url(img/web/Lunde-Wedding-19052018-627.jpg) center center /cover;
+}
+
+.partiessubImage2:hover {
+    transform: scale(1.01);
+    background: linear-gradient(#0000001c, #0000001c), url(img/web/Lunde-Wedding-19052018-639.jpg) center center /cover;
+}
+
+/*Contact.html*/
+
+.contactGrid {
+    display: grid;
+    grid-template-areas: "info map""adress email";
+    margin: 2vw auto 0 auto;
+    width: 80vw;
+}
+
+.contactInfo,
+.adressAndPhone,
+.contactForm {
+    margin: 2vw;
+    padding: 2vw;
+}
+
+.contactGrid section p {
+    margin: 2vw 0 0 0;
+}
+
+.contactInfo {
+    grid-area: info;
+}
+
+#map {
+    grid-area: map;
+    margin: 5vw 0 0 0;
+    width: 47vw;
+    height: 23vw;
+    background-color: #a0a0a0;
+    border-radius: 5px;
+}
+
+.adressAndPhone {
+    grid-area: adress;
+}
+
+.contactForm {
+    grid-area: email;
+}
+
+.contactForm h3 {
+    margin: 0 0 1vw 0;
+}
+
+#emailForm {
+    grid-template-areas: "label1 firstName""label2 mailAdress""label3 longText""btn btn";
+    display: grid;
+}
+
+#emailForm input,
+textarea {
+    width: 35vw;
+    margin: 0 0 1vw 1vw;
+}
+
+#emailForm label:nth-child(1) {
+    grid-area: label1;
+}
+
+#emailForm #name {
+    grid-area: firstName;
+}
+
+#emailForm label:nth-child(3) {
+    grid-area: label2;
+}
+
+#emailForm #email {
+    grid-area: mailAdress;
+}
+
+#emailForm label:nth-child(5) {
+    grid-area: label3;
+}
+
+#emailForm #message {
+    grid-area: longText;
+    height: 5vw;
+}
+
+textarea {
+    overflow-wrap: break-word;
+    resize: none;
+}
+
+#submit {
+    grid-area: btn;
+}
+
+.gallery {
+    grid-area: main;
+    grid-template-areas: "heading""gallery";
+    display: grid;
+}
+
+.gallery h1 {
+    grid-area: heading;
+    margin: 3vw auto;
+}
+
+.galleryGrid {
+    display: grid;
+    grid-area: gallery;
+    grid-template-areas: "1 2 3 4""5 6 7 8""9 10 11 12""13 14 15 16""17 18 19 20""21 22 23 24""25 26 27 28""29 30 31 32""33 34 35 36""37 38 39 40";
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+.galleryGrid img {
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+    margin: 1vw;
+    cursor: pointer;
+    border: 0;
+    transition: border .1s ease-in;
+    border-radius: 2px;
+}
+
+.galleryGrid img:hover {
+    border: 2px solid #96192b;
+}
+
+.galleryHidden {
+    display: none;
+}
+
+.show {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    background: #0000009c;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.show img {
+    height: initial;
+    max-height: 40vw;
+    width: 60vw;
+    object-fit: cover;
+    margin: 5vw 20vw;
+}
+
+.galleryBtn {
+    margin: 2vw auto 5vw;
+}
+
+.mobileHeader,
+.mobileNav,
+.menuBtn i {
+    display: none;
+}
+
+/*MQ for small web*/
+
+@media screen AND (max-width: 1000px) {
+    p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .dropdown ul a {
+        font-size: 12px;
+    }
+
+    main {
+        width: 90vw;
+    }
+
+    body {
+        background-position: center;
+    }
+
+    .galleryGrid img {
+        width: 22vw;
+        height: 22vw;
+    }
+    .show img {
+        height: initial;
+        max-height: 60vw;
+        width: 60vw;
+        margin: 5vw 20vw;
+    }
+    .galleryGrid {
+        width: 100%;
+    }
+
+    main, .gallery {
+        width: 100vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*MQ for large mobile*/
+
+@media screen AND (max-width: 425px) {
+    p {
+        font-size: 16px;
+        line-height: 18px;
+        /*Smashing mag says 16px for web
+        https://www.smashingmagazine.com/2018/06/reference-guide-typography-mobile-web-design/ */
+    }
+
+    /* hero changes */
+
+    .hero div {
+        width: 80vw;
+    }
+
+    .hero {
+        height: 60vw;
+        background: linear-gradient(#00000080, #00000080), url(img/web/Mad_med_mest_01.jpg) center center/cover no-repeat;
+    }
+
+    /* card changes */
+    .card {
+        padding-bottom: 0;
+    }
+
+    .card p {
+        display: none;
+    }
+
+    .card h2 {
+        font-size: 16px;
+        padding-top: 8vw;
+    }
+
+    /* fredag changes */
+    #fredag {
+        height: 70vw;
+    }
+
+    .fredagContent {
+        width: 80%;
+        margin-top: 8vw;   
+    }
+
+    #fredag {
+        background: url(img/web/suppe003.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 80vw;
+        padding: 6vw 0 6vw 0;
+    }
+
+    /* button resizing */
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* footer changes */
+    footer {
+        display: grid;
+        grid-template-areas: "kontakt""adresse""social";
+        height: 60vw;
+        width: 100%;
+    }
+
+    .footerBox:nth-child(1) {
+        justify-self: center;
+        margin: auto;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .footerBox:nth-child(2) {
+        justify-self: center;
+        margin: auto;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .footerBox:nth-child(3) {
+        justify-self: center;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .footerBoxOverskrift {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .footerBox ul li {
+        padding: 1vw;
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 0vw;
+    }
+
+    .footerBox a {
+        padding: 0.2vw;
+        font-size: 16px;
+    }
+
+    /*Makes titles bigger and*/
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 26px;
+        font-weight: 900;
+    }
+    .menusubGrid h2,
+    .partiessubGrid h2{
+font-size: 20px;
+    }
+
+    /*Header and dropdown on mobile*/
+    header,
+    .nav,
+    .line {
+        display: none;
+    }
+
+    .dropdown:hover ul {
+        display: none;
+    }
+
+    header {
+        display: block;
+        z-index: 99;
+        height: 10vw;
+    }
+
+    nav {
+        display: block;
+        z-index: 90;
+        transition: height .1s ease-in;
+        background: #fff;
+        margin: 0;
+    }
+
+    nav ul {
+        padding: 2vw;
+    }
+
+    nav ul li a {
+        transition: font-size .1s ease-in;
+        font-size: 16px;
+    }
+
+    nav ul li {
+        display: list-item;
+    }
+
+    .logo {
+        display: inline-block;
+        padding-top: 0;
+    }
+
+    .logo img {
+        height: 5vw;
+    }
+
+    .menuBtn {
+        display: inline-block;
+        width: 6vw;
+        height: 6vw;
+        cursor: pointer;
+        margin: 1vw 0 1vw 2vw;
+    }
+
+    .menuBtn i {
+        display: block;
+        padding: 1vw 0 0 1vw;
+    }
+
+    .logo {
+        height: 5vw;
+        margin: 2vw 2vw 1vw 35vw;
+    }
+
+    .hideNav {
+        height: 0;
+        display: none;
+    }
+
+
+
+    /*Mobile layout*/
+    .menuGrid {
+        grid-template-areas: "menuHead""menu""menuImgs";
+        width: 90vw;
+    }
+
+    .menu {
+        margin: 2vw 0 0 0;
+    }
+
+    /*Makes images bigger*/
+    .menuImgs img {
+        width: 42vw;
+        height: 42vw;
+        margin: 1vw;
+    }
+
+    /*Makes img container bigger*/
+    .menuImgs {
+        height: 134vw;
+        margin: 5vw 0 5vw 0;
+        width: 90vw;
+        padding: 1vw;
+    }
+
+    /*Adjusts the menu header*/
+    .menuHead {
+        margin-top: 5vw;
+        padding: 2vw 2vw 3vw 2vw;
+        margin-bottom: 3vw;
+    }
+
+    .menuHead p {
+        width: 70vw;
+    }
+
+    /* Submenu */
+    .menusubText p {
+        width: 80vw;
+    }
+
+    .menusubImage1,
+    .menusubImage2,
+    .menusubImage3,
+    .menusubImage4 {
+        margin-left: 1vw;
+        margin-right: 1vw;
+        margin-top: 3vw;
+        width: 40vw;
+    }
+
+    .menusubImg {
+        text-align: center;
+        color: #fff;
+        box-shadow: 0 0 0 0;
+    }
+
+    .menuHead p {
+        width: 70vw;
+        font-size: 16px;
+        margin: 0 auto 1vw auto;
+    }
+
+    .menusubImg {
+        padding-top: 12vw;
+    }
+
+    /* parties changes */
+
+    .partiesImgBox {
+        background: none;
+        height: 108vw;
+        width: 90vw;
+    }
+
+    .partiesInfo h3 {
+        margin-bottom: 0vw;
+        margin-top: 2vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
+        font-size: 20px;
+    }
+
+    .extraInfo {
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    .partiesImgBox img {
+        width: 90vw;
+        margin: auto;
+        height: 99.8vw;
+        overflow: hidden;
+        object-fit: cover;
+        background: #838383;
+        margin-top: 2.5vw;
+    }
+.extraInfo{
+    font-size: 16px;
+}
+    #partiesSpacing {
+        margin-top: 2vw;
+        width: 90vw;
+    }
+
+    .partiesInfo h2,
+    .partiesInfo {
+        padding: 0vw;
+        text-align: center;
+        width: 90vw;
+    }
+
+    /* Selskab subpage */
+    .partiessubGrid {
+        width: 90%;
+    }
+.partiesHead{
+    margin-top: 5vw;
+    margin-bottom: 3vw;
+}
+    .partiessubText p {
+        padding: 3vw;
+        width: 80vw;
+    }
+
+    .partiessubImg {
+        width: 40vw;
+        height: 30vw;
+        padding-top: 13vw;
+        box-shadow: 0 0 0 0;
+       
+    }
+
+    .partiessubImage1 {
+        margin-right: 2vw;
+        margin-left: 5vw;
+    }
+
+    .partiessubImage2 {
+        grid-area: menusubImage2;
+        margin-right: 5vw;
+        margin-left: 2vw;
+    }
+
+    /* ABOUT US  */
+
+    .aboutusGrid {
+        grid-area: main;
+        display: grid;
+        grid-template-areas: "aboutus""aboutImgs";
+        width: 90vw;
+        margin: auto;
+    }
+
+    .aboutus h1 {
+        font-size: 18px;
+    }
+
+    .aboutus p {
+        font-size: 16px;
+        margin-bottom: 2vw;
+        padding: 1.5vw;
+    }
+
+    .aboutImgs {
+        padding: 0vw;
+    }
+
+    .aboutImgs {
+        margin: 1.3vw 0 2vw 0vw;
+    }
+
+    .aboutImgs img {
+        width: 95%;
+        height: 40vw;
+        margin: 1.3vw;
+    }
+
+    .aboutImgs {
+        justify-items: center;
+        align-items: center;
+        background: #fff;
+        display: grid;
+        grid-area: aboutImgs;
+        grid-template-areas:
+            "img1 img2"
+            "img3 img4";
+        height: auto; 
+        margin: 0;
+        width: auto; 
+        padding: 0.4vw;
+    }
+
+    /* contact page */
+
+    .contactGrid {
+        grid-template-areas:
+            "info"
+            "map"
+            "adress"
+            "email";
+        margin: 2vw auto 0 auto;
+        width: 90vw;
+    }
+
+    .contactGrid h3 {
+        font-size: 16px;
+    }
+
+    #map {
+        margin: auto;
+        width: 70vw;
+        height: 70vw;
+    }
+
+    #emailForm input,
+    textarea {
+        width: 100%;
+        margin: 1vw 0vw 1vw 0vw;
+    }
+
+    /* restaurant page */
+
+    .restaurantGrid {
+        grid-template-areas:
+            "restaurantIntro restaurantIntro"
+            "booking1 booking2"
+            "booking3 booking4"
+            "booking5 booking6";
+        width: 90%;
+    }
+
+    .restaurantIntro img {
+        width: 24vw;
+        height: 20vw;
+        margin: 2vw 0.5vw 0vw 0.5vw;
+    }
+
+    .restaurantIntro p {
+        width: 80vw;
+    }
+
+    .restaurant {
+        width: 40vw;
+        background-color: #fff;
+        box-shadow: 2px 7px 20px 0px #7d7d7d;
+        margin-top: 2vw;
+        text-align: center;
+        margin-bottom: 3vw;
+        transition: ease-in 0.1s;
+    }
+
+    .restaurant h2 {
+        font-size: 16px;
+        margin-bottom: 1vw;
+        padding: 1vw;
+        text-transform: capitalize;
+    }
+
+    .booking6 button {
+        margin-top: 5.5vw;
+        margin-bottom: 1vw;
+    }
+
+    .booking2 button {
+        margin-top: 5.5vw;
+        margin-bottom: 1vw;
+    }
+
+    .restaurant img {
+        width: 40vw;
+        height: 30vw;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .show img {
+        height: initial;
+        max-height: 60vw;
+        width: 90vw;
+        margin: 15vw 5vw;
+    }
+}

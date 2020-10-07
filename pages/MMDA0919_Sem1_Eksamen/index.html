@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Svalegaarden Mest skaber skræddersyede oplevelser til enhver begivenhed - Se vores udvalg af menuer og besøg vores restaurant på udvalgte fredage">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="reset.css" media="all">
+    <link rel="stylesheet" href="style.css" media="all">
+    <script src="https://kit.fontawesome.com/a076d05399.js" async defer></script>
+    <title>Svalegaarden Mest</title>
+<script src="nav.js" async defer></script>
+</head>
+<body class="masterGrid">
+    <header>
+        <div class="menuBtn" id="menuBtn"><i class="fas fa-bars"></i></div>
+        <div class="logo"><a href="#"> <img src="img/logos/svalegaarden_logo_grey.svg" alt="logo"> </a>
+        </div>
+        <nav id="mobileNav" class="hideNav">
+            <ul>
+                <li> <a href="about_us/"> OM OS </a> </li>
+                <li class="dropdown"><a href="menus/"> MENUER </a>
+                    <ul>
+                        <li> <a href="menus/spring/"> FORÅR </a> </li>
+                        <li> <a href="menus/summer/"> SOMMER </a> </li>
+                        <li> <a href="menus/fall/"> EFTERÅR </a> </li>
+                        <li> <a href="menus/winter/"> VINTER </a> </li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a href="parties/"> SELSKABER </a>
+                    <ul>
+                        <li> <a href="parties/weddings/"> BRYLLUP </a> </li>
+                        <li> <a href="parties/confirmations/"> KONFIRMATION </a> </li>
+                    </ul>
+                </li>
+                <li> <a href="restaurant/"> RESTAURANT </a> </li>
+                <li> <a href="contact/"> KONTAKT </a> </li>
+            </ul>
+        </nav>
+        <div class="line"></div>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <img src="img/logos/svalegaarden_logo_white2.svg" alt="logo">
+            <div>
+                <p class="heroText2">
+                    Hos Svalegaarden Mest hjælper vi dig med at skabe mindeværdige og unikke oplevelser i historiske omgivelser.
+                    </p>
+                <button onclick="window.location.href='contact'" class="contactBtn"> Kontakt</button>
+            </div>
+        </section>
+
+        <section class="cards" id="cards">
+            <div onclick="window.location.href='menus'" class="card">
+                <div>
+                    <h2>Menuer</h2>
+                </div>
+                <p>Vi har her sammensat vores bud på nogle menuer der er tilpasset hver årstid. Skal du holde
+                    fødselsdag, bryllup eller barnedåb, så er der hos os rig mulighed for at sammensætte
+                    lige netop dén menu, som du ønsker.</p>
+                <!-- Du er meget velkommen til at kontakte os og høre mere om,
+                    hvad vi kan gøre for dig. Vi glæder os til at høre fra dig! -->
+            </div>
+            <div onclick="window.location.href='gallery'" class="card">
+                <div>
+                    <h2>Galleri</h2>
+                </div>
+                <p>Se billeder fra tidligere arrangementer, hvad vi tilbyder
+                    inden for mad, borddækning, pynt i salene med meget mere, samt billeder fra restauranten om
+                    fredagen. </p>
+            </div>
+            <div onclick="window.location.href='parties'" class="card">
+                <div>
+                    <h2>Selskaber</h2>
+                </div>
+                <p>Svalegaarden Mest skaber omgivelserne for alle livets begivenheder.
+                    Vi ønsker at gøre dine store begivenheder til mindeværdige oplevelser. <br> Vi arrangerer fester for
+                    selskaber 20 personer og op efter.
+                </p>
+            </div>
+            <div onclick="window.location.href='about_us'" class="card">
+                <div>
+                    <h2>Service</h2>
+                </div>
+                <p> Svalegaarden Mest er vidunderlig at arbejde med. De gamle bygninger mærkes og giver os en
+                    naturlig ydmyghed og lyst til at bringe de gode oplevelser videre til vores gæster.
+                </p>
+            </div>
+        </section>
+
+        <section class="fredag" id="fredag">
+            <div class="fredagContent">
+                <p> Udvalgte fredage byder vi indenfor på Svalegaarden Mest.
+                    Her kan du nyde en tre retters menu inklusiv vine.
+                    <p> Vi glæder os til at byde jer velkommen på Svalegaarden Mest. </p>
+                    <button onclick="window.location.href='restaurant'">Se tider</button>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footerBox">
+            <ul>
+                <li class="footerBoxOverskrift"> Adresse </li>
+                <li> Einar Packness Vej 2 </li>
+                <li> Aalborg 9000</li>
+                <li>Danmark</li>
+            </ul>
+        </div>
+        <div class="footerBox">
+            <ul>
+                <li class="footerBoxOverskrift"> Social Media </li>
+                <li> <a target="_blank" rel="noreferrer" href="https://www.facebook.com/SvalegaardenMEST/"><i
+                            class="fab fa-facebook-square"></i> Facebook</a> </li>
+                <li> <a target="_blank" rel="noreferrer" href="https://www.instagram.com/svalegaardenmest/"><i
+                            class="fab fa-instagram"></i> Instagram</a> </li>
+                <li> &copy; 2020 </li>
+            </ul>
+        </div>
+        <div class="footerBox">
+            <ul>
+                <li class="footerBoxOverskrift"> Kontakt </li>
+                <li> Tlf. Køkken: +45 51 90 55 54 </li>
+                <li> Tlf. Administration: +45 98 13 50 53 </li>
+                <li> info@svalegaarden-mest.dk </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Kontakt Svalegaarden Mest og find en løsning til din næste begivenhed">
+    <link rel="icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="../reset.css" media="all">
+    <link rel="stylesheet" href="../style.css" media="all">
+    <script src="https://kit.fontawesome.com/a076d05399.js" async defer></script>
+    <script src="../scripts.js" ></script> 
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpZHPXAAuWq3ui1ktI6CYo2pKanZjq-y0&callback=initMap">
+    </script>
+    <title>Kontakt os | Svalegaarden Mest</title>
+    <script src="../nav.js" async defer></script>
+</head>
+<body class="masterGrid">
+    <header>
+        <div class="menuBtn" id="menuBtn"><i class="fas fa-bars"></i></div>
+        <div class="logo"><a href="../"> <img src="../img/logos/svalegaarden_logo_grey.svg" alt="logo"> </a>
+        </div>
+        <nav id="mobileNav" class="hideNav">
+            <ul>
+                <li> <a href="../about_us/"> OM OS </a> </li>
+                <li class="dropdown"><a href="../menus/"> MENUER </a>
+                    <ul>
+                        <li> <a href="../menus/spring"> FORÅR </a> </li>
+                        <li> <a href="../menus/summer"> SOMMER </a> </li>
+                        <li> <a href="../menus/fall"> EFTERÅR </a> </li>
+                        <li> <a href="../menus/winter"> VINTER </a> </li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a href="../parties/"> SELSKABER </a>
+                    <ul>
+                        <li> <a href="../parties/weddings/"> BRYLLUP </a> </li>
+                        <li> <a href="../parties/confirmations/"> KONFIRMATION </a> </li>
+                    </ul>
+                </li>
+                <li> <a href="../restaurant/"> RESTAURANT </a> </li>
+                <li> <a href="../contact/"> KONTAKT </a> </li>
+            </ul>
+        </nav>
+        <div class="line"></div>
+    </header>
+    <main class="contactGrid">
+        <section class="contactInfo">
+            <h2>Kontaktoplysninger</h2>
+            <p>Skal du holde et arrangement – alt lige fra bryllup, barnedåb, møder eller teambuilding? Ønsker du at
+                vide mere om Svalegaarden Mest, vores menuer eller (noget helt andet)? Hos Svalegaarden Mest
+                skræddersyer vi dit arrangement, så det passer dig. </p>
+                <p>Du finder vores kontaktoplysninger her på siden, og du er mere end velkommen til at kontakte os for at
+                    høre nærmere på nedenstående oplysninger.  </p>
+                </section>
+                <div id="map"></div>
+        <section class="adressAndPhone">
+            <h3>Svalegaarden Mest</h3>
+            <p>Einar Packness Vej 2 <br>
+                9000 Aalborg </p>
+            <p>TLF. KØKKEN:+45 51 90 55 54 </p>
+            <p>TLF. ADMINISTRATION:
+                <br>+45 98 13 50 53
+                <br>info@svalegaarden-mest.dk </p>
+        </section>
+        <section class="contactForm">
+        <h3>Skriv til os her</h3>
+            <form action="#" id="emailForm">
+                <label for="name" >Fulde navn</label>
+                <input type="text" name="fullName" placeholder="Indtast dit navn her" id="name">
+                <label for="email">E-mail</label>
+                <input type="email" name="mailAdress" id="email" placeholder="Indtast din e-mail her">
+                <label for="message">Beskedtekst</label>
+                <textarea name="beskedText" id="message" placeholder="Skriv din besked her"></textarea>
+                <input type="Button" value="Send Besked" id="submit" onclick = "Redirect();"/>
+            </form>
+        </section> 
+    </main>
+    <footer>
+        <div class="footerBox">
+            <ul>
+                <li class="footerBoxOverskrift"> Adresse </li>
+                <li> Einar Packness Vej 2 </li>
+                <li> Aalborg 9000</li>
+                <li>Danmark</li>
+            </ul>
+        </div>
+        <div class="footerBox">
+            <ul>
+                <li class="footerBoxOverskrift"> Social Media </li>
+                <li> <a target="_blank" rel="noreferrer" href="https://www.facebook.com/SvalegaardenMEST/"><i
+                            class="fab fa-facebook-square"></i> Facebook</a> </li>
+                <li> <a target="_blank" rel="noreferrer" href="https://www.instagram.com/svalegaardenmest/"><i
+                            class="fab fa-instagram"></i> Instagram</a> </li>
+                <li> &copy; 2020 </li>
+            </ul>
+        </div>
+        <div class="footerBox">
+            <ul>
+                <li class="footerBoxOverskrift"> Kontakt </li>
+                <li> Tlf. Køkken: +45 51 90 55 54 </li>
+                <li> Tlf. Administration: +45 98 13 50 53 </li>
+                <li> info@svalegaarden-mest.dk </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
