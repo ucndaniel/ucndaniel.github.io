@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio | Forside</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="assets/javascript/script.js"></script>
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"> KAN BRUGES TIL ANIMATIONS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> CSS.ANIMATIONS-->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> SCROLLREVEAL-->
+</head>
+
+<body>
+    <header class="sticky" id="header">
+        <div class="container">
+            <div id="branding">
+                <a href="index.html">
+                    <img id="danLogo" src="assets/images/Asset 3.svg" alt="portfoliologo">
+                </a>
+            </div>
+            <nav>
+                <ul id="navbar"> 
+                    <li class="current"> <a href="index.html">Forside</a></li>
+                    <li class="dropdown nodropdown"><a href="assets/pages/projects.html">Case Studies <span
+                                style="font-size: 16px;">
+                                &#9660;</span></a>
+                        <ul>
+                            <li class="dropdownItem"> <a href="assets/pages/umf.html"> Ungdomsringens musikfestival </a> </li>
+                            <li class="dropdownItem"> <a href="assets/pages/svalegaarden.html"> Svalegaarden Mest </a> </li>
+                            <li class="dropdownItem"> <a href="assets/pages/loop.html"> Loop Fitness </a> </li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="assets/pages/cv.html">CV</a></li> -->
+                    <li><a href="assets/pages/aboutme.html">Om mig</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="navbar()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </nav>
+        </div>
+    </header>
+    <main class="mainGrid">
+        <div class="img"> <img src="assets/images/baggrundindex.jpg" alt="portfolioimage" srcset=""> </div>
+        <div class="text">
+           <div class="textContent">
+            <p>Mit navn er Daniel Grunnet, <br> jeg studerer multimediedesign og er interesseret i implementering og redigering af multimedieproduktioner<br></p>
+            <button class="arrowBtn1" onclick="window.location.href = 'assets/pages/projects.html';"> <span>Case
+                    Studies</span></button></div> 
+        </div>
+
+        
+
+    </main>
+
+    <footer>
+        <p class="githubText">Github</p>
+        <a class="githubContainer" href="https://github.com/ucndaniel" target="_blank" rel="noopener noreferrer">
+            <div class="github"></div>
+            <!-- <img src="assets/images/GitHub-Mark-Light-32px.png" alt=""> //anden løsning, fjerner hover -->
+        </a>
+
+        <p class="emailText">Email</p>
+        <div class="email">
+            <a href="mailto:dangrunnet@outlook.com"> <i class="fa fa-envelope">
+
+                    dangrunnet@outlook.com </i></a>
+        </div>
+
+        <p class="somethingText"> Linkedin</p>
+
+        <a class="linkedContainer" href="https://www.linkedin.com/in/daniel-grunnet-1a2a8a1a6/" target="_blank"
+            rel="noopener noreferrer">
+            <div class="something">
+                <img src="assets/images/LI-Logo.png" alt="logo">
+            </div>
+        </a>
+    </footer>
+    
+</body>
+</html>
