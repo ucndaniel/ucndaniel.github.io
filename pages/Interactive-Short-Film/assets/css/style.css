@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+/* Welcome to the start of the CSS*/
+:root {
+    --hFont: 3vw;
+    --pFont: 1.1vw;
+    
+    --hFontFam:'Open Sans', sans-serif;
+    --pFontFam:'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--hFontFam);
+    font-size: var(--hFont);
+}
+
+p,
+label,
+button,
+b,
+a,
+i {
+    font-family: var(--pFontFam);
+    font-size: var(--pFont);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Main */
+.centered{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*Video hotspots*/
+.videoHotspotsParent {
+    position: relative;
+}
+
+div > .hotspot {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+div > .hotspot.image {
+    background-size: cover;
+    background-position: center;
+}
+
+video:focus {
+    outline: none;
+}
+
+
+/* buttons */
+
+a:hover,
+button:hover {
+    cursor: pointer;
+}
+
+#video1 > div.vjs-control-bar{
+    display: none;
+}
+.vjs-tech {
+    pointer-events: none;
+}
+
+header {
+    height: 24vh;
+    width: 99%;
+    overflow-x: hidden;
+}
+
+.logoandflower {
+    width: 40vw;
+    margin: 0;
+    float: left;
+    position: relative;
+}
+
+.logoimg {
+    height: 20vh;
+    position: absolute;
+    z-index: 2;
+    left: 4vw;
+}
+
+.flowerimg {
+    height: 20vh;
+    transform: rotate(270deg);
+    position: absolute;
+    z-index: 1;
+}
+
+.flowersright {
+    position: relative;
+    float: right;
+    width: 40vw;
+    margin: 0;
+}
+
+.flower {
+    transform: rotate(362.5deg);
+    position: absolute;
+    height: 20vh;
+    right: 0vw;
+    top: -1vw;
+}
+
+.rotateflower {
+    height: 19vh;
+    transform: rotate(330deg);
+    position: absolute;
+    right: -4vw;
+}
+
+.openingline {
+    text-align: center;
+}
+
+.playmovietext {
+    font-size: 2vw;
+}
+
+.leadingtext {
+    text-align: center;
+    font-size: 1.8vw;
+}
+
+.cardscontainer {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    margin: 5vh 0 10vh 0;
+    padding: 0 120px 0 120px;
+}
+
+.card {
+    background-color: #E28E04;
+    width: 16vw;
+    height: 42vh;
+    position: relative;
+    align-content: center;
+    padding: 0 2vw 0 2vw;
+}
+
+.cardoverskrift {
+    font-family: 'Alfa Slab One', cursive;
+    color: white;
+    text-align: center;
+    font-size: 1.9vw;
+}
+
+.beskrivendetext {
+    color: white;
+    text-align: center;
+    line-height: 1.5vw;
+    width: 11vw;
+    margin: auto;
+}
+
+.buttoncontainer {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2vh;
+}
+
+.fakeButton{
+    margin: 0;
+    padding-top: 0.6vw;
+    width: 12vw;
+    height: 5vh;
+    position: absolute;
+    bottom: 2vh;
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    text-align: center;
+    background-color: #E28E04;
+    border: solid white 1px;
+}
+
+
+footer {
+    bottom: 0;
+    width: 100%;
+}
+
+#copyright {
+    text-align: center;
+}
+
+
+
+

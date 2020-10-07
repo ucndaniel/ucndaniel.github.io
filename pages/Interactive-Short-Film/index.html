@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+
+    <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/7.8.4/video.js" defer></script>
+
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/video-hotspots.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+    <title>Now playing: "Zoo Detective: Monkey Trouble"</title>
+</head>
+
+<body onload="getYear()">
+    <header>
+        <div class="logoandflower">
+            <img class="logoimg" src="assets/images/aalborglogo.png" alt="logo">
+            <img class="flowerimg" src="assets/images/leaves.png" alt="gren">
+        </div>
+        <div class="flowersright">
+            <img class="flower" src="assets/images/leaves.png" alt="gren">
+            <img class="rotateflower" src="assets/images/leaves.png" alt="gren">
+        </div>
+    </header>
+    <section>
+        <div class="openingline">
+            <p class="playmovietext">
+                Afspil filmen og se, om du kan løse mysteriet om aben Charlie
+            </p>
+        </div>
+        <div class="centered">
+            <video id="video1" class="video-js responsive-video ratio-16-9 vjs-big-play-centered" controls width="1280" height="720">
+                <source src="assets/video/videoplayback.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p class="leadingtext"> 
+            Vil du ud i Aalborg Zoo og møde Charlie? 
+        </p>
+    </section>  
+    <section>
+        <div class="cardscontainer">
+            <div class="card">
+                <p class="cardoverskrift">Åbent hele året rundt</p>
+                <p class="beskrivendetext">Åbningstider for årets sæsoner</p>
+                    <a class="fakeButton" href="https://aalborgzoo.dk/aabningstider.aspx" target="_blank">Åbningstider</a>
+            </div>
+    
+            <div class="card">
+                <p class="cardoverskrift">Aktuel information</p>
+                <p class="beskrivendetext">Svar på ofte stillede spørgsmål og forholdsregler i forbindelse med covid-19</p>
+                <a class="fakeButton" href="https://aalborgzoo.dk/kalender/naar-du-besoeger-zoo.aspx" target="_blank">Se mere</a>
+            </div>
+        
+            <div class="card">
+                <p class="cardoverskrift">Køb din billet her</p>
+                <p class="beskrivendetext">Gør det nemt, køb din billet på forhånd</p>
+                <a class="fakeButton" href="https://shop.aalborgzoo.dk/" target="_blank">Køb billet</a>
+            </div>
+        
+            <div class="card">
+                <p class="cardoverskrift">Det vildeste årskort</p>
+                <p class="beskrivendetext">Masser af fordele og vilde oplevelser <br> <br> Inklusiv Jul i Zoo</p>
+                <a class="fakeButton" href="https://aalborgzoo.dk/aarskort.aspx" target="_blank">Køb årskort</a>
+            </div>
+        
+    </div>
+    </section>
+    <footer>
+        <p id="copyright"></p>
+    </footer>
+</body>
+
+
+</html>
