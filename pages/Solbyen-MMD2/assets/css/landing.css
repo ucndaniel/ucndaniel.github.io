@@ -1,0 +1,522 @@
+.hero {
+    display: grid;
+    grid-template-areas:
+        "h1 img"
+        "p img";
+    margin-bottom: 2vw;
+}
+
+.hero h1 {
+    grid-area: h1;
+    margin: 0;
+    left: 8vw;
+    top: 6.8vw;
+    font-size: 14vw;
+    line-height: 11.3vw;
+    text-transform: uppercase;
+    position: absolute;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.hero .kort {
+    grid-area: p;
+    margin: 21vw 2vw 0vw 8.8vw;
+    background-image: url(../images/solbyen2.jpg);
+    background-size: 30vw;
+    background-position: center;
+    z-index: 1;
+}
+
+.hero p {
+    padding: 2vw;
+    line-height: 1.4;
+    -webkit-backdrop-filter: blur(0.2px) grayscale(0%) brightness(25%);
+    backdrop-filter: blur(0.2px) grayscale(0%) brightness(25%);
+    color: white;
+    text-shadow: 1px 1px solid black;
+}
+
+.hero img {
+    grid-area: img;
+    height: 37vw;
+    margin-top: 2vw;
+    width: 62vw;
+    margin-right: 5vw;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+
+.news {
+    display: grid;
+    grid-template-areas:
+        "nyhedTitl mailTitl"
+        "nyhed mail";
+    padding: 0;
+    overflow: hidden;
+}
+
+.nyhed {
+    padding-right: 1vw;
+    padding-left: 9.375vw;
+    padding-top: 0vw;
+    padding-bottom: 2vw;
+}
+
+.mail {
+    padding-left: 1.375vw;
+    padding-top: 0vw;
+    padding-bottom: 2vw;
+}
+
+h2 {
+    grid-area: nyhedTitl;
+}
+
+.nyhed {
+    grid-area: nyhed;
+}
+
+.nyhed p {
+    width: 50vw;
+}
+
+.nyhed a {
+    text-decoration: underline;
+    margin: 1vw 0;
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--blue);
+}
+
+h3 {
+    grid-area: mailTitl;
+}
+
+.mail {
+    grid-area: mail;
+}
+
+h2 {
+
+    border-bottom: none;
+    margin: 0;
+    background: var(--yellow);
+    text-transform: uppercase;
+    padding: 1vw 0 1vw 9.375vw;
+    line-height: 1.4;
+}
+
+h3 {
+
+    border-bottom: none;
+    margin: 0;
+    background: var(--yellow);
+    text-transform: uppercase;
+    padding: 1vw 0 1vw 1.375vw;
+    line-height: 1.4;
+
+}
+
+
+
+.landNew1 {
+    margin: 0;
+    padding: 0;
+    width: 63vw;
+}
+
+.landNew2 {
+    margin: 0;
+    padding: 0;
+    width: 37vw;
+}
+
+form {
+    margin-top: 1vw;
+    display: block;
+    padding-bottom: 3vw;
+}
+
+
+input[type=submit] {
+    border: .01vw solid var(--black);
+    display: block;
+    padding: .15vw;
+    width: 20%;
+    color: var(--black);
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(to right, var(--blue), var(--blue));
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition-duration: 0.4s;
+    box-shadow: 5px 5px;
+}
+
+input[type=submit]:hover {
+    color: white;
+    background-size: 100% 100%;
+}
+
+input[type=email] {
+    margin: 1vw 0;
+    display: block;
+    width: 50%;
+}
+
+label {
+    display: block;
+}
+
+.newsHeading {
+    margin: 1vw 0 .5vw;
+    font-family: var(--hFontFam);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.lists {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "a b c d";
+    padding: 0 5.1vw;
+    background: var(--blue);
+}
+
+.listitem {
+    display: grid;
+    grid-template-areas:
+        "a"
+        "c"
+        "d"
+    ;
+    border-right: none;
+    margin: 2.6vw 0 2.6vw 2.6vw;
+    padding: 0 0 0 2vw;
+    background: white;
+}
+
+.listitem p {
+    width: 70%;
+    margin: 0.2vw 0;
+}
+
+.button {
+    border: .01vw solid var(--black);
+    display: block;
+    padding: .2vw;
+    width: 8vw;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    margin: 1vw;
+    margin-left: 0;
+    background: linear-gradient(to right, var(--blue), var(--blue));
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition-duration: 0.4s;
+    box-shadow: 5px 5px;
+}
+
+.button:hover {
+    background-size: 100% 100%;
+    color: white;
+    box-shadow: 5px 5px;
+}
+
+.lists .img {
+    display: block;
+    height: auto;
+    width: 13vw;
+    margin: 2.6vw 2.6vw 2.6vw 0;
+    padding: .2vw;
+    -o-object-fit: cover;
+    object-fit: cover;
+    justify-self: start;
+
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.new {
+    background-image: url("../images/stock/white-graphing-paper-164686.jpg");
+}
+
+.tool {
+    background-image: url("../images/stock/tool-set-on-plank-175039.jpg");
+}
+
+h4,
+h5 {
+    font-weight: 500;
+    margin: 1vw 0 0;
+}
+
+.loading {
+    position: absolute;
+    top: 55.9vw;
+    left: 10%;
+    width: 11vw;
+}
+
+@media screen AND (max-width:2550px) {
+    .loading {
+        top: 60.9vw;
+    }
+}
+
+@media screen AND (max-width:1440px) {
+    .loading {
+        top: 76.9vw;
+        width: 12vw;
+    }
+}
+
+@media screen AND (max-width:1366px) {
+
+    .hero img {
+        margin-top: 0vw;
+        margin-right: 0vw;
+    }
+
+    .hero {
+        margin-bottom: 0vw;
+    }
+
+    .button {
+        width: 12vw;
+    }
+
+    input[type=submit] {
+        width: 25%;
+    }
+}
+
+@media screen AND (max-width:1024px) {
+    .hero h1 {
+        top: 10vw;
+        font-size: 10vw;
+        line-height: 9vw;
+    }
+
+    .loading {
+        top: 79.9vw;
+        width: 16vw;
+    }
+
+    /* MQ tablet START */
+    @media screen AND (max-width:800px) {
+
+        .hero {
+            grid-template-areas:
+                "h1 img"
+                "p p";
+        }
+
+        .hero h1 {
+            font-size: 24vw;
+            line-height: 22vw;
+            top: 14vw;
+        }
+
+        .hero .kort {
+            margin: 1vw 0 2vw;
+            background-size: 60vw;
+        }
+
+        .hero img {
+            height: auto;
+        }
+
+        .news {
+            grid-template-areas:
+                "nyhedTitl"
+                "nyhed"
+                "mailTitl"
+                "mail";
+        }
+
+        h2,
+        h3,
+        h4,
+        h5 {
+
+            height: auto;
+            line-height: 5vw;
+        }
+
+        h2 {
+            border-bottom: none;
+            margin: 0;
+            background: var(--yellow);
+            text-transform: uppercase;
+            padding: 1vw 0 1vw 4.375vw;
+            line-height: 1.4;
+        }
+
+        h3 {
+            border-bottom: none;
+            margin: 0;
+            background: var(--yellow);
+            text-transform: uppercase;
+            padding: 1vw 0 1vw 4.375vw;
+            line-height: 1.4;
+        }
+
+        h5,
+        h4 {
+            margin: 4vw 0 0;
+            line-height: 6.2vw;
+        }
+
+        .landNew1 {
+            margin: 0;
+            padding: 0;
+            width: auto;
+        }
+
+        .landNew2 {
+            margin: 0;
+            padding: 0;
+            width: auto;
+        }
+
+
+        .nyhed {
+            width: auto;
+
+        }
+
+        .nyhed,
+        .mail {
+
+            padding: 0 4.375vw 1vw;
+            height: auto;
+        }
+
+        .nyhed p {
+            width: auto;
+        }
+
+        label,
+        input {
+            font-size: var(--pFont);
+        }
+
+        input[type=submit] {
+            width: 100%;
+            font-size: var(--pFont);
+        }
+
+        .lists {
+            grid-template-areas:
+                "a b"
+                "c d";
+            padding: 2.6vw;
+        }
+
+
+        .button {
+            padding: 0.7vw;
+            width: 31vw;
+            margin: 4vw 0;
+        }
+
+        .lists .img {
+            height: 40vw;
+            width: 40vw;
+            background-size: 64vw;
+        }
+
+        .listitem p {
+            width: 100%;
+        }
+
+        .loading {
+            top: 91vw;
+            width: 29vw;
+        }
+    }
+
+    /* MQ mobile START */
+    @media screen AND (max-width:500px) {
+
+        .nyhed,
+        .mail {
+            padding: 0 4.375vw 1vw;
+            height: auto;
+        }
+
+        .landNew1 {
+            margin: 0;
+            padding: 0;
+            width: auto;
+        }
+
+        .landNew2 {
+            margin: 0;
+            padding: 0;
+            width: auto;
+        }
+
+        .hero h1 {
+            font-size: 28vw;
+            line-height: 23vw;
+            top: 25vw;
+            left: 2vw;
+        }
+
+        h2 {
+
+            border-bottom: none;
+            margin: 0;
+            background: var(--yellow);
+            text-transform: uppercase;
+            padding: 1vw 0 1vw 4.375vw;
+            line-height: 1.4;
+        }
+
+        h3 {
+
+            border-bottom: none;
+            margin: 0;
+            background: var(--yellow);
+            text-transform: uppercase;
+            padding: 1vw 0 1vw 4.375vw;
+            line-height: 1.4;
+        }
+
+        input[type=email] {
+            margin: 1vw 0;
+            display: block;
+            width: 100%;
+        }
+
+        .lists .img {
+            height: 63vw;
+            width: 40vw;
+            background-size: 97vw;
+        }
+
+        .button {
+            padding: 0.7vw;
+            width: 31vw;
+            margin: 0vw 0;
+        }
+
+        .hero .kort {
+            margin: 0;
+            background-size: 60vw;
+        }
+
+        .loading {
+            top: 97vw;
+            width: 65vw;
+        }
+    }
+}

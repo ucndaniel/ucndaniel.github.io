@@ -1,0 +1,123 @@
+main {
+    display: grid;
+    grid-template-areas:
+        "h1 h1 h1"
+        "imgA imgB imgC";
+    padding: 0 6.276vw;
+    align-content: center;
+
+}
+
+h1 {
+    grid-area: h1;
+    text-align: center;
+    margin: 12.315vh 0 2vw;
+    font-weight: normal;
+}
+
+main a {
+    height: 32.2vw;
+    width: 22.3vw;
+    background-color: var(--black);
+    margin: 0 4vw;
+    background-position: center;
+    background-size: cover;
+    border: .1vw solid var(--black);
+    box-shadow: 5px 5px #4b4b4b;
+}
+
+main a p {
+    margin-top: 21vw;
+    height: 2.3vw;
+    text-align: center;
+
+    font-size: 1.4vw;
+    line-height: 2.1vw;
+    color: var(--black);
+    background-color: white;
+    font-family: var(--hFontFam);
+
+}
+
+.ref {
+    background-image: url("../images/ref.jpg");
+}
+
+.ref p {
+    background-color: var(--yellow);
+}
+
+.lokal {
+    background-image: url("../images/lokalplan.jpg");
+}
+
+.lokal p {
+    background-color: #97CEFF;
+}
+
+.vedt {
+    background-image: url("../images/vedt.jpg");
+    /* john-mark-smith-USS2u1-98io-unsplash@2x */
+}
+
+.vedt p {
+    background-color: #EB7470;
+}
+
+
+/* MQ tablet START */
+@media screen AND (max-width:800px) {
+    h1 {
+        font-size: 10vw;
+    }
+
+    main {
+        grid-template-areas:
+            "h1"
+            "imgA";
+    }
+
+    h1 {
+        margin: 3vw 0;
+    }
+
+    main a {
+        height: 66vw;
+        width: 66vw;
+        margin: 4vw;
+
+        justify-self: center;
+    }
+
+    main a p {
+        font-size: 5.1vw;
+        margin-top: 23vw;
+        height: 10.1vw;
+        line-height: 10.6vw;
+    }
+
+    .ref p {
+        font-size: 5.1vw;
+        margin-top: 23vw;
+        height: 10.1vw;
+        line-height: 10.6vw;
+
+    }
+}
+
+/* MQ mobile START */
+@media screen AND (max-width:500px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    .ref p {
+
+        height: 10vw;
+    }
+
+    main a p {
+        height: 10vw;
+        font-size: 5vw;
+    }
+}

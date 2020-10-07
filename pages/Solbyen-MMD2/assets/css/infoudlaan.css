@@ -1,0 +1,152 @@
+.sectionGrid {
+    display: grid;
+    grid-template: 'a b';
+}
+
+h2 {
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+}
+
+.content {
+    width: 54vw;
+    margin-left: 5vw;
+}
+
+.content p {
+    padding-right: 10vw;
+}
+
+.listen {
+    display: grid;
+    grid-template-areas: 'a b';
+    width: 40vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.listen p {
+    border-bottom: 0.052vw solid black;
+    padding: 1vw;
+    width: 20vw;
+}
+
+.liste1 {
+    border: var(--black) 0.052vw solid;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.liste2 {
+    border: var(--black) 0.052vw solid;
+    border-left: 0.052vw solid var(--black);
+    border-bottom: 0;
+}
+
+.listen2 {
+    display: grid;
+    grid-template-areas: 'c d';
+    width: 40vw;
+    margin-top: 0.5vw;
+    margin-bottom: 2vw;
+}
+
+.listen2 p {
+    border-bottom: 0.052vw solid black;
+    padding: 1vw;
+    width: 20vw;
+}
+
+
+@media screen AND (max-width:1366px) {
+    .listen {
+        width: 53vw;
+    }
+
+    .listen2 {
+        width: 53vw;
+    }
+
+    .listen p {
+        width: auto;
+    }
+
+    .listen2 p {
+        width: auto;
+    }
+}
+
+@media screen AND (max-width:800px) {
+    .sectionGrid {
+        display: grid;
+        grid-template: 'a''b';
+        width: 100%;
+    }
+    .listen {
+        width: 90vw;
+        margin: auto;
+        margin-right: 5vw;
+        margin-top: 4vw;
+        margin-bottom: 2vw;
+    }
+
+    .listen2 {
+        width: 90vw;
+        margin: auto;
+        margin-right: 5vw;
+        margin-top: 1vw;
+    }
+
+    .listen p {
+        width: auto;
+        height: 12vw;
+    }
+
+    .listen2 p {
+        width: auto;
+        height: 12vw;
+    }
+
+    .content p {
+        padding-right: 1vw;
+    }
+
+    .content {
+        width: 95vw;
+    }
+
+}
+
+
+@media screen AND (max-width:500px) {
+
+    .sectionGrid {
+        display: grid;
+        grid-template: 'a''b';
+        width: 100%;
+    }
+
+    .content {
+        width: 90vw;
+        margin: auto;
+    }
+
+    .listen {
+        width: 90vw;
+    }
+
+    .listen2 {
+        width: 90vw;
+    }
+
+    .listen p {
+        width: auto;
+        height: 16vw;
+    }
+
+    .listen2 p {
+        width: auto;
+        height: 16vw;
+    }
+
+}

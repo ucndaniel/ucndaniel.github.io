@@ -1,0 +1,117 @@
+main {
+    display: -ms-grid;
+    display: grid;
+    grid-template-areas:
+        "label h1"
+        "list items";
+    margin: 0 0 3vw 0;
+    min-height: 25.35vw;
+}
+
+
+h1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: h1;
+    margin: 1vw 0 0 1vw;
+    padding: 1vw 0 0 1vw;
+    height: 4vw;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+h2 {
+    margin: 0 0 1vw 0;
+}
+
+select {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: list;
+    border: 0.1vw solid var(--black);
+    -ms-grid-column-align: end;
+    justify-self: end;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: .1vw;
+}
+
+select,
+option,
+label {
+    font-size: 1vw;
+}
+
+select {
+    margin: .5vw .8vw .5vw .5vw;
+    font-weight: bold;
+}
+
+main ul li .a {
+    color: var(--black);
+    text-decoration: underline;
+    text-align: center
+}
+
+main .a:hover,
+.current {
+    color: var(--red);
+    cursor: pointer;
+}
+
+section {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: items;
+    width: 70vw;
+    margin: 0 5vw 1vw 2vw;
+    min-height: 19vw;
+}
+
+main a {
+    display: block;
+    color: #2C5982;
+}
+
+label {
+    -ms-grid-row-align: end;
+    align-self: end;
+    -ms-grid-column-align: end;
+    justify-self: end;
+padding:0 .6vw 0 0;
+}
+
+@media screen AND (max-width: 1366px) {
+    section {
+        margin: 1vw 3vw 0 6vw;
+    }
+    main{
+        min-height: 63vh;
+    }
+}
+
+@media screen AND (max-width: 800px) {
+    label {
+        padding: 6vw 0 0 0;
+    }
+h1 {
+    padding: 1vw 0 0 4.8vw;
+}
+select,
+option,
+label {
+    font-size: 3vw;
+}
+
+option {
+    font-size: 2vw;
+}
+}
+
+@media screen AND (max-width: 500px) {
+    select, option, label {
+        font-size: 4vw;
+    }
+
+}
