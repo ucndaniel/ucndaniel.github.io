@@ -1045,7 +1045,7 @@ footer p {
         height: 15vw;
     }
     p, li, a {
-        font-size: 2.1vw;
+        font-size: 2.6vw;
         margin: 0;
         padding: 0;
         text-decoration: none;
@@ -1112,10 +1112,6 @@ footer p {
         border-top: 0;
     }
 
-    
-    
-    
-    
     
     /* projektsiden */
 
@@ -1305,3 +1301,41 @@ footer p {
         padding: 100px;
     }
  }
+
+ /* @media only screen and (max-width: 350px) {
+    
+    p, li, a {
+    font-size: 4.5vw;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+ 
+    .box1 h2, .box2 h2, .box3 h2, .box4 h2, .box5 h2, .box6 h2, .box7 h2 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    border: none;
+    font-size: 5vw;
+    text-decoration: none;
+    transition: ease-in-out 0.1s;
+    text-align: left;
+}
+.projectsTextContainer {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0px;
+     padding-left: 0; 
+    padding-top: 35px;
+    border-radius: 0; 
+    margin-bottom: 20px;
+    margin: auto;
+    position: relative;
+}
+
+
+
+} */
+
