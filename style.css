@@ -589,7 +589,7 @@ section p {
 .container1 {
     display: flex;
     /* justify-content: center; */
-    width: 90vw;
+    width: 90%;
     margin: auto;
 }
 .cool {
@@ -1299,5 +1299,9 @@ footer p {
         margin-top: 3vw;
         margin-bottom: 2vw;
     
+    }
+
+    footer {
+        padding: 100px;
     }
  }
