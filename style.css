@@ -65,7 +65,7 @@ background-size: cover;    */
 h1, h2, h3, h4, h5 {
     font-size: 1.6vw;
     margin: 0;
-    font-family: 'Chilanka', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-style: normal;
 }
@@ -102,7 +102,7 @@ header {
     text-decoration: none;
     align-self: center;
     color: #272727;
-    font-family: 'Chilanka', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     letter-spacing: 0.5vw;
     color: #000;
@@ -163,7 +163,7 @@ nav li a {
                           2px 2px #ff1f8f,
                           3px 3px #000000; */
                          transition: ease-in-out 0.1s;
-                         font-family: 'Chilanka', cursive;
+                         font-family: 'Montserrat', sans-serif;
   }
 
   .activePage {
@@ -262,7 +262,7 @@ section p {
 
 .boxMiddle div h1 a {
     font-size: 1.6vw;
-    font-family: 'Chilanka', cursive;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: black;
     font-weight: 600;
@@ -1026,7 +1026,7 @@ footer p {
         margin: 0;
         padding: 0;
         text-decoration: none;
-        font-family: courier-std, monospace;
+        
     }
     
     nav li a {
