@@ -1100,7 +1100,7 @@ footer p {
         margin: auto;
     }
     .boxMiddle {
-        height: 19vw;
+        height: 25vw;
         width: 45vw;
         color: black;
         display: inline-block;
@@ -1299,6 +1299,90 @@ footer p {
         padding: 100px;
     }
  }
+
+ @media only screen and (max-width: 599px) {
+    
+    p {
+        font-size: 16px;
+    }
+    a {
+        font-size: 16px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .section1 {
+        display: grid;
+        grid-template-areas:
+            'welcome'
+            '1'
+            '1'
+            '3'
+            '4';
+    }
+
+    #welcome {
+        grid-area: welcome;
+        text-align: center;
+        /* font-size: 6vw; */
+        margin: auto;
+        margin-top: 9vw;
+        width: 60vw;
+        margin-bottom: 4vw;
+    }
+
+    .boxMiddle div h1 a {
+        font-size: 6vw;
+    }
+    .boxMiddle div h1 {
+        font-size: 6vw;
+    }
+    .boxMiddle {
+        height: auto;
+        width: 100%;
+        color: black;
+        display: inline-block;
+        padding: 1vw;
+        padding-top: 9.7vw;
+        border-left: 0;
+        border-top: 0;
+        margin: auto;
+    }
+
+    .boxMiddle ul {
+        display: grid;
+        grid-template-areas: 'a b c';
+        padding: 0.5vw;
+        justify-content: normal;
+        padding-left: 0;
+        margin-bottom: 4vw;
+    }
+    .boxMiddle div {
+        display: grid;
+        grid-template-areas: 'a';
+    }
+    footer {
+        padding: 0px;
+    }
+    .contentBox {
+        padding: 0px;
+        padding-top: 46px;
+        margin: auto;
+    }
+
+    .textProject1 {
+        font-size: 16px;
+    }
+    .contentBox img {
+        width: 89vw;
+        height: 51vw;
+    }
+
+     }
 
  /* @media only screen and (max-width: 350px) {
     
