@@ -333,7 +333,8 @@ section p {
     height: 22vw;
     opacity: 1;
 	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    /* object-fit: fill; */
 }
 
 
@@ -1380,6 +1381,7 @@ footer p {
     .contentBox img {
         width: 89vw;
         height: 51vw;
+        /* object-fit: contain; */
     }
 
      }
