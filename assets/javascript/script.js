@@ -36,8 +36,20 @@ anime({
     direction: 'alternate',
     loop: false
   });
+//navbar
+  function navbar() {
+    let navbar = document.getElementById("navbar");
+    if (navbar.style.display === "flex") {
+    navbar.style.display = "none";
+        } else {
+    navbar.style.display = "flex";
+    navbar.style.flexDirection = "column";
+    navbar.style.marginTop = "30px";
+        }
+      }
 
-  
+
+
 // GEMT TIL SENERE
 
 //  const TypeWriter = function(txtElement, words) {

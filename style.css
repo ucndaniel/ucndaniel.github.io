@@ -328,6 +328,27 @@ section p {
     margin: auto;
 }
 
+.icon {
+    display: none;
+}
+
+/* a.icon {
+    background: #9f2541;
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-top: 0;
+    top: 0;
+    color: black;
+    padding: 1px 6px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+a.icon:hover {
+    background-color: #520B1B;
+    color: black;
+} */
 .contentBox img {
     width: 40vw;
     height: 22vw;
@@ -1332,7 +1353,7 @@ footer p {
         /* font-size: 6vw; */
         margin: auto;
         margin-top: 9vw;
-        width: 60vw;
+        width: 70vw;
         margin-bottom: 4vw;
     }
 
@@ -1348,7 +1369,7 @@ footer p {
         color: black;
         display: inline-block;
         padding: 1vw;
-        padding-top: 9.7vw;
+        padding-top: 7vw;
         border-left: 0;
         border-top: 0;
         margin: auto;
@@ -1356,7 +1377,7 @@ footer p {
 
     .boxMiddle ul {
         display: grid;
-        grid-template-areas: 'a b c';
+        grid-template-areas: 'a' 'b' 'c';
         padding: 0.5vw;
         justify-content: normal;
         padding-left: 0;
@@ -1371,8 +1392,18 @@ footer p {
     }
     .contentBox {
         padding: 0px;
-        padding-top: 46px;
+        padding-top: 50px;
         margin: auto;
+    }
+
+    .btnFp {
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 40px;
+        max-width: 204px;
+        margin-top: 5vw;
+     
     }
 
     .textProject1 {
@@ -1384,42 +1415,187 @@ footer p {
         /* object-fit: contain; */
     }
 
+/* footer mobile */
+    footer {
+        grid-template-areas: 'githubText' 'github' 'emailText' 'email' 'somethingText' 'something';
+        grid-template-columns: 1fr;
+        margin-top: 20vw;
+    }
+
+    .githubText {
+        margin-bottom: 0;
+        margin-top: 6vw;
+    }
+    .emailText {
+        margin-bottom: 0;
+        padding-top: 10px;
+    }
+
+    .something img {
+        margin: 5px;
+        padding: 6px;
+    }
+
+    .somethingText {
+        margin-bottom: 0;
+        padding-top: 10px;
+    }
+    .github {
+        margin: 10px;
+    }
+    i {
+        font-size: 16px;
+    }
+    .fa {
+        font-size: 16px;
+    }
+    .fa-envelope {
+        font-size: 16px;
+    }
+    .linkedContainer {
+        width: auto;
+        margin: auto;
+    }
+    .text {
+        grid-area: text;
+        color: #fff;
+        padding: 5px;
+        height: auto;
+    }
+
+
+    /* NAVBAR mobile */
+    header {
+        height: 18vw;
+    }
+    .logo a {
+        font-size: 6vw;
+    }
+    nav {
+        height: min-content;
+        display: grid;
+        align-self: center;
+        height: 9vw;
+    }
+    .sticky {
+        top: 0;
+        width: 100%;
+        z-index: 2;
+        position: absolute;
+    }
+    #navbar {
+    display: none;
+    flex-direction: column;
+    margin-top: 32px;
+    position: absolute;
+    width: 241px;
+    /* height: 100px; */
+    right: 32px;
+    /* border: 1px solid #000000; */
+    /* border-bottom: 0; */
+    /* border-top: 0; */
+    background: #ff1f8f;
+    z-index: 2;  }
+
+    header li a {
+        /* color: #ffff; */
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    
+    .container {
+        width: 93%;
+        margin: auto;
+        height: auto;
+    }
+    header nav ul {
+        float: left;
+        display: none;
+    }
+    .fa-bars:before {
+        content: "\f0c9";
+        color: #292626;
+    }
+    a.icon {
+        background: #ff1f8f;
+        position: absolute;
+        right: 48px;
+        /* top: 30px; */
+        margin-top: 0;
+        /* top: 25px; */
+        color: black;
+        padding: 1px 10px;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+    }
+
+    nav li {
+        display: grid;
+        /* opacity: 1; */
+        padding: 2vw;
+        /* color: #343A42; */
+        border-bottom: 1px solid black;
+        /* align-items: center; */
+        /* justify-self: center; */
+    }
+
+    .divider {
+        display: none;
+    }
+.activePage {
+    text-decoration: none;
+    
+}
+    /* other pages */
+
+    .pageTitleCS {
+        font-size: 6vw;
+        text-decoration: none;
+        text-shadow: 1px 1px #ff1f8f;
+    }
+
+    .box1 h2, .box2 h2, .box3 h2, .box4 h2, .box5 h2, .box6 h2, .box7 h2 {
+        border: none;
+        font-size: 4vw;
      }
 
- /* @media only screen and (max-width: 350px) {
-    
-    p, li, a {
-    font-size: 4.5vw;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
- 
-    .box1 h2, .box2 h2, .box3 h2, .box4 h2, .box5 h2, .box6 h2, .box7 h2 {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-decoration: none;
-    border: none;
-    font-size: 5vw;
-    text-decoration: none;
-    transition: ease-in-out 0.1s;
-    text-align: left;
-}
-.projectsTextContainer {
-    width: 90vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 0px;
-     padding-left: 0; 
-    padding-top: 35px;
-    border-radius: 0; 
-    margin-bottom: 20px;
-    margin: auto;
-    position: relative;
-}
+     .box1 img, .box2 img, .box3 img, .box4 img, .box5 img, .box6 img, .box7 img {
+        width: 87vw;
+        height: 45vw;
+        object-fit: cover;
+    }
 
+    .projectsTextContainer {
+        margin-left: 20px;
+    }
 
+    .caseStudyTitle {
+        font-size: 6vw;
+        padding-top: 35px;
+    }
+    .cool {
+        font-size: 5vw;
+    }
 
-} */
+    .imgCV {
+        grid-area: cvimg;
+        width: 55vw;
+        height: auto;
+        padding-top: 7.5vw;
+        margin: auto;
+    }
+
+    .boxOne h3, .boxThree h3 {
+        font-size: 5vw;
+    }
+    .boxFive h3 {
+        text-align: left;
+        font-size: 5vw;
+    }
+
+    }
+
 

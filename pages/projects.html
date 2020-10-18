@@ -13,17 +13,21 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons4/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons4/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons4/favicon-16x16.png">
+    <script  src="../assets/javascript/script.js"></script>
 </head>
 
 <body>
     <header>
         <h1 class="logo"> <a href="../index.html"> Daniel Grunnet</a></h1>
         <nav>
-            <ul>
+            <ul id="navbar">
                 <li> <a href="projects.html" class="activePage"> Projekter</a></li>
                 <span class="divider">//</span>
                 <li> <a href="about.html"> Om mig</a></li>
             </ul>
+            <a href="javascript:void(0);" class="icon" onclick="navbar()">
+                <i class="fa fa-bars"></i>
+              </a>
         </nav>
     </header>
     <main>
