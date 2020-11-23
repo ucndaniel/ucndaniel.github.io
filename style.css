@@ -4,6 +4,7 @@
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 /* colors: #343A42 - #CCE0D1 - #5BB7AA */
 body {
@@ -31,7 +32,7 @@ body {
             background-position: 0% 50%;
         } */
     
- background: linear-gradient(#e4f7f5, #fafafa, #f6d7cb) center no-repeat fixed;
+ background: linear-gradient(#c4faf5, #fafafa, #d39b84) center no-repeat fixed;
  color: #161514;
 /* background by SVGBackgrounds.com */
 /* pyramide 1 
@@ -88,7 +89,6 @@ header {
     width: 90%;
     display: grid;
     grid-template-areas: 'a b';
-    border-bottom: 0.01vw solid #000;
     margin: auto;
 } 
 
@@ -196,6 +196,14 @@ nav li a {
         width: 40vw;
         margin-bottom: 4vw;
     }
+    .spaceShipGoBrrBrr {
+        width: 5vw;
+        height: 5vw;
+        position: absolute;
+        top: 22vw;
+        left: -10vw;
+        overflow: hidden;
+    }
 
     .shadow {
         filter: drop-shadow(3px 3px 2px #ff1f8f);
@@ -239,9 +247,9 @@ nav li a {
 .section1 {
     display: grid;
     grid-template-areas: 
-    'welcome welcome welcome welcome'
-    '1 2 3 4';
-    width: 90vw;
+    'welcome welcome welcome'
+    '1 2 3';
+    width: 80vw;
     margin: auto;
 }
 
@@ -476,21 +484,21 @@ a.icon:hover {
     /* border-radius: 21px; */
     margin-bottom: 40px;
     position: relative;
+    animation: projectsTextContainer 1.5s forwards;
+}
+@keyframes projectsTextContainer
+{
+   0% {
+   opacity: 0;
+    left: -1000px;
 }
 
-/* IKONER 
-.webdesign {
-    width: 20vw;
-    position: absolute;
-    right: 20vw;
-    top: 20vw;
+100% {
+    opacity: 1;
+    left: 0;
 }
-.editing {
-    width: 20vw;
-    position: absolute;
-    right: 20vw;
-    top: 20vw;
-} */
+
+}
 
 .projectsTitleText {
     padding-top: 0.3vw;
@@ -1071,6 +1079,10 @@ footer p {
         text-decoration: none;
         
     }
+
+    .spaceShipGoBrrBrr {
+        top: 32vw;
+    }
     
     nav li a {
         font-size: 3vw;
@@ -1120,6 +1132,7 @@ footer p {
             '1 2'
             '3 4';
         margin: auto;
+        width: 90vw;
     }
     .boxMiddle {
         height: 25vw;
@@ -1146,6 +1159,7 @@ footer p {
         /* border-radius: 21px; */
         margin-bottom: 20px;
         position: relative;
+        
     }
 
     .pageTitleCS {
@@ -1336,7 +1350,9 @@ footer p {
         padding: 0;
         font-size: 18px;
     }
-
+.spaceShipGoBrrBrr {
+    display: none;
+}
     .section1 {
         display: grid;
         grid-template-areas:
