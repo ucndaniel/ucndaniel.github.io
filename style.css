@@ -33,8 +33,12 @@ body {
         100% {
             background-position: 0% 50%;
         } */
-    background: linear-gradient(#c4faf5, #fafafa, #d39b84) center no-repeat fixed;
-    color: #161514;
+    /* background: #F6C332; EAB449 anden gul */
+    /* background: #AAE1D1; */
+    /* background: #FBE598; anden gul */
+    /* background: #E8CF3F; */
+    background: #83eff436; 
+    color: #292626;
     /* background by SVGBackgrounds.com */
     /* pyramide 1 
 background-color: #538190;
@@ -406,6 +410,7 @@ a.icon:hover {
     color: #000;
     cursor: pointer;
     display: block;
+    background-color: rgba(0, 0, 0, 0);
     font-size: 16px;
     font-weight: 400;
     line-height: 45px;
@@ -499,7 +504,7 @@ a.icon:hover {
     margin-top: 4vw;
     margin-left: auto;
     margin-right: auto;
-    width: 44vw;
+    width: auto;
     padding: 0px;
     height: auto;
     /* text-align: center; */
@@ -938,7 +943,7 @@ footer {
     width: 90%;
     /* height: 12vw; */
     margin: auto;
-    /* border-top: 0.01vw solid #000; */
+    border-top: 0.01vw solid #000; 
     font-weight: bold;
     clear: both;
     margin-top: 12vw;
