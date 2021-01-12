@@ -20,3 +20,14 @@ anime({
     loop: true,
     easing: 'linear'
   });
+
+  window.
+onload
+= function() {
+  Particles.
+init
+({
+    selector: 
+'.background'
+  });
+};
