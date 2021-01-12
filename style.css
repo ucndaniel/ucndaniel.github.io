@@ -108,7 +108,7 @@ p, li, a {
 /* header start */
 
 header {
-    width: 90%;
+    width: 80%;
     display: grid;
     grid-template-areas: 'a b';
     margin: auto;
@@ -377,6 +377,7 @@ a.icon:hover {
     opacity: 1;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
+    object-fit: cover;
     /* object-fit: fill; */
 }
 
@@ -947,6 +948,45 @@ a.icon:hover {
     text-align: center;
 }
 
+
+/* ILLUSTRATOR PAGE */
+
+.illustratorGrid {
+    display: grid;
+    width: 80vw;
+    margin: auto;
+    background-color: #c8ffef;
+}
+.illustratorIntro {
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 2vw;
+}
+.image-gallery {
+    display: grid;
+    grid-template-areas: 'a b' 'c d' 'e f';
+    place-content: center;
+    grid-column-gap: 6vw;
+}
+
+.galleryImg{
+    place-self: center;
+    padding: 2vw;
+    height: 30vw;
+    width: 30vw;
+    object-fit: cover;
+}
+.image-gallery p {
+    padding: 2vw;
+    width: 30vw;
+    padding-top: 0;
+}
+
+.aeImg { 
+    padding: 2vw;
+    width: 30vw;
+    height: auto;
+}
 /* projekt-individuelle END */
 
 /* footer start */
