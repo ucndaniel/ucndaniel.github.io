@@ -50,12 +50,10 @@ function makeMeCool()
 //navbar
   function navbar() {
     let navbar = document.getElementById("navbar");
-    if (navbar.style.display === "flex") {
+    if (navbar.style.display === "grid") {
     navbar.style.display = "none";
         } else {
-    navbar.style.display = "flex";
-    navbar.style.flexDirection = "column";
-    navbar.style.marginTop = "30px";
+    navbar.style.display = "grid";
         }
       }
 

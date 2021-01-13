@@ -1497,6 +1497,13 @@ footer p {
         /* border-top: 0; */
         background: #ff1f8f;
         z-index: 2;
+        display: none;
+    /* flex-direction: column; */
+    margin-top: 30px;
+    width: 61vw;
+    height: 50vw;
+    place-items: center;
+    grid-template-areas: 'a';
     }
     header li a {
         /* color: #ffff; */
@@ -1583,5 +1590,43 @@ footer p {
     .boxFive h3 {
         text-align: left;
         font-size: 5vw;
+    }
+
+    .image-gallery {
+        display: grid;
+        grid-template-areas:
+            'a'
+            'b'
+            'c'
+            'd'
+            'e'
+            'e';
+        grid-column-gap: 6vw;
+        width: 70vw;
+        margin: auto;
+    }
+    .galleryImg {
+        place-self: center;
+        padding: 2vw;
+        height: auto;
+        width: 70vw;
+        object-fit: cover;
+    }
+
+    .illustratorGrid {
+        display: grid;
+        width: 90vw;
+        margin: auto;
+        background-color: #c8ffef;
+    }
+    .aeImg {
+        padding: 2vw;
+        width: 70vw;
+        height: auto;
+    }
+    .image-gallery p {
+        padding: 2vw;
+        width: auto;
+        padding-top: 0;
     }
 }
