@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+/* Welcome to the start of the CSS*/
+:root {
+    --hFont: 3vw;
+    --pFont: 1.1vw;
+    
+    --hFontFam:'Open Sans', sans-serif;
+    --pFontFam:'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--hFontFam);
+    font-size: var(--hFont);
+}
+
+p,
+label,
+button,
+b,
+a,
+i {
+    font-family: var(--pFontFam);
+    font-size: var(--pFont);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    background-color: #fff;
+    margin-bottom: 1vw;
+    color: #004250;
+    font-family: var(--hFontFam);
+    font-size: 2vw;
+    padding: 1vw;
+    text-align: center;
+}
+/* Main */
+.centered{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5vw;
+}
+
+/*Video hotspots*/
+.videoHotspotsParent {
+    position: relative;
+}
+
+div > .hotspot {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+div > .hotspot.image {
+    background-size: cover;
+    background-position: center;
+}
+
+video:focus {
+    outline: none;
+}
+
+/* buttons */
+
+a:hover,
+button:hover {
+    cursor: pointer;
+}
+
+a:hover,
+button:hover {
+    cursor: pointer;
+}
+ #video1 > div.vjs-control-bar{
+    display: none;
+} 
+
+   #video1 {
+    width: 1280px;
+    height: 720px; 
+}   
+.vjs-tech {
+    pointer-events: none;
+}
+
+.video-js .vjs-big-play-button {
+    background-color: #004250;
+}
+
+.video-js:hover .vjs-big-play-button:hover {
+    background-color: #004250;
+}
+
+
+
+ @media screen AND (max-width:1024px) {
+    :root {
+        --hFont: 4vw;
+        --pFont: 3vw;
+    }
+
+    #video1 {
+        width: 1020px;
+        height: 574px;
+    }
+}
+
+@media screen AND (max-width:768px) {
+    :root {
+        --hFont: 4vw;
+        --pFont: 3vw;
+    }
+
+    #video1 {
+        width: 731px;
+        height: 410px;
+    }
+}
+
+/* MediaQueries for mobile  */
+@media screen AND (max-width:500px) {
+    :root {
+        --hFont: 6vw;
+        --pFont: 2vw;
+    } 
+}
