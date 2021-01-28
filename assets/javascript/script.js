@@ -130,3 +130,22 @@ function onVideoTimeupdate() {
     }
 }
 video.hotspots.init();
+
+// video mobile
+
+const content = {
+    "controls": true,
+    "autoplay": false,
+    "preload": "auto",
+    "muted": false
+}
+var videoPlayer = videojs("video2", content);
+
+// var videoPlayer = videojs("video1", content);
+
+// // make a square video
+// videoPlayer.aspectRatio('1:1');
+
+videojs('video2').ready(function () {
+    this.on('timeupdate', onVideoTimeupdate);
+});

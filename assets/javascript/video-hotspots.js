@@ -978,115 +978,940 @@ const hotspots = [
 
 
 
-    // {
-    //     active: true,
-    //     videoId: "video1",
-    //     markIn: 0,
-    //     markOut: 4.1,
-    //     sizeX: 17,
-    //     sizeY: 6,
-    //     posX: 67,
-    //     posY: 16.4,
-    //     ui: choice,
-    //     hotspot: {
-    //         type: "function",
-    //         func: () => {
-    //             // Indgang
-    //             videoPlayer.currentTime(5);
-    //             videoPlayer.play();
-    //             pauseTime = 11;
-    //         }
-    //     }
-    // },
+/// SECONDARY VIDEO FOR MOBILE
+
+
+// // hotspots
+// const hotspots = [
+    
+//     // map hotspots    
+//     //hotspots for small circles
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 2.7,
+//         sizeY: 4.7,
+//         posX: 28.2,
+//         posY: 15.5,
+//         ui: choiceCircle,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // Indgang circel
+//                 videoPlayer.currentTime(5);
+//                 videoPlayer.play();
+//                 pauseTime = 11;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 2.7,
+//         sizeY: 4.7,
+//         posX: 30.2,
+//         posY: 20.5,
+//         ui: choiceCircle,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // servicecenter circel
+//                 videoPlayer.currentTime(12.5);
+//                 videoPlayer.play();
+//                 pauseTime = 19;
+//             }
+//         }
+//     },
+
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 2.3,
+//         sizeY: 4.4,
+//         posX: 33.5,
+//         posY: 15.5,
+//         ui: choiceCircle,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // studieadministration circel
+//                 videoPlayer.currentTime(20.5);
+//                 videoPlayer.play();
+//                 pauseTime = 27.3;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 2.3,
+//         sizeY: 4.4,
+//         posX: 35.2,
+//         posY: 13,
+//         ui: choiceCircle,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // studievejledning 1 circel
+//                 videoPlayer.currentTime(28.5);
+//                 videoPlayer.play();
+//                 pauseTime = 36;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 2.3,
+//         sizeY: 4.4,
+//         posX: 38.6,
+//         posY: 17.4,
+//         ui: choiceCircle,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // studievejledning 2 circel
+//                 videoPlayer.currentTime(28.5);
+//                 videoPlayer.play();
+//                 pauseTime = 36;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 2.3,
+//         sizeY: 4.4,
+//         posX: 21.7,
+//         posY: 13.1,
+//         ui: choiceCircle,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // studievejledning 3 circel
+//                 videoPlayer.currentTime(28.5);
+//                 videoPlayer.play();
+//                 pauseTime = 36;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 2.3,
+//         sizeY: 4.4,
+//         posX: 7.7,
+//         posY: 24,
+//         ui: choiceCircle,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // studievejledning 4 circel
+//                 videoPlayer.currentTime(28.5);
+//                 videoPlayer.play();
+//                 pauseTime = 36;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 2.3,
+//         sizeY: 4.4,
+//         posX: 5.7,
+//         posY: 47,
+//         ui: choiceCircle,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // studievejledning 5 circel 
+//                 videoPlayer.currentTime(28.5);
+//                 videoPlayer.play();
+//                 pauseTime = 36;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 2.7,
+//         sizeY: 4.7,
+//         posX: 25.2,
+//         posY: 15.5,
+//         ui: choiceCircle,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // faglokale 1 circel
+//                 videoPlayer.currentTime(37);
+//                 videoPlayer.play();
+//                 pauseTime = 44;
+//             }
+//         }
+//     },
+
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 2.3,
+//         sizeY: 4.4,
+//         posX: 4.9,
+//         posY: 24,
+//         ui: choiceCircle,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // faglokale 2 circel
+//                 videoPlayer.currentTime(37);
+//                 videoPlayer.play();
+//                 pauseTime = 44;
+//             }
+//         }
+//     },
+
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 2.3,
+//         sizeY: 4.4,
+//         posX: 4.9,
+//         posY: 35,
+//         ui: choiceCircle,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // faglokale 3 circel
+//                 videoPlayer.currentTime(37);
+//                 videoPlayer.play();
+//                 pauseTime = 44;
+//             }
+//         }
+//     },
+
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 2.3,
+//         sizeY: 4.4,
+//         posX: 16.3,
+//         posY: 47,
+//         ui: choiceCircle,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // faglokale 4 circel
+//                 videoPlayer.currentTime(37);
+//                 videoPlayer.play();
+//                 pauseTime = 44;
+//             }
+//         }
+//     },
+
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 2.3,
+//         sizeY: 4.4,
+//         posX: 21.4,
+//         posY: 41,
+//         ui: choiceCircle,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // gruppeområde 1 circel 
+//                 videoPlayer.currentTime(46);
+//                 videoPlayer.play();
+//                 pauseTime = 57;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 2.3,
+//         sizeY: 4.4,
+//         posX: 33.6,
+//         posY: 41,
+//         ui: choiceCircle,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // gruppeområde 2 circel 
+//                 videoPlayer.currentTime(46);
+//                 videoPlayer.play();
+//                 pauseTime = 57;
+//             }
+//         }
+//     },
+
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 2.3,
+//         sizeY: 4.4,
+//         posX: 18.5,
+//         posY: 31,
+//         ui: choiceCircle,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // auditorium
+//                 videoPlayer.currentTime(59);
+//                 videoPlayer.play();
+//                 pauseTime = 67;
+//             }
+//         }
+//     },
+
+// {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 2.3,
+//         sizeY: 4.4,
+//         posX: 26.9,
+//         posY: 46.9,
+//         ui: choiceCircle,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // bibliotek  
+//                 videoPlayer.currentTime(69);
+//                 videoPlayer.play();
+//                 pauseTime = 78;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 2.3,
+//         sizeY: 4.4,
+//         posX: 16,
+//         posY: 13.1,
+//         ui: choiceCircle,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // internationalt kontor
+//                 videoPlayer.currentTime(80);
+//                 videoPlayer.play();
+//                 pauseTime = 90;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 2.3,
+//         sizeY: 4.4,
+//         posX: 36.2,
+//         posY: 30.8,
+//         ui: choiceCircle,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // kantine og spiseområde
+//                 videoPlayer.currentTime(91);
+//                 videoPlayer.play();
+//                 pauseTime = 101;
+//             }
+//         }
+//     },
+
+    
+
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 31,
+//         sizeY: 7,
+//         posX: 67,
+//         posY: 7.2,
+//         ui: choice,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // Indgang
+//                 videoPlayer.currentTime(5);
+//                 videoPlayer.play();
+//                 pauseTime = 11;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 31,
+//         sizeY: 7,
+//         posX: 67,
+//         posY: 15.9,
+//         ui: choice,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // Servicecenter
+//                 videoPlayer.currentTime(12.5);
+//                 videoPlayer.play();
+//                 pauseTime = 19;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 31,
+//         sizeY: 7,
+//         posX: 67,
+//         posY: 24.6,
+//         ui: choice,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // Studieadministration
+//                 videoPlayer.currentTime(20.5);
+//                 videoPlayer.play();
+//                 pauseTime = 27.3;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 31,
+//         sizeY: 7,
+//         posX: 67,
+//         posY: 33.4,
+//         ui: choice,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // Studievejledning
+//                 videoPlayer.currentTime(28.5);
+//                 videoPlayer.play();
+//                 pauseTime = 36;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 31,
+//         sizeY: 7,
+//         posX: 67,
+//         posY: 42,
+//         ui: choice,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // Faglokale
+//                 videoPlayer.currentTime(37);
+//                 videoPlayer.play();
+//                 pauseTime = 44;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 31,
+//         sizeY: 7,
+//         posX: 67,
+//         posY: 50.5,
+//         ui: choice,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // Gruppeområde
+//                 videoPlayer.currentTime(46);
+//                 videoPlayer.play();
+//                 pauseTime = 57;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 31,
+//         sizeY: 7,
+//         posX: 67,
+//         posY: 59.6,
+//         ui: choice,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // Auditorium
+//                 videoPlayer.currentTime(59);
+//                 videoPlayer.play();
+//                 pauseTime = 67;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 31,
+//         sizeY: 7,
+//         posX: 67,
+//         posY: 68.4,
+//         ui: choice,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // Bibliotek
+//                 videoPlayer.currentTime(69);
+//                 videoPlayer.play();
+//                 pauseTime = 78;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 31,
+//         sizeY: 7,
+//         posX: 67,
+//         posY: 77.1,
+//         ui: choice,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // Internationalt kontor
+//                 videoPlayer.currentTime(80);
+//                 videoPlayer.play();
+//                 pauseTime = 90;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 0,
+//         markOut: 4.1,
+//         sizeX: 31,
+//         sizeY: 7,
+//         posX: 67,
+//         posY: 86.2,
+//         ui: choice,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // Kantine og spiseområde
+//                 videoPlayer.currentTime(91);
+//                 videoPlayer.play();
+//                 pauseTime = 101;
+//             }
+//         }
+//     },
 
 
 
 
-/*
-
-// MIXED EXAMPLE WITH MORE KEY/VALUE PAIRS THAN YOU REALLY NEED
-
-{
-    active: true,           // you can set this to false if you don't want this hotspot to appear
-    videoId: "video4",      // the id of the video tag you want to add a hotspot to
-    markIn: 5,              // when to start (seconds)
-    markOut: 6,             // when to end (seconds)
-    sizeX: 50,              // width (in %, but don't write %)
-    sizeY: 50,              // height (in %, but don't write %)
-    posX: 0,                // left position (in %, but don't write %)
-    posY: 50,               // top position (in %, but don't write %)
-    ui: {                               // how should the hotspot look?
-        type: "box",                                // type: "box" or "image"
-        title: "Text when hovering the hotspot",    // optional: add a title attribute with the text
-        image: "",                                  // add url for image (if type=image)
-        style: "",                                  // add styles, can be used for both image and box
-    },
-    hotspot: {                          // what should the hotspot do when clicked?
-        type: "link",                               // type: "link" or "function"
-        onHover: true,                              // trigger on hover (if type=function)
-        url: "http://tv2.dk",                       // url (if type=link)
-        target: "_blank",                           // target (if type=link)
-        func: () => {             // (if type=function)
-            // run any javascript you want done when clicking on the hotspot
-            // Leave empty if you want nothing to happen
-        }
-    }
-}
 
 
+//     // BACK TO MAP POINTS
 
-// BOX/LINK ONLY EXAMPLE ----------------------------------------------------
-// All these keys are required for boxes/links
+// // permanent point?
+// {
+//     active: true,
+//     videoId: "video2",
+//     markIn: 5,
+//     markOut: 101,
+//     sizeX: `auto`,
+//     sizeY: `auto`,
+//     posX: 1,
+//     posY: 90,
+//     ui: {
+//         type: "box",
+//         style: `border: none;
+//         font-size: 20px;
+//         color: #fff;
+//         text-align: center;
+//         background-color: #004250;
+//         padding: 1vw;
+//         border-radius: .5vw;`,
+//         text: "Tilbage til kortet"
+//     },
+//     hotspot: {
+//         type: "function",
+//         func: () => {
+//             // back to map (konstant box)
+//             videoPlayer.currentTime(0);
+//             videoPlayer.play();
+//             pauseTime = 4;
+//         }
+//     }
+// },  
 
-{
-    active: true,
-    videoId: "video4",
-    markIn: 5,
-    markOut: 6,
-    sizeX: 50,
-    sizeY: 50,
-    posX: 0,
-    posY: 50,
-    ui: {
-        type: "box",
-        title: "Text when hovering the hotspot",    // optional: add a title attribute with the text
-        style: "border: 2px solid green; background-color: rgba(0,255,0,.5)"
-    },
-    hotspot: {
-        type: "link",
-        url: "http://tv2.dk",
-        target: "_blank"
-    }
-}
+// // forskellige points indsat efter bestemte tider
+//  {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 10,
+//         markOut: 11,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (indgang)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },  
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 18,
+//         markOut: 19.4,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (servicecenter)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },  
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 25,
+//         markOut: 27,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (studieadministration)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },  
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 34,
+//         markOut: 37,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (studievejledning)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },  
+
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 41,
+//         markOut: 44,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (faglokale)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },  
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 55,
+//         markOut: 57,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (gruppeområde)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 65,
+//         markOut: 67,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (auditorium)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 77,
+//         markOut: 78,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (bibliotek)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 88,
+//         markOut: 90,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (internationalt kontor)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 99,
+//         markOut: 101,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (kantine og spiseområde)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },
+// ];
 
 
-// IMAGE/FUNCTION ONLY EXAMPLE ----------------------------------------------------
-// All these keys are required for images/functions
-
-const hotspots = [
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 20.4,
-        markOut: 21,
-        sizeX: 30,
-        sizeY: 32,
-        posX: 52,
-        posY: 6,
-        ui: {
-            type: "image",
-            title: "Text when hovering the hotspot",    // optional: add a title attribute with the text
-            image: "assets/images/speech-scream.png",
-            style: "border: none"
-        },
-        hotspot: {
-            type: "function",
-            onHover: true,      // optional, will default to false (trigger function on click)
-            func: () => {
-                console.log("Internal screaming!");
-            }
-        }
-    },
 
 
-*/
+//     // {
+//     //     active: true,
+//     //     videoId: "video2",
+//     //     markIn: 0,
+//     //     markOut: 4.1,
+//     //     sizeX: 17,
+//     //     sizeY: 6,
+//     //     posX: 67,
+//     //     posY: 16.4,
+//     //     ui: choice,
+//     //     hotspot: {
+//     //         type: "function",
+//     //         func: () => {
+//     //             // Indgang
+//     //             videoPlayer.currentTime(5);
+//     //             videoPlayer.play();
+//     //             pauseTime = 11;
+//     //         }
+//     //     }
+//     // },
+
+
+
+
+// /*
+
+// // MIXED EXAMPLE WITH MORE KEY/VALUE PAIRS THAN YOU REALLY NEED
+
+// {
+//     active: true,           // you can set this to false if you don't want this hotspot to appear
+//     videoId: "video4",      // the id of the video tag you want to add a hotspot to
+//     markIn: 5,              // when to start (seconds)
+//     markOut: 6,             // when to end (seconds)
+//     sizeX: 50,              // width (in %, but don't write %)
+//     sizeY: 50,              // height (in %, but don't write %)
+//     posX: 0,                // left position (in %, but don't write %)
+//     posY: 50,               // top position (in %, but don't write %)
+//     ui: {                               // how should the hotspot look?
+//         type: "box",                                // type: "box" or "image"
+//         title: "Text when hovering the hotspot",    // optional: add a title attribute with the text
+//         image: "",                                  // add url for image (if type=image)
+//         style: "",                                  // add styles, can be used for both image and box
+//     },
+//     hotspot: {                          // what should the hotspot do when clicked?
+//         type: "link",                               // type: "link" or "function"
+//         onHover: true,                              // trigger on hover (if type=function)
+//         url: "http://tv2.dk",                       // url (if type=link)
+//         target: "_blank",                           // target (if type=link)
+//         func: () => {             // (if type=function)
+//             // run any javascript you want done when clicking on the hotspot
+//             // Leave empty if you want nothing to happen
+//         }
+//     }
+// }
+
+
+
+// // BOX/LINK ONLY EXAMPLE ----------------------------------------------------
+// // All these keys are required for boxes/links
+
+// {
+//     active: true,
+//     videoId: "video4",
+//     markIn: 5,
+//     markOut: 6,
+//     sizeX: 50,
+//     sizeY: 50,
+//     posX: 0,
+//     posY: 50,
+//     ui: {
+//         type: "box",
+//         title: "Text when hovering the hotspot",    // optional: add a title attribute with the text
+//         style: "border: 2px solid green; background-color: rgba(0,255,0,.5)"
+//     },
+//     hotspot: {
+//         type: "link",
+//         url: "http://tv2.dk",
+//         target: "_blank"
+//     }
+// }
+
+
+// // IMAGE/FUNCTION ONLY EXAMPLE ----------------------------------------------------
+// // All these keys are required for images/functions
+
+// const hotspots = [
+//     {
+//         active: true,
+//         videoId: "video2",
+//         markIn: 20.4,
+//         markOut: 21,
+//         sizeX: 30,
+//         sizeY: 32,
+//         posX: 52,
+//         posY: 6,
+//         ui: {
+//             type: "image",
+//             title: "Text when hovering the hotspot",    // optional: add a title attribute with the text
+//             image: "assets/images/speech-scream.png",
+//             style: "border: none"
+//         },
+//         hotspot: {
+//             type: "function",
+//             onHover: true,      // optional, will default to false (trigger function on click)
+//             func: () => {
+//                 console.log("Internal screaming!");
+//             }
+//         }
+//     },
+
+
+// */
