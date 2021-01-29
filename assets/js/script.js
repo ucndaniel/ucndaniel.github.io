@@ -2,7 +2,8 @@ const content = {
     "controls": true,
     "autoplay": false,
     "preload": "auto",
-    "muted": false
+    "muted": false,
+    "responsive": true
 }
 var videoPlayer = videojs("video1", content);
 

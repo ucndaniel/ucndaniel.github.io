@@ -100,10 +100,14 @@ button:hover {
     display: none;
 } 
 
-    /* #video1 {
-    width: 1400px;
+ /* #video1 {
+    width: 1280px;
     height: 420px; 
 }     */
+
+/* .video-js.vjs-fluid {
+    width: 78%;
+} */
 .vjs-tech {
     pointer-events: none;
 }
@@ -116,6 +120,15 @@ button:hover {
     background-color: #004250;
 }
 
+/* rezising */
+.video-js.vjs-fluid, .video-js.vjs-16-9, .video-js.vjs-4-3 {
+    width: 67.9%;
+    max-width: 100%;
+    height: 0;
+}
+.video1-dimensions.vjs-fluid {
+    padding-top: 38.3%;
+}
 
 
  @media screen AND (max-width:1024px) {
@@ -124,10 +137,20 @@ button:hover {
         --pFont: 3vw;
     }
 
+    /* rezising */
+    .video-js.vjs-fluid, .video-js.vjs-16-9, .video-js.vjs-4-3 {
+        width: 68%;
+        max-width: 100%;
+        height: 0;
+    }
     /* #video1 {
         width: 1020px;
         height: 574px;
     } */
+}
+
+#hotspotId28 {
+    left: 75%  !important;
 }
 
 @media screen AND (max-width:768px) {
@@ -148,4 +171,18 @@ button:hover {
         --hFont: 6vw;
         --pFont: 3vw;
     } 
+
+    .video-js.vjs-fluid, .video-js.vjs-16-9, .video-js.vjs-4-3 {
+        width: 100%;
+        max-width: 100%;
+        height: 0;
+    }
+    .video1-dimensions.vjs-fluid {
+        padding-top: 56.3%;
+    }
+
+    #hotspotId28 {
+        left: 52%  !important;
+        top: 9%  !important;
+    }
 }

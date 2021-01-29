@@ -142,12 +142,12 @@ let video = {
 
 let choice = {
     type: "box",
-    style: `border: solid 2px #004250;`
+    style: `border: solid 2px #004250; position: absolute;`
 };
 
 let choiceCircle = {
     type: "box",
-    style: "border: none; border-radius: 50%"
+    style: "border: 2px solid #000; border-radius: 50%; position: absolute;"
 }
 let backToMap = {
     type: "box",
@@ -171,10 +171,7 @@ const hotspots = [
         sizeY: 4.7,
         posX: 28.2,
         posY: 15.5,
-        ui: { choiceCircle,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choiceCircle,
         hotspot: {
             type: "function",
             func: () => {
@@ -194,10 +191,7 @@ const hotspots = [
         sizeY: 4.7,
         posX: 30.2,
         posY: 20.5,
-        ui: { choiceCircle,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choiceCircle,
         hotspot: {
             type: "function",
             func: () => {
@@ -218,10 +212,7 @@ const hotspots = [
         sizeY: 4.4,
         posX: 33.5,
         posY: 15.5,
-        ui: { choiceCircle,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choiceCircle,
         hotspot: {
             type: "function",
             func: () => {
@@ -241,10 +232,7 @@ const hotspots = [
         sizeY: 4.4,
         posX: 35.2,
         posY: 13,
-        ui: { choiceCircle,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choiceCircle,
         hotspot: {
             type: "function",
             func: () => {
@@ -264,10 +252,7 @@ const hotspots = [
         sizeY: 4.4,
         posX: 38.6,
         posY: 17.4,
-        ui: { choiceCircle,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choiceCircle,
         hotspot: {
             type: "function",
             func: () => {
@@ -287,10 +272,7 @@ const hotspots = [
         sizeY: 4.4,
         posX: 21.7,
         posY: 13.1,
-        ui: { choiceCircle,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choiceCircle,
         hotspot: {
             type: "function",
             func: () => {
@@ -310,10 +292,7 @@ const hotspots = [
         sizeY: 4.4,
         posX: 7.7,
         posY: 24,
-        ui: { choiceCircle,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choiceCircle,
         hotspot: {
             type: "function",
             func: () => {
@@ -333,10 +312,7 @@ const hotspots = [
         sizeY: 4.4,
         posX: 5.7,
         posY: 47,
-        ui: { choiceCircle,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choiceCircle,
         hotspot: {
             type: "function",
             func: () => {
@@ -356,10 +332,7 @@ const hotspots = [
         sizeY: 4.7,
         posX: 25.2,
         posY: 15.5,
-        ui: { choiceCircle,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choiceCircle,
         hotspot: {
             type: "function",
             func: () => {
@@ -380,10 +353,7 @@ const hotspots = [
         sizeY: 4.4,
         posX: 4.9,
         posY: 24,
-        ui: { choiceCircle,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choiceCircle,
         hotspot: {
             type: "function",
             func: () => {
@@ -404,10 +374,7 @@ const hotspots = [
         sizeY: 4.4,
         posX: 4.9,
         posY: 35,
-        ui: { choiceCircle,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choiceCircle,
         hotspot: {
             type: "function",
             func: () => {
@@ -428,10 +395,7 @@ const hotspots = [
         sizeY: 4.4,
         posX: 16.3,
         posY: 47,
-        ui: { choiceCircle,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choiceCircle,
         hotspot: {
             type: "function",
             func: () => {
@@ -452,10 +416,7 @@ const hotspots = [
         sizeY: 4.4,
         posX: 21.4,
         posY: 41,
-        ui: { choiceCircle,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choiceCircle,
         hotspot: {
             type: "function",
             func: () => {
@@ -475,10 +436,7 @@ const hotspots = [
         sizeY: 4.4,
         posX: 33.6,
         posY: 41,
-        ui: { choiceCircle,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choiceCircle,
         hotspot: {
             type: "function",
             func: () => {
@@ -499,10 +457,7 @@ const hotspots = [
         sizeY: 4.4,
         posX: 18.5,
         posY: 31,
-        ui: { choiceCircle,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choiceCircle,
         hotspot: {
             type: "function",
             func: () => {
@@ -523,10 +478,7 @@ const hotspots = [
         sizeY: 4.4,
         posX: 26.9,
         posY: 46.9,
-        ui: { choiceCircle,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choiceCircle,
         hotspot: {
             type: "function",
             func: () => {
@@ -546,10 +498,7 @@ const hotspots = [
         sizeY: 4.4,
         posX: 16,
         posY: 13.1,
-        ui: { choiceCircle,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choiceCircle,
         hotspot: {
             type: "function",
             func: () => {
@@ -569,10 +518,7 @@ const hotspots = [
         sizeY: 4.4,
         posX: 36.2,
         posY: 30.8,
-        ui: { choiceCircle,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choiceCircle,
         hotspot: {
             type: "function",
             func: () => {
@@ -595,10 +541,7 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 7.2,
-        ui: { choice,
-            type: "box",
-            style: `position: absolute;`
-            }, 
+        ui: choice, 
         hotspot: {
             type: "function",
             func: () => {
@@ -618,10 +561,7 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 15.9,
-        ui: { choice,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choice,
         hotspot: {
             type: "function",
             func: () => {
@@ -641,10 +581,7 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 24.6,
-        ui: { choice,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choice,
         hotspot: {
             type: "function",
             func: () => {
@@ -664,10 +601,7 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 33.4,
-        ui: { choice,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choice,
         hotspot: {
             type: "function",
             func: () => {
@@ -687,10 +621,7 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 42,
-        ui: { choice,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choice,
         hotspot: {
             type: "function",
             func: () => {
@@ -710,10 +641,7 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 50.5,
-        ui: { choice,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choice,
         hotspot: {
             type: "function",
             func: () => {
@@ -733,10 +661,7 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 59.6,
-        ui: { choice,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choice,
         hotspot: {
             type: "function",
             func: () => {
@@ -756,10 +681,7 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 68.4,
-        ui: { choice,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choice,
         hotspot: {
             type: "function",
             func: () => {
@@ -779,10 +701,7 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 77.1,
-        ui: { choice,
-            type: "box",
-            style: `position: absolute;`
-            },
+        ui: choice,
         hotspot: {
             type: "function",
             func: () => {
@@ -802,10 +721,7 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 86.2,
-        ui: { choice,
-        type: "box",
-        style: `position: absolute;`
-        },
+        ui: choice,
         hotspot: {
             type: "function",
             func: () => {
@@ -852,7 +768,7 @@ const hotspots = [
             // back to map (konstant box)
             videoPlayer.currentTime(0);
             videoPlayer.play();
-            pauseTime = 4;
+            pauseTime = 3.4;
         }
     }
 },  
