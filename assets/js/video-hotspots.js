@@ -152,7 +152,8 @@ let choiceCircle = {
 let backToMap = {
     type: "box",
     style: "border: solid 2px #004250; background-color: #fff; text-align:center; font-weight: bold; font-size: 26px; color: #004250; padding: 0.5%; background",
-    text: "Tilbage til kortet"
+    text: "Tilbage til kortet",
+    position: "absolute"
 };
 
 
@@ -540,7 +541,7 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 7.2,
-        ui: choice,
+        ui: choice, 
         hotspot: {
             type: "function",
             func: () => {
@@ -757,7 +758,8 @@ const hotspots = [
         text-align: center;
         background-color: #004250;
         padding: 1vw;
-        border-radius: .5vw;`,
+        border-radius: .5vw;
+        position: absolute;`,
         text: "Tilbage til kortet"
     },
     hotspot: {
