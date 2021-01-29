@@ -747,8 +747,8 @@ const hotspots = [
     markOut: 101,
     sizeX: `auto`,
     sizeY: `auto`,
-    posX: 1,
-    posY: 90,
+    posX: 81,
+    posY: 10,
     ui: {
         type: "box",
         style: `border: none;
@@ -772,207 +772,207 @@ const hotspots = [
 },  
 
 // forskellige points indsat efter bestemte tider
- {
-        active: true,
-        videoId: "video1",
-        markIn: 10,
-        markOut: 11,
-        sizeX: 36,
-        sizeY: 38,
-        posX: 62,
-        posY: 16.4,
-        ui: backToMap,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // back to map (indgang)
-                videoPlayer.currentTime(0);
-                videoPlayer.play();
-                pauseTime = 4;
-            }
-        }
-    },  
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 18,
-        markOut: 19.4,
-        sizeX: 36,
-        sizeY: 38,
-        posX: 62,
-        posY: 16.4,
-        ui: backToMap,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // back to map (servicecenter)
-                videoPlayer.currentTime(0);
-                videoPlayer.play();
-                pauseTime = 4;
-            }
-        }
-    },  
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 25,
-        markOut: 27,
-        sizeX: 36,
-        sizeY: 38,
-        posX: 62,
-        posY: 16.4,
-        ui: backToMap,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // back to map (studieadministration)
-                videoPlayer.currentTime(0);
-                videoPlayer.play();
-                pauseTime = 4;
-            }
-        }
-    },  
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 34,
-        markOut: 37,
-        sizeX: 36,
-        sizeY: 38,
-        posX: 62,
-        posY: 16.4,
-        ui: backToMap,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // back to map (studievejledning)
-                videoPlayer.currentTime(0);
-                videoPlayer.play();
-                pauseTime = 4;
-            }
-        }
-    },  
+//  {
+//         active: true,
+//         videoId: "video1",
+//         markIn: 10,
+//         markOut: 11,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (indgang)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },  
+//     {
+//         active: true,
+//         videoId: "video1",
+//         markIn: 18,
+//         markOut: 19.4,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (servicecenter)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },  
+//     {
+//         active: true,
+//         videoId: "video1",
+//         markIn: 25,
+//         markOut: 27,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (studieadministration)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },  
+//     {
+//         active: true,
+//         videoId: "video1",
+//         markIn: 34,
+//         markOut: 37,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (studievejledning)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },  
 
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 41,
-        markOut: 44,
-        sizeX: 36,
-        sizeY: 38,
-        posX: 62,
-        posY: 16.4,
-        ui: backToMap,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // back to map (faglokale)
-                videoPlayer.currentTime(0);
-                videoPlayer.play();
-                pauseTime = 4;
-            }
-        }
-    },  
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 55,
-        markOut: 57,
-        sizeX: 36,
-        sizeY: 38,
-        posX: 62,
-        posY: 16.4,
-        ui: backToMap,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // back to map (gruppeområde)
-                videoPlayer.currentTime(0);
-                videoPlayer.play();
-                pauseTime = 4;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 65,
-        markOut: 67,
-        sizeX: 36,
-        sizeY: 38,
-        posX: 62,
-        posY: 16.4,
-        ui: backToMap,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // back to map (auditorium)
-                videoPlayer.currentTime(0);
-                videoPlayer.play();
-                pauseTime = 4;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 77,
-        markOut: 78,
-        sizeX: 36,
-        sizeY: 38,
-        posX: 62,
-        posY: 16.4,
-        ui: backToMap,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // back to map (bibliotek)
-                videoPlayer.currentTime(0);
-                videoPlayer.play();
-                pauseTime = 4;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 88,
-        markOut: 90,
-        sizeX: 36,
-        sizeY: 38,
-        posX: 62,
-        posY: 16.4,
-        ui: backToMap,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // back to map (internationalt kontor)
-                videoPlayer.currentTime(0);
-                videoPlayer.play();
-                pauseTime = 4;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 99,
-        markOut: 101,
-        sizeX: 36,
-        sizeY: 38,
-        posX: 62,
-        posY: 16.4,
-        ui: backToMap,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // back to map (kantine og spiseområde)
-                videoPlayer.currentTime(0);
-                videoPlayer.play();
-                pauseTime = 4;
-            }
-        }
-    },
+//     {
+//         active: true,
+//         videoId: "video1",
+//         markIn: 41,
+//         markOut: 44,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (faglokale)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },  
+//     {
+//         active: true,
+//         videoId: "video1",
+//         markIn: 55,
+//         markOut: 57,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (gruppeområde)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video1",
+//         markIn: 65,
+//         markOut: 67,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (auditorium)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video1",
+//         markIn: 77,
+//         markOut: 78,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (bibliotek)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video1",
+//         markIn: 88,
+//         markOut: 90,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (internationalt kontor)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },
+//     {
+//         active: true,
+//         videoId: "video1",
+//         markIn: 99,
+//         markOut: 101,
+//         sizeX: 36,
+//         sizeY: 38,
+//         posX: 62,
+//         posY: 16.4,
+//         ui: backToMap,
+//         hotspot: {
+//             type: "function",
+//             func: () => {
+//                 // back to map (kantine og spiseområde)
+//                 videoPlayer.currentTime(0);
+//                 videoPlayer.play();
+//                 pauseTime = 4;
+//             }
+//         }
+//     },
 ];
 
 
