@@ -171,7 +171,10 @@ const hotspots = [
         sizeY: 4.7,
         posX: 28.2,
         posY: 15.5,
-        ui: choiceCircle,
+        ui: { choiceCircle,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -191,7 +194,10 @@ const hotspots = [
         sizeY: 4.7,
         posX: 30.2,
         posY: 20.5,
-        ui: choiceCircle,
+        ui: { choiceCircle,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -212,7 +218,10 @@ const hotspots = [
         sizeY: 4.4,
         posX: 33.5,
         posY: 15.5,
-        ui: choiceCircle,
+        ui: { choiceCircle,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -232,7 +241,10 @@ const hotspots = [
         sizeY: 4.4,
         posX: 35.2,
         posY: 13,
-        ui: choiceCircle,
+        ui: { choiceCircle,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -252,7 +264,10 @@ const hotspots = [
         sizeY: 4.4,
         posX: 38.6,
         posY: 17.4,
-        ui: choiceCircle,
+        ui: { choiceCircle,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -272,7 +287,10 @@ const hotspots = [
         sizeY: 4.4,
         posX: 21.7,
         posY: 13.1,
-        ui: choiceCircle,
+        ui: { choiceCircle,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -292,7 +310,10 @@ const hotspots = [
         sizeY: 4.4,
         posX: 7.7,
         posY: 24,
-        ui: choiceCircle,
+        ui: { choiceCircle,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -312,7 +333,10 @@ const hotspots = [
         sizeY: 4.4,
         posX: 5.7,
         posY: 47,
-        ui: choiceCircle,
+        ui: { choiceCircle,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -332,7 +356,10 @@ const hotspots = [
         sizeY: 4.7,
         posX: 25.2,
         posY: 15.5,
-        ui: choiceCircle,
+        ui: { choiceCircle,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -353,7 +380,10 @@ const hotspots = [
         sizeY: 4.4,
         posX: 4.9,
         posY: 24,
-        ui: choiceCircle,
+        ui: { choiceCircle,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -374,7 +404,10 @@ const hotspots = [
         sizeY: 4.4,
         posX: 4.9,
         posY: 35,
-        ui: choiceCircle,
+        ui: { choiceCircle,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -395,7 +428,10 @@ const hotspots = [
         sizeY: 4.4,
         posX: 16.3,
         posY: 47,
-        ui: choiceCircle,
+        ui: { choiceCircle,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -416,7 +452,10 @@ const hotspots = [
         sizeY: 4.4,
         posX: 21.4,
         posY: 41,
-        ui: choiceCircle,
+        ui: { choiceCircle,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -436,11 +475,14 @@ const hotspots = [
         sizeY: 4.4,
         posX: 33.6,
         posY: 41,
-        ui: choiceCircle,
+        ui: { choiceCircle,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
-                // gruppeområde 2 circel 
+                // gruppeområde 2 circle
                 videoPlayer.currentTime(46);
                 videoPlayer.play();
                 pauseTime = 57;
@@ -457,11 +499,14 @@ const hotspots = [
         sizeY: 4.4,
         posX: 18.5,
         posY: 31,
-        ui: choiceCircle,
+        ui: { choiceCircle,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
-                // auditorium
+                // auditorium circle
                 videoPlayer.currentTime(59);
                 videoPlayer.play();
                 pauseTime = 67;
@@ -478,11 +523,14 @@ const hotspots = [
         sizeY: 4.4,
         posX: 26.9,
         posY: 46.9,
-        ui: choiceCircle,
+        ui: { choiceCircle,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
-                // bibliotek  
+                // bibliotek circle
                 videoPlayer.currentTime(69);
                 videoPlayer.play();
                 pauseTime = 78;
@@ -498,11 +546,14 @@ const hotspots = [
         sizeY: 4.4,
         posX: 16,
         posY: 13.1,
-        ui: choiceCircle,
+        ui: { choiceCircle,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
-                // internationalt kontor
+                // internationalt kontor circle
                 videoPlayer.currentTime(80);
                 videoPlayer.play();
                 pauseTime = 90;
@@ -518,11 +569,14 @@ const hotspots = [
         sizeY: 4.4,
         posX: 36.2,
         posY: 30.8,
-        ui: choiceCircle,
+        ui: { choiceCircle,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
-                // kantine og spiseområde
+                // kantine og spiseområde circle
                 videoPlayer.currentTime(91);
                 videoPlayer.play();
                 pauseTime = 101;
@@ -541,7 +595,10 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 7.2,
-        ui: choice, 
+        ui: { choice,
+            type: "box",
+            style: `position: absolute;`
+            }, 
         hotspot: {
             type: "function",
             func: () => {
@@ -561,7 +618,10 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 15.9,
-        ui: choice,
+        ui: { choice,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -581,7 +641,10 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 24.6,
-        ui: choice,
+        ui: { choice,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -601,7 +664,10 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 33.4,
-        ui: choice,
+        ui: { choice,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -621,7 +687,10 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 42,
-        ui: choice,
+        ui: { choice,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -641,7 +710,10 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 50.5,
-        ui: choice,
+        ui: { choice,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -661,7 +733,10 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 59.6,
-        ui: choice,
+        ui: { choice,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -681,7 +756,10 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 68.4,
-        ui: choice,
+        ui: { choice,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -701,7 +779,10 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 77.1,
-        ui: choice,
+        ui: { choice,
+            type: "box",
+            style: `position: absolute;`
+            },
         hotspot: {
             type: "function",
             func: () => {
@@ -721,7 +802,10 @@ const hotspots = [
         sizeY: 7,
         posX: 67,
         posY: 86.2,
-        ui: choice,
+        ui: { choice,
+        type: "box",
+        style: `position: absolute;`
+        },
         hotspot: {
             type: "function",
             func: () => {
