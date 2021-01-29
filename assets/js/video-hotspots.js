@@ -151,7 +151,7 @@ let choiceCircle = {
 }
 let backToMap = {
     type: "box",
-    style: "border: solid 2px #004250; background: url(assets/images/map.png); text-align:center; font-weight: bold; font-size: 26px; color: #004250; padding: 0.5%; background",
+    style: "border: solid 2px #004250; background-color: #fff; text-align:center; font-weight: bold; font-size: 26px; color: #004250; padding: 0.5%; background",
     text: "Tilbage til kortet"
 };
 

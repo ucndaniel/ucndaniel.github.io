@@ -3,7 +3,7 @@
 /* Welcome to the start of the CSS*/
 :root {
     --hFont: 3vw;
-    --pFont: 1.1vw;
+    --pFont: 1.4vw;
     
     --hFontFam:'Open Sans', sans-serif;
     --pFontFam:'Open Sans', sans-serif;
@@ -146,6 +146,6 @@ button:hover {
 @media screen AND (max-width:500px) {
     :root {
         --hFont: 6vw;
-        --pFont: 2vw;
+        --pFont: 3vw;
     } 
 }

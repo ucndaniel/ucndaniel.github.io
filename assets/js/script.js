@@ -14,6 +14,9 @@ var videoPlayer = videojs("video1", content);
 videojs('video1').ready(function () {
     this.on('timeupdate', onVideoTimeupdate);
 });
+var player = videojs('video1', {
+    responsive: true
+  });
 
 let loopStart = 0;
 let loopEnd = 3;
