@@ -1,9 +1,10 @@
 const content = {
     "controls": true,
-    "autoplay": false,
-    "preload": "auto",
+    "preload": 'auto',
+    "autoplay": 'muted',
     "muted": false,
-    "responsive": true
+    "responsive": true,
+    "poster": "../assets/images/ucnlogo.jpg"
 }
 var videoPlayer = videojs("video1", content);
 

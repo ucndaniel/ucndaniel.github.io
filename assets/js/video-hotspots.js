@@ -142,12 +142,12 @@ let video = {
 
 let choice = {
     type: "box",
-    style: `border: solid 2px #004250; position: absolute;`
+    style: `position: absolute; border:`
 };
 
 let choiceCircle = {
     type: "box",
-    style: "border: 2px solid #000; border-radius: 50%; position: absolute;"
+    style: "border-radius: 50%; position: absolute;"
 }
 let backToMap = {
     type: "box",
@@ -748,7 +748,7 @@ const hotspots = [
     markOut: 101,
     sizeX: `auto`,
     sizeY: `auto`,
-    posX: 81,
+    posX: 70,
     posY: 10,
     ui: {
         type: "box",
@@ -756,7 +756,7 @@ const hotspots = [
         font-size: 20px;
         color: #fff;
         text-align: center;
-        background-color: #004250;
+        background-color: rgb(0 66 80 / 60%);
         padding: 1vw;
         border-radius: .5vw;
         position: absolute;`,

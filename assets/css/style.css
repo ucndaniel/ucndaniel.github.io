@@ -114,6 +114,7 @@ button:hover {
 
 .video-js .vjs-big-play-button {
     background-color: #004250;
+    
 }
 
 .video-js:hover .vjs-big-play-button:hover {
@@ -130,7 +131,9 @@ button:hover {
     padding-top: 38.3%;
 }
 
-
+.video-js {
+    background-color: #ffffff00;
+}
  @media screen AND (max-width:1024px) {
     :root {
         --hFont: 4vw;
@@ -146,12 +149,12 @@ button:hover {
     /* #video1 {
         width: 1020px;
         height: 574px;
-    } */
+    } */#hotspotId28 {
+    left: 64%  !important;
 }
 
-#hotspotId28 {
-    left: 75%  !important;
 }
+
 
 @media screen AND (max-width:768px) {
     :root {
