@@ -4,9 +4,9 @@
 :root {
     --hFont: 3vw;
     --pFont: 1.4vw;
-    
-    --hFontFam:'Open Sans', sans-serif;
-    --pFontFam:'Open Sans', sans-serif;
+
+    --hFontFam: 'Open Sans', sans-serif;
+    --pFontFam: 'Open Sans', sans-serif;
 }
 
 * {
@@ -45,7 +45,8 @@ i {
     display: flex;
     justify-content: space-between;
 }
-header{
+
+header {
     background-color: #fff;
     margin-bottom: 1vw;
     color: #004250;
@@ -54,8 +55,9 @@ header{
     padding: 1vw;
     text-align: center;
 }
+
 /* Main */
-.centered{
+.centered {
     display: grid;
     place-items: center;
     width: 100%;
@@ -69,20 +71,166 @@ header{
     position: relative;
 }
 
-div > .hotspot {
+div>.hotspot {
     box-sizing: border-box;
     position: absolute;
     z-index: 1;
     cursor: pointer;
+    alt: "alttekst";
 }
 
-div > .hotspot.image {
+div>.hotspot.image {
     background-size: cover;
     background-position: center;
 }
 
 video:focus {
     outline: none;
+}
+
+#hotspotId0 {
+    position: absolute;
+    border: 1px solid black;
+    color: rgba(0, 0, 0, 0);
+    /* margin-right: 10px; */
+    font-size: 2.2vw;
+    letter-spacing: 2vw;
+}
+
+#hotspotId1 {
+    position: absolute;
+    border: 1px solid black;
+    color: rgba(0, 0, 0, 0);
+    /* margin-right: 10px; */
+    font-size: 2vw;
+    letter-spacing: 0.8vw;
+}
+
+#hotspotId2 {
+    position: absolute;
+    border: 1px solid black;
+    color: rgba(0, 0, 0, 0);
+    /* margin-right: 10px; */
+    font-size: 2vw;
+    letter-spacing: 0.1vw;
+}
+
+#hotspotId3 {
+    position: absolute;
+    border: 1px solid black;
+    color: rgba(0, 0, 0, 0);
+    /* margin-right: 10px; */
+    font-size: 2vw;
+    letter-spacing: 0.4vw;
+}
+
+#hotspotId4 {
+    position: absolute;
+    border: 1px solid black;
+    color: rgba(0, 0, 0, 0);
+    /* margin-right: 10px; */
+    font-size: 2vw;
+    letter-spacing: 1vw;
+}
+
+#hotspotId5 {
+    position: absolute;
+    border: 1px solid black;
+    color: rgba(0, 0, 0, 0);
+    /* margin-right: 10px; */
+    font-size: 2vw;
+    letter-spacing: 0.4vw;
+}
+
+#hotspotId6 {
+    position: absolute;
+    border: 1px solid black;
+    color: rgba(0, 0, 0, 0);
+    /* margin-right: 10px; */
+    font-size: 2vw;
+    letter-spacing: 0.4vw;
+}
+
+#hotspotId7 {
+    position: absolute;
+    border: 1px solid black;
+    color: rgba(0, 0, 0, 0);
+    /* margin-right: 10px; */
+    font-size: 2vw;
+    letter-spacing: 0.4vw;
+}
+
+#hotspotId8 {
+    position: absolute;
+    border: 1px solid black;
+    color: rgba(0, 0, 0, 0);
+    /* margin-right: 10px; */
+    font-size: 2vw;
+    letter-spacing: 0vw;
+}
+
+#hotspotId9 {
+    position: absolute;
+    border: 1px solid black;
+    color: rgba(0, 0, 0, 0);
+    /* margin-right: 10px; */
+    font-size: 1.8vw;
+    letter-spacing: 0vw;
+}
+
+#hotspotId10 {
+    clip: rect(0px, 20px, 17px, 4px);
+}
+#hotspotId11 {
+    clip: rect(0px, 20px, 17px, 4px);
+}
+#hotspotId12 {
+    clip: rect(0px, 20px, 17px, 4px);
+}
+#hotspotId13 {
+    clip: rect(0px, 20px, 17px, 4px);
+}
+#hotspotId14 {
+    clip: rect(0px, 20px, 17px, 4px);
+}
+#hotspotId15 {
+    clip: rect(0px, 20px, 17px, 4px);
+}
+#hotspotId16 {
+    clip: rect(0px, 20px, 17px, 4px);
+}
+#hotspotId17 {
+    clip: rect(0px, 20px, 17px, 4px);
+}
+#hotspotId18 {
+    clip: rect(0px, 20px, 17px, 4px);
+}
+#hotspotId19 {
+    clip: rect(0px, 20px, 17px, 4px);
+}
+#hotspotId20 {
+    clip: rect(0px, 20px, 17px, 4px);
+}
+#hotspotId21 {
+    clip: rect(0px, 20px, 17px, 4px);
+}
+#hotspotId22 {
+    clip: rect(0px, 20px, 17px, 4px);
+}
+#hotspotId23 {
+    clip: rect(0px, 20px, 17px, 4px);
+}
+#hotspotId24 {
+    clip: rect(0px, 20px, 17px, 4px);
+}
+#hotspotId25 {
+    clip: rect(0px, 20px, 17px, 4px);
+}
+#hotspotId26 {
+    clip: rect(0px, 20px, 17px, 4px);
+}
+#hotspotId27 {
+    clip: rect(0px, 20px, 17px, 4px);
 }
 
 /* buttons */
@@ -96,11 +244,12 @@ a:hover,
 button:hover {
     cursor: pointer;
 }
- #video1 > div.vjs-control-bar{
-    display: none;
-} 
 
- /* #video1 {
+#video1>div.vjs-control-bar {
+    display: none;
+}
+
+/* #video1 {
     width: 1280px;
     height: 420px; 
 }     */
@@ -114,7 +263,7 @@ button:hover {
 
 .video-js .vjs-big-play-button {
     background-color: #00415044;
-    
+
 }
 
 .video-js:hover .vjs-big-play-button:hover {
@@ -122,36 +271,44 @@ button:hover {
 }
 
 /* rezising */
-.video-js.vjs-fluid, .video-js.vjs-16-9, .video-js.vjs-4-3 {
+.video-js.vjs-fluid,
+.video-js.vjs-16-9,
+.video-js.vjs-4-3 {
     width: 68.9%;
     max-width: 100%;
     height: 0;
 }
+
 .video1-dimensions.vjs-fluid {
     padding-top: 38.3%;
 }
 
 .video-js {
-    background-color: #ffffff00;
+    background-color: #ff00;
 }
- @media screen AND (max-width:1024px) {
+
+@media screen AND (max-width:1024px) {
     :root {
         --hFont: 4vw;
         --pFont: 3vw;
     }
 
     /* rezising */
-    .video-js.vjs-fluid, .video-js.vjs-16-9, .video-js.vjs-4-3 {
+    .video-js.vjs-fluid,
+    .video-js.vjs-16-9,
+    .video-js.vjs-4-3 {
         width: 68.5%;
         max-width: 100%;
         height: 0;
     }
+
     /* #video1 {
         width: 1020px;
         height: 574px;
-    } */#hotspotId28 {
-    left: 64%  !important;
-}
+    } */
+    #hotspotId28 {
+        left: 64% !important;
+    }
 
 }
 
@@ -173,19 +330,167 @@ button:hover {
     :root {
         --hFont: 6vw;
         --pFont: 3vw;
-    } 
+    }
 
-    .video-js.vjs-fluid, .video-js.vjs-16-9, .video-js.vjs-4-3 {
+    .video-js.vjs-fluid,
+    .video-js.vjs-16-9,
+    .video-js.vjs-4-3 {
         width: 100%;
         max-width: 100%;
         height: 0;
     }
+
     .video1-dimensions.vjs-fluid {
         padding-top: 56.3%;
     }
 
     #hotspotId28 {
-        left: 52%  !important;
-        top: 9%  !important;
+        left: 52% !important;
+        top: 9% !important;
+    }
+
+    #hotspotId0 {
+        position: absolute;
+        border: 1px solid black;
+        color: black;
+        /* margin-right: 10px; */
+        font-size: 2.2vw;
+        letter-spacing: 2vw;
+    }
+
+    #hotspotId1 {
+        position: absolute;
+        border: 1px solid black;
+        color: black;
+        /* margin-right: 10px; */
+        font-size: 2vw;
+        letter-spacing: 0.8vw;
+    }
+
+    #hotspotId2 {
+        position: absolute;
+        border: 1px solid black;
+        color: black;
+        /* margin-right: 10px; */
+        font-size: 2vw;
+        letter-spacing: 0.1vw;
+    }
+
+    #hotspotId3 {
+        position: absolute;
+        border: 1px solid black;
+        color: black;
+        /* margin-right: 10px; */
+        font-size: 2vw;
+        letter-spacing: 0.4vw;
+    }
+
+    #hotspotId4 {
+        position: absolute;
+        border: 1px solid black;
+        color: black;
+        /* margin-right: 10px; */
+        font-size: 2vw;
+        letter-spacing: 1vw;
+    }
+
+    #hotspotId5 {
+        position: absolute;
+        border: 1px solid black;
+        color: black;
+        /* margin-right: 10px; */
+        font-size: 2vw;
+        letter-spacing: 0.4vw;
+    }
+
+    #hotspotId6 {
+        position: absolute;
+        border: 1px solid black;
+        color: black;
+        /* margin-right: 10px; */
+        font-size: 2vw;
+        letter-spacing: 0.4vw;
+    }
+
+    #hotspotId7 {
+        position: absolute;
+        border: 1px solid black;
+        color: black;
+        /* margin-right: 10px; */
+        font-size: 2vw;
+        letter-spacing: 0.4vw;
+    }
+
+    #hotspotId8 {
+        position: absolute;
+        border: 1px solid black;
+        color: black;
+        /* margin-right: 10px; */
+        font-size: 2vw;
+        letter-spacing: 0vw;
+    }
+
+    #hotspotId9 {
+        position: absolute;
+        border: 1px solid black;
+        color: black;
+        /* margin-right: 10px; */
+        font-size: 1.8vw;
+        letter-spacing: 0vw;
+    }
+
+    #hotspotId10 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId11 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId12 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId13 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId14 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId15 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId16 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId17 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId18 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId19 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId20 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId21 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId22 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId23 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId24 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId25 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId26 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId27 {
+        clip: rect(0px, 10px, 11px, 0px);
     }
 }
