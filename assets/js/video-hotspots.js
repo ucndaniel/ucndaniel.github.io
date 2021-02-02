@@ -346,7 +346,7 @@ const hotspots = [
             type: "function",
             func: () => {
                 // Bibliotek
-                videoPlayer.currentTime(69);
+                videoPlayer.currentTime(70);
                 videoPlayer.play();
                 pauseTime = 78;
             }
@@ -805,7 +805,7 @@ const hotspots = [
             type: "function",
             func: () => {
                 // bibliotek circle
-                videoPlayer.currentTime(69);
+                videoPlayer.currentTime(70);
                 videoPlayer.play();
                 pauseTime = 78;
             }
