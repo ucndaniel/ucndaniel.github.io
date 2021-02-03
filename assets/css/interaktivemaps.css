@@ -14,6 +14,10 @@ body {
     padding: 0;
 }
 
+:root {
+    --hFont: 3vw;
+    --pFont: 1.4vw;
+}
 
 h1, h2, h3, h4, h5 {
     font-size: 2.5vw;
@@ -21,6 +25,7 @@ h1, h2, h3, h4, h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-style: normal;
+    font-size: var(--hFont);
 }
 
 ul {
@@ -38,6 +43,7 @@ p, li, a {
     line-height: 1.5;
     font-weight: 400;
     font-style: normal;
+    font-size: var(--pFont);
 }
 
 .interactiveGlobal {
@@ -54,16 +60,48 @@ p, li, a {
 .interactiveGlobal h1 {
     color: #fff;
     margin-bottom: 1.5vw;
+    font-size: var(--hFont);
 }
 .interactiveGlobal ul li {
     padding: 1vw;
     place-self: center;
+    font-size: var(--pFont);
 }
 .interactiveGlobal li a {
     color:#fff;
     text-decoration: underline;
+    font-size: var(--pFont);
 }
 
 .interactiveGlobal li a:hover {
     color:rgb(212, 88, 88);
 }
+
+@media screen AND (max-width:1205px) { 
+    :root {
+        --hFont: 4vw;
+        --pFont: 3vw;
+    }
+}
+
+@media screen AND  (max-width: 1215px) and (min-width:860px) { 
+    :root {
+        --hFont: 3vw;
+        --pFont: 3vw;
+    }  
+}
+@media screen AND (max-width:859px) { 
+    :root {
+        --hFont: 3vw;
+        --pFont: 3vw;
+    }  
+}
+
+@media screen AND (max-width:500px) {
+    :root {
+        --hFont: 6vw;
+        --pFont: 4vw;
+    }
+ }
+
+
