@@ -16,7 +16,7 @@ body {
 
 :root {
     --hFont: 3vw;
-    --pFont: 1.4vw;
+    --pFont: 2vw;
 }
 
 h1, h2, h3, h4, h5 {
@@ -51,8 +51,7 @@ p, li, a {
     place-items: center;
 }
  .interactiveWrapper {
-    position: fixed;
-   
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -101,6 +100,14 @@ p, li, a {
     :root {
         --hFont: 5.5vw;
         --pFont: 5vw;
+    }
+    .interactiveGlobal h1 {
+        color: #fff;
+        margin-bottom: 4.5vw;
+        font-size: var(--hFont);
+    }
+    .interactiveGlobal ul li {
+        padding-bottom: 4vw;
     }
  }
 
