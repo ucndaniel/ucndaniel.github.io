@@ -42,7 +42,9 @@ i {
     font-family: var(--pFontFam);
     font-size: var(--pFont);
 }
-
+.mobileMessage {
+    display: none;
+}
 .flex {
     display: flex;
     justify-content: space-between;
@@ -294,6 +296,9 @@ button:hover {
 }
 
 @media screen AND (max-width:1205px) { /* 1024 var den før */
+    .mobileMessage {
+        display: none;
+    }
     :root {
         --hFont: 4vw;
         --pFont: 3vw;
@@ -379,6 +384,9 @@ button:hover {
 
 
 @media screen AND (max-width:859px) { /* 768 var den før */
+    .mobileMessage {
+        display: none;
+    }
     :root {
         --hFont: 4vw;
         --pFont: 3vw;
@@ -446,6 +454,11 @@ button:hover {
 
 /* additional sizes */
 @media only screen and (max-width: 750px) and (min-width: 616px) {
+
+.mobileMessage {
+    display: none;
+}
+
     #hotspotId10 {
         clip: rect(0px, 12px, 11px, 0px);  
     }
@@ -505,6 +518,9 @@ button:hover {
 /* MediaQueries for mobile  */
 
 @media only screen and (max-width: 615px) and (min-width: 501px) {
+    .mobileMessage {
+        display: none;
+    }
     #hotspotId10 {
         clip: rect(0px, 11px, 11px, 0px);
     }
@@ -584,7 +600,10 @@ button:hover {
         left: 52% !important;
         top: 9% !important;
     }
-
+.mobileMessage {
+    display: block;
+    margin-top: 2vw;
+}
     #hotspotId0 {
         position: absolute;
         border: 0px solid black;
