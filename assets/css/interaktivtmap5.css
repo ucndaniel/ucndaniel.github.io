@@ -285,13 +285,18 @@ button:hover {
 .video-js {
     background-color: #ff00;
 }
+.mobileMessage {
+    display: none;
+}
 
 @media screen AND (max-width:1205px) { /* 1024 var den før */
     :root {
         --hFont: 4vw;
         --pFont: 3vw;
     }
-
+    .mobileMessage {
+        display: none;
+    }
     /* rezising */
     .video-js.vjs-fluid,
     .video-js.vjs-16-9,
@@ -379,6 +384,9 @@ button:hover {
         --hFont: 4vw;
         --pFont: 3vw;
     }
+    .mobileMessage {
+        display: none;
+    }
     #hotspotId10 {
         clip: rect(0px, 17px, 17px, 2px);
     }
@@ -445,6 +453,9 @@ button:hover {
 
 /* additional sizes */
 @media only screen and (max-width: 750px) and (min-width: 616px) {
+    .mobileMessage {
+        display: none;
+    }
     #hotspotId10 {
         clip: rect(0px, 12px, 11px, 0px);  
     }
@@ -507,6 +518,9 @@ button:hover {
 /* MediaQueries for mobile  */
 
 @media only screen and (max-width: 615px) and (min-width: 501px) {
+    .mobileMessage {
+        display: none;
+    }
     #hotspotId10 {
         clip: rect(0px, 11px, 11px, 0px);
     }
@@ -571,6 +585,10 @@ button:hover {
     :root {
         --hFont: 6vw;
         --pFont: 3vw;
+    }
+    .mobileMessage {
+        display: block;
+        margin-top: 2vw;
     }
 
     .video-js.vjs-fluid,
