@@ -1,6 +1,3 @@
-// JS by Dan Høegh
-// UCN MMD 2020
-
 // A framework for showing time-encoded hotspots on multiple videos.
 // Assumes either video.js or a parent <div> for the video that has the same dimensions as the video.
 
@@ -165,9 +162,9 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 31,
-        sizeY: 7,
-        posX: 67,
+        sizeX: 29,
+        sizeY: 6,
+        posX: 70,
         posY: 7.2,
         ui: {
            choice, 
@@ -189,10 +186,10 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 31,
-        sizeY: 7,
-        posX: 67,
-        posY: 15.9,
+        sizeX: 29,
+        sizeY: 6,
+        posX: 70,
+        posY: 14.4,
         ui: {
             choice, 
              type: "box",
@@ -213,10 +210,10 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 31,
-        sizeY: 7,
-        posX: 67,
-        posY: 24.6,
+        sizeX: 29,
+        sizeY: 6,
+        posX: 70,
+        posY: 21.4,
         ui: {
             choice, 
              type: "box",
@@ -237,10 +234,10 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 31,
-        sizeY: 7,
-        posX: 67,
-        posY: 33.4,
+        sizeX: 29,
+        sizeY: 6,
+        posX: 70,
+        posY: 28.4,
         ui: {
             choice, 
              type: "box",
@@ -261,10 +258,10 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 31,
-        sizeY: 7,
-        posX: 67,
-        posY: 42,
+        sizeX: 29,
+        sizeY: 6,
+        posX: 70,
+        posY: 35.2,
         ui: {
             choice, 
              type: "box",
@@ -285,10 +282,10 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 31,
-        sizeY: 7,
-        posX: 67,
-        posY: 50.5,
+        sizeX: 29,
+        sizeY: 6,
+        posX: 70,
+        posY: 42.3,
         ui: {
             choice, 
              type: "box",
@@ -309,34 +306,10 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 31,
-        sizeY: 7,
-        posX: 67,
-        posY: 59.6,
-        ui: {
-            choice, 
-             type: "box",
-             text: "Auditorium"
-         },
-        hotspot: {
-            type: "function",
-            func: () => {
-                // Auditorium
-                videoPlayer.currentTime(59);
-                videoPlayer.play();
-                pauseTime = 67;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 0,
-        markOut: 4.1,
-        sizeX: 31,
-        sizeY: 7,
-        posX: 67,
-        posY: 68.4,
+        sizeX: 29,
+        sizeY: 6,
+        posX: 70,
+        posY: 49.4,
         ui: {
             choice, 
              type: "box",
@@ -357,10 +330,10 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 31,
-        sizeY: 7,
-        posX: 67,
-        posY: 77.1,
+        sizeX: 29,
+        sizeY: 6,
+        posX: 70,
+        posY: 56.1,
         ui: {
             choice, 
              type: "box",
@@ -381,10 +354,10 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 31,
-        sizeY: 7,
-        posX: 67,
-        posY: 86.2,
+        sizeX: 29,
+        sizeY: 6,
+        posX: 70,
+        posY: 64.2,
         ui: {
             choice, 
              type: "box",
@@ -400,6 +373,58 @@ const hotspots = [
             }
         }
     },
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 0,
+        markOut: 4.1,
+        sizeX: 29,
+        sizeY: 6,
+        posX: 70,
+        posY: 70.6,
+        ui: {
+            choice, 
+             type: "box",
+             text: "auditorie"
+         },
+        hotspot: {
+            type: "function",
+            func: () => {
+                // audietorie
+                videoPlayer.currentTime(59);
+                videoPlayer.play();
+                pauseTime = 67;
+            }
+        }
+    },
+
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 0,
+        markOut: 4.1,
+        sizeX: 29,
+        sizeY: 6,
+        posX: 70,
+        posY: 77.6,
+        ui: {
+            choice, 
+             type: "box",
+             text: "Fredagsbar"
+         },
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Fredagsbar
+                videoPlayer.currentTime(102);
+                videoPlayer.play();
+                pauseTime = 110;
+            }
+        }
+    },
+    
+    
+   
 
 
     // map hotspots    
@@ -411,8 +436,8 @@ const hotspots = [
         markOut: 4.1,
         sizeX: 2.7,
         sizeY: 4.7,
-        posX: 28.2,
-        posY: 15.5,
+        posX: 22.2,
+        posY: 84.5,
         ui:  {
            choiceCircle, 
             type: "box",
@@ -436,8 +461,8 @@ const hotspots = [
         markOut: 4.1,
         sizeX: 2.7,
         sizeY: 4.7,
-        posX: 30.2,
-        posY: 20.5,
+        posX: 20.7,
+        posY: 75.5,
         ui:  {
             choiceCircle, 
              type: "box",
@@ -462,8 +487,8 @@ const hotspots = [
         markOut: 4.1,
         sizeX: 2.3,
         sizeY: 4.4,
-        posX: 33.5,
-        posY: 15.5,
+        posX: 20.8,
+        posY: 80,
         ui:  {
             choiceCircle, 
              type: "box",
@@ -487,8 +512,8 @@ const hotspots = [
         markOut: 4.1,
         sizeX: 2.3,
         sizeY: 4.4,
-        posX: 35.2,
-        posY: 13,
+        posX: 18.9,
+        posY: 83.8,
         ui:  {
             choiceCircle, 
              type: "box",
@@ -512,8 +537,8 @@ const hotspots = [
         markOut: 4.1,
         sizeX: 2.3,
         sizeY: 4.4,
-        posX: 38.6,
-        posY: 17.4,
+        posX: 17.5,
+        posY: 76,
         ui:  {
             choiceCircle, 
              type: "box",
@@ -537,8 +562,8 @@ const hotspots = [
         markOut: 4.1,
         sizeX: 2.3,
         sizeY: 4.4,
-        posX: 21.7,
-        posY: 13.1,
+        posX: 14.9,
+        posY: 76,
         ui:  {
             choiceCircle, 
              type: "box",
@@ -562,8 +587,8 @@ const hotspots = [
         markOut: 4.1,
         sizeX: 2.3,
         sizeY: 4.4,
-        posX: 7.7,
-        posY: 24,
+        posX: 13.2,
+        posY: 76,
         ui:  {
             choiceCircle, 
              type: "box",
@@ -587,8 +612,8 @@ const hotspots = [
         markOut: 4.1,
         sizeX: 2.3,
         sizeY: 4.4,
-        posX: 5.7,
-        posY: 47,
+        posX: 10,
+        posY: 88,
         ui:  {
             choiceCircle, 
              type: "box",
@@ -612,8 +637,8 @@ const hotspots = [
         markOut: 4.1,
         sizeX: 2.7,
         sizeY: 4.7,
-        posX: 25.2,
-        posY: 15.5,
+        posX: 9.6,
+        posY: 17.1,
         ui:  {
             choiceCircle, 
              type: "box",
@@ -638,8 +663,8 @@ const hotspots = [
         markOut: 4.1,
         sizeX: 2.3,
         sizeY: 4.4,
-        posX: 4.9,
-        posY: 24,
+        posX: 11.4,
+        posY: 43.8,
         ui:  {
             choiceCircle, 
              type: "box",
@@ -664,8 +689,8 @@ const hotspots = [
         markOut: 4.1,
         sizeX: 2.3,
         sizeY: 4.4,
-        posX: 4.9,
-        posY: 35,
+        posX: 6.2,
+        posY: 72.3,
         ui:  {
             choiceCircle, 
              type: "box",
@@ -690,8 +715,8 @@ const hotspots = [
         markOut: 4.1,
         sizeX: 2.3,
         sizeY: 4.4,
-        posX: 16.3,
-        posY: 47,
+        posX: 26.3,
+        posY: 54,
         ui:  {
             choiceCircle, 
              type: "box",
@@ -716,21 +741,21 @@ const hotspots = [
         markOut: 4.1,
         sizeX: 2.3,
         sizeY: 4.4,
-        posX: 21.4,
-        posY: 41,
+        posX: 26.9,
+        posY: 59.7,
         ui:  {
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "Gruppeområde"
+             text: "Faglokale"
          },
         hotspot: {
             type: "function",
             func: () => {
-                // gruppeområde 1 circel 
-                videoPlayer.currentTime(46);
+                // gruppeområde 1 circel // ændres til faglokale
+                videoPlayer.currentTime(37);
                 videoPlayer.play();
-                pauseTime = 57;
+                pauseTime = 44;
             }
         }
     },
@@ -741,21 +766,21 @@ const hotspots = [
         markOut: 4.1,
         sizeX: 2.3,
         sizeY: 4.4,
-        posX: 33.6,
-        posY: 41,
+        posX: 36.4,
+        posY: 92.3,
         ui:  {
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "Gruppeområde"
+             text: "Faglokale"
          },
         hotspot: {
             type: "function",
             func: () => {
-                // gruppeområde 2 circle
-                videoPlayer.currentTime(46);
+                // gruppeområde 2 circle // ændres til faglokale
+                videoPlayer.currentTime(37);
                 videoPlayer.play();
-                pauseTime = 57;
+                pauseTime = 44;
             }
         }
     },
@@ -767,21 +792,21 @@ const hotspots = [
         markOut: 4.1,
         sizeX: 2.3,
         sizeY: 4.4,
-        posX: 18.5,
-        posY: 31,
+        posX: 23,
+        posY: 73,
         ui:  {
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "Auditorium"
+             text: "Gruppeområde"
          },
         hotspot: {
             type: "function",
             func: () => {
-                // auditorium circle
-                videoPlayer.currentTime(59);
+                // audietorie circle // ændres til gruppeområde
+                videoPlayer.currentTime(46);
                 videoPlayer.play();
-                pauseTime = 67;
+                pauseTime = 57;
             }
         }
     },
@@ -793,21 +818,21 @@ const hotspots = [
         markOut: 4.1,
         sizeX: 2.3,
         sizeY: 4.4,
-        posX: 26.9,
-        posY: 46.9,
+        posX: 30.1,
+        posY: 72.9,
         ui:  {
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "Bibliotek"
+             text: "Gruppeområde"
          },
         hotspot: {
             type: "function",
             func: () => {
-                // bibliotek circle
-                videoPlayer.currentTime(70);
+                // bibliotek circle // ændres til gruppeområde
+                videoPlayer.currentTime(46);
                 videoPlayer.play();
-                pauseTime = 78;
+                pauseTime = 57;
             }
         }
     },
@@ -818,8 +843,85 @@ const hotspots = [
         markOut: 4.1,
         sizeX: 2.3,
         sizeY: 4.4,
-        posX: 16,
-        posY: 13.1,
+        posX: 43,
+        posY: 86.1,
+        ui:  {
+            choiceCircle, 
+             type: "box",
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
+             text: "Gruppeområde"
+         },
+        hotspot: {
+            type: "function",
+            func: () => {
+                // internationalt kontor circle // ændres til gruppeområde
+                videoPlayer.currentTime(46);
+                videoPlayer.play();
+                pauseTime = 57;
+            }
+        }
+    },
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 0,
+        markOut: 4.1,
+        sizeX: 2.3,
+        sizeY: 4.4,
+        posX: 36.5,
+        posY: 85.8,
+        ui:  {
+            choiceCircle, 
+             type: "box",
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
+             text: "gruppeområde"
+         },
+        hotspot: {
+            type: "function",
+            func: () => {
+                // gruppeområde
+                videoPlayer.currentTime(46);
+                videoPlayer.play();
+                pauseTime = 57;
+            }
+        }
+    },
+
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 0,
+        markOut: 4.1,
+        sizeX: 2.3,
+        sizeY: 4.4,
+        posX: 33.2,
+        posY: 82.8,
+        ui:  {
+            choiceCircle, 
+             type: "box",
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
+             text: "bibliotek"
+         },
+        hotspot: {
+            type: "function",
+            func: () => {
+                // bibliotek
+                videoPlayer.currentTime(70);
+                videoPlayer.play();
+                pauseTime = 78;
+            }
+        }
+    },
+
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 0,
+        markOut: 4.1,
+        sizeX: 2.3,
+        sizeY: 4.4,
+        posX: 39.6,
+        posY: 69.3,
         ui:  {
             choiceCircle, 
              type: "box",
@@ -829,13 +931,14 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // internationalt kontor circle
+                // Internationalt kontor circle
                 videoPlayer.currentTime(80);
                 videoPlayer.play();
                 pauseTime = 90;
             }
         }
     },
+
     {
         active: true,
         videoId: "video1",
@@ -843,8 +946,34 @@ const hotspots = [
         markOut: 4.1,
         sizeX: 2.3,
         sizeY: 4.4,
-        posX: 36.2,
-        posY: 30.8,
+        posX: 26.8,
+        posY: 82.8,
+        ui:  {
+            choiceCircle, 
+             type: "box",
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
+             text: "auditorie"
+         },
+        hotspot: {
+            type: "function",
+            func: () => {
+                // audietorie circle
+                videoPlayer.currentTime(59);
+                videoPlayer.play();
+                pauseTime = 67;
+            }
+        }
+    },
+
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 0,
+        markOut: 4.1,
+        sizeX: 2.3,
+        sizeY: 4.4,
+        posX: 34.2,
+        posY: 88.8,
         ui:  {
             choiceCircle, 
              type: "box",
@@ -862,16 +991,41 @@ const hotspots = [
         }
     },
 
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 0,
+        markOut: 4.1,
+        sizeX: 2.3,
+        sizeY: 4.4,
+        posX: 9.9,
+        posY: 81.8,
+        ui:  {
+            choiceCircle, 
+             type: "box",
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
+             text: "Fredagsbar"
+         },
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Fredagsbar circle
+                videoPlayer.currentTime(102);
+                videoPlayer.play();
+                pauseTime = 110;
+            }
+        }
+    },
 
 
     // BACK TO MAP POINTS
 
-// permanent point?
+// permanent point
 {
     active: true,
     videoId: "video1",
     markIn: 5,
-    markOut: 101,
+    markOut: 111,
     sizeX: `auto`,
     sizeY: `auto`,
     posX: 70,
@@ -1034,7 +1188,7 @@ const hotspots = [
 //         hotspot: {
 //             type: "function",
 //             func: () => {
-//                 // back to map (auditorium)
+//                 // back to map (audietorie)
 //                 videoPlayer.currentTime(0);
 //                 videoPlayer.play();
 //                 pauseTime = 4;
@@ -1113,7 +1267,7 @@ const hotspots = [
     //     markOut: 4.1,
     //     sizeX: 17,
     //     sizeY: 6,
-    //     posX: 67,
+    //     posX: 70,
     //     posY: 16.4,
     //     ui: choice,
     //     hotspot: {
@@ -1160,8 +1314,6 @@ const hotspots = [
         }
     }
 }
-
-
 
 // BOX/LINK ONLY EXAMPLE ----------------------------------------------------
 // All these keys are required for boxes/links

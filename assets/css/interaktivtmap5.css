@@ -90,44 +90,39 @@ video:focus {
 
 #hotspotId0 {
     position: absolute;
-    border: 0px solid black;
-    color: rgba(0, 0, 0, 0);
+    border: 1px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 2.2vw;
-    letter-spacing: 2vw;
+    font-size: 1.7vw;
+    letter-spacing: 1.5vw;
 }
 
 #hotspotId1 {
     position: absolute;
-    border: 0px solid black;
-    color: rgba(0, 0, 0, 0);
+    border: 1px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 2vw;
+    font-size: 1.4vw;
     letter-spacing: 0.8vw;
 }
 
 #hotspotId2 {
     position: absolute;
-    border: 0px solid black;
-    color: rgba(0, 0, 0, 0);
+    border: 1px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 2vw;
+    font-size: 1.5vw;
     letter-spacing: 0.1vw;
 }
 
 #hotspotId3 {
     position: absolute;
-    border: 0px solid black;
-    color: rgba(0, 0, 0, 0);
+    border: 1px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 2vw;
+    font-size: 1.6vw;
     letter-spacing: 0.4vw;
 }
 
 #hotspotId4 {
     position: absolute;
-    border: 0px solid black;
-    color: rgba(0, 0, 0, 0);
+    border: 1px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
     font-size: 2vw;
     letter-spacing: 1vw;
@@ -135,8 +130,7 @@ video:focus {
 
 #hotspotId5 {
     position: absolute;
-    border: 0px solid black;
-    color: rgba(0, 0, 0, 0);
+    border: 1px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
     font-size: 2vw;
     letter-spacing: 0.4vw;
@@ -144,8 +138,7 @@ video:focus {
 
 #hotspotId6 {
     position: absolute;
-    border: 0px solid black;
-    color: rgba(0, 0, 0, 0);
+    border: 1px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
     font-size: 2vw;
     letter-spacing: 0.4vw;
@@ -153,8 +146,7 @@ video:focus {
 
 #hotspotId7 {
     position: absolute;
-    border: 0px solid black;
-    color: rgba(0, 0, 0, 0);
+    border: 1px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
     font-size: 2vw;
     letter-spacing: 0.4vw;
@@ -162,19 +154,17 @@ video:focus {
 
 #hotspotId8 {
     position: absolute;
-    border: 0px solid black;
-    color: rgba(0, 0, 0, 0);
+    border: 1px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 2vw;
+    font-size: 1.7vw;
     letter-spacing: 0vw;
 }
 
 #hotspotId9 {
     position: absolute;
-    border: 0px solid black;
-    color: rgba(0, 0, 0, 0);
+    border: 1px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 1.8vw;
+    font-size: 1.4vw;
     letter-spacing: 0vw;
 }
 /* cirkler fullscreen */
@@ -231,6 +221,9 @@ video:focus {
     clip: rect(4px, 28px, 28px, 5px);
 }
 #hotspotId27 {
+    clip: rect(4px, 28px, 28px, 5px);
+}
+#hotspotId28 {
     clip: rect(4px, 28px, 28px, 5px);
 }
 
@@ -307,7 +300,7 @@ button:hover {
         width: 1020px;
         height: 574px;
     } */
-    #hotspotId28 {
+    #hotspotId29 {
         left: 64% !important;
     }
 
@@ -366,6 +359,9 @@ button:hover {
         clip: rect(1px, 17px, 15px, 4px);
     }
     #hotspotId27 {
+        clip: rect(1px, 17px, 15px, 4px);
+    }
+    #hotspotId28 {
         clip: rect(1px, 17px, 15px, 4px);
     }
     
@@ -432,6 +428,9 @@ button:hover {
     #hotspotId27 {
         clip: rect(1px, 15px, 13px, 2px);
     }
+    #hotspotId28 {
+        clip: rect(1px, 15px, 13px, 2px);
+    }
     
     /* #video1 {
         width: 731px;
@@ -495,6 +494,9 @@ button:hover {
     #hotspotId27 {
         clip: rect(0px, 11px, 10px, 0px);
     }
+    #hotspotId28 {
+        clip: rect(0px, 11px, 10px, 0px);
+    }
 }
 
 /* MediaQueries for mobile  */
@@ -554,6 +556,9 @@ button:hover {
     #hotspotId27 {
         clip: rect(1px, 9px, 10px, 2px);
     }
+    #hotspotId28 {
+        clip: rect(1px, 9px, 10px, 2px);
+    }
 }
 
 /* MediaQueries for mobile  */
@@ -575,15 +580,15 @@ button:hover {
         padding-top: 56.3%;
     }
 
-    #hotspotId28 {
+    #hotspotId29 {
         left: 52% !important;
         top: 9% !important;
     }
 
     #hotspotId0 {
         position: absolute;
-        border: 0px solid black;
-        color: rgba(0, 0, 0, 0);
+        border: 1px solid black;
+        color: green;
         /* margin-right: 10px; */
         font-size: 2.8vw;
         letter-spacing: 2vw;
@@ -591,8 +596,8 @@ button:hover {
 
     #hotspotId1 {
         position: absolute;
-        border: 0px solid black;
-        color: rgba(0, 0, 0, 0);
+        border: 1px solid rgb(0, 0, 0);
+        color: green;
         /* margin-right: 10px; */
         font-size: 2.7vw;
         letter-spacing: 0.8vw;
@@ -600,8 +605,7 @@ button:hover {
 
     #hotspotId2 {
         position: absolute;
-        border: 0px solid black;
-        color: rgba(0, 0, 0, 0);
+        border: 1px solid black; color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
         font-size: 2.6vw;
         letter-spacing: 0.1vw;
@@ -609,8 +613,7 @@ button:hover {
 
     #hotspotId3 {
         position: absolute;
-        border: 0px solid black;
-        color: rgba(0, 0, 0, 0);
+        border: 1px solid black; color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
         font-size: 2.6vw;
         letter-spacing: 0.4vw;
@@ -618,55 +621,49 @@ button:hover {
 
     #hotspotId4 {
         position: absolute;
-        border: 0px solid black;
-        color: rgba(0, 0, 0, 0);
+        border: 1px solid black; color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 2.8vw;
+        font-size: 2.6vw;
         letter-spacing: 1vw;
     }
 
     #hotspotId5 {
         position: absolute;
-        border: 0px solid black;
-        color: rgba(0, 0, 0, 0);
+        border: 1px solid black; color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 3vw;
+        font-size: 2.6vw;
         letter-spacing: 0.4vw;
     }
 
     #hotspotId6 {
         position: absolute;
-        border: 0px solid black;
-        color: rgba(0, 0, 0, 0);
+        border: 1px solid black; color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 3vw;
+        font-size: 2.6vw;
         letter-spacing: 0.4vw;
     }
 
     #hotspotId7 {
         position: absolute;
-        border: 0px solid black;
-        color: rgba(0, 0, 0, 0);
+        border: 1px solid black; color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 3vw;
+        font-size: 2.6vw;
         letter-spacing: 0.4vw;
     }
 
     #hotspotId8 {
         position: absolute;
-        border: 0px solid black;
-        color: rgba(0, 0, 0, 0);
+        border: 1px solid black; color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 3vw;
+        font-size: 2.3vw;
         letter-spacing: 0vw;
     }
 
     #hotspotId9 {
         position: absolute;
-        border: 0px solid black;
-        color: rgba(0, 0, 0, 0);
+        border: 1px solid black; color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 2.5vw;
+        font-size: 2.1vw;
         letter-spacing: 0vw;
     }
 
