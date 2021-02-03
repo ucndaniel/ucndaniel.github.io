@@ -30,7 +30,9 @@ h6 {
     font-family: var(--hFontFam);
     font-size: var(--hFont);
 }
-
+p {
+    margin: 0;
+}
 p,
 label,
 button,
@@ -54,6 +56,9 @@ header {
     font-size: 2vw;
     padding: 1vw;
     text-align: center;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 2vw;
 }
 
 /* Main */
