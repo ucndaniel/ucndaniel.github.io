@@ -99,8 +99,8 @@ p, li, a {
 
 @media screen AND (max-width:500px) {
     :root {
-        --hFont: 6vw;
-        --pFont: 4vw;
+        --hFont: 5.5vw;
+        --pFont: 5vw;
     }
  }
 
