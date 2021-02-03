@@ -142,7 +142,7 @@ let video = {
 
 let choice = {
     type: "box",
-    style: `position: absolute; border: 1px solid black`,
+    style: `position: absolute;`,
 };
 
 let choiceCircle = {
