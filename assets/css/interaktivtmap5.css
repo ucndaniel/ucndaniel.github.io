@@ -92,7 +92,7 @@ div>.hotspot.image {
 video:focus {
     outline: none;
 }
-
+/* tekst i højre side af mappet - fontsize til screenreader - skift border til 1px og color til hvilken som helst farve for at se den usynlige tekst som screenreader læser op ved hover*/
 #hotspotId0 {
     position: absolute;
     border: 0px solid black; color: rgba(0, 0, 0, 0);
@@ -173,7 +173,7 @@ video:focus {
     letter-spacing: 0vw;
 }
 /* cirkler fullscreen */
-
+/* clip: bruges til at holde tekstelementet inde i cirklerne - til screenreader brugere */
 #hotspotId10 {
     clip: rect(0px, 33px, 30px, 5px);
 }

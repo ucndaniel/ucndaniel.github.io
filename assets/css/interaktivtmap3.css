@@ -92,7 +92,7 @@ div>.hotspot.image {
 video:focus {
     outline: none;
 }
-
+/* tekst i højre side af mappet - fontsize til screenreader - skift border til 1px og color til hvilken som helst farve for at se den usynlige tekst som screenreader læser op ved hover*/
 #hotspotId0 {
     position: absolute;
     border: 0px solid black;
@@ -143,8 +143,8 @@ video:focus {
     border: 0px solid black;
     color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 2vw;
-    letter-spacing: 0.4vw;
+    font-size: 1.8vw;
+    letter-spacing: 0vw;
 }
 
 #hotspotId6 {
@@ -174,18 +174,14 @@ video:focus {
     letter-spacing: 0vw;
 }
 
-#hotspotId9 {
-    position: absolute;
-    border: 0px solid black;
-    color: rgba(0, 0, 0, 0);
-    /* margin-right: 10px; */
-    font-size: 2.3vw;
-    letter-spacing: 0vw;
-}
-/* cirkler fullscreen */
 
-#hotspotId10 {
+/* cirkler fullscreen */
+/* clip: bruges til at holde tekstelementet inde i cirklerne - til screenreader brugere */
+#hotspotId9 {
     clip: rect(0px, 33px, 30px, 5px);
+}
+#hotspotId10 {
+    clip: rect(4px, 28px, 28px, 5px);
 }
 #hotspotId11 {
     clip: rect(4px, 28px, 28px, 5px);
@@ -220,24 +216,7 @@ video:focus {
 #hotspotId21 {
     clip: rect(4px, 28px, 28px, 5px);
 }
-#hotspotId22 {
-    clip: rect(4px, 28px, 28px, 5px);
-}
-/* #hotspotId23 {
-    clip: rect(4px, 28px, 28px, 5px);
-} */
-#hotspotId24 {
-    clip: rect(4px, 28px, 28px, 5px);
-}
-#hotspotId25 {
-    clip: rect(4px, 28px, 28px, 5px);
-}
-#hotspotId26 {
-    clip: rect(4px, 28px, 28px, 5px);
-}
-#hotspotId27 {
-    clip: rect(4px, 28px, 28px, 5px);
-}
+
 
 /* buttons */
 
@@ -295,7 +274,10 @@ button:hover {
 .mobileMessage {
     display: none;
 }
-
+#hotspotId22 {
+    left: 76%;
+    top: 85%;
+    }
 @media screen AND (max-width:1205px) { /* 1024 var den før */
     :root {
         --hFont: 4vw;
@@ -317,15 +299,19 @@ button:hover {
         width: 1020px;
         height: 574px;
     } */
-    #hotspotId23 {
-        left: 64% !important;
-    }
+    #hotspotId22 {
+        left: 67%;
+        top: 85%;
+        }
 
 
 
     /* cirkler */
-    #hotspotId10 {
+    #hotspotId9 {
         clip: rect(0px, 17px, 17px, 2px);
+    }
+    #hotspotId10 {
+        clip: rect(1px, 16px, 20px, 3px);
     }
     #hotspotId11 {
         clip: rect(1px, 16px, 20px, 3px);
@@ -360,9 +346,6 @@ button:hover {
     #hotspotId21 {
         clip: rect(1px, 17px, 15px, 4px);
     }
-    #hotspotId22 {
-        clip: rect(1px, 17px, 15px, 4px);
-    }
     /* #hotspotId23 {
         clip: rect(1px, 17px, 15px, 4px);
     }
@@ -391,8 +374,11 @@ button:hover {
     .mobileMessage {
         display: none;
     }
-    #hotspotId10 {
+    #hotspotId9 {
         clip: rect(0px, 17px, 17px, 2px);
+    }
+    #hotspotId10 {
+        clip: rect(1px, 15px, 13px, 2px);
     }
     #hotspotId11 {
         clip: rect(1px, 15px, 13px, 2px);
@@ -428,8 +414,9 @@ button:hover {
         clip: rect(1px, 15px, 13px, 2px);
     }
     #hotspotId22 {
-        clip: rect(1px, 15px, 13px, 2px);
-    }
+        left: 62%;
+        top: 85%;
+        }
     /* #hotspotId23 {
         clip: rect(1px, 15px, 13px, 2px);
     }
@@ -457,8 +444,11 @@ button:hover {
     .mobileMessage {
         display: none;
     }
-    #hotspotId10 {
+    #hotspotId9 {
         clip: rect(0px, 12px, 11px, 0px);  
+    }
+    #hotspotId10 {
+        clip: rect(0px, 11px, 10px, 0px);
     }
     #hotspotId11 {
         clip: rect(0px, 11px, 10px, 0px);
@@ -494,8 +484,9 @@ button:hover {
         clip: rect(0px, 11px, 10px, 0px);
     }
     #hotspotId22 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
+        left: 60%;
+        top: 80%;
+        }
     /* #hotspotId23 {
         clip: rect(0px, 11px, 10px, 0px);
     }
@@ -556,8 +547,9 @@ button:hover {
         clip: rect(1px, 9px, 10px, 2px);
     }
     #hotspotId22 {
-        clip: rect(1px, 9px, 10px, 2px);
-    }
+        left: 50%;
+        top: 80%;
+        }
     /* #hotspotId23 {
         clip: rect(1px, 9px, 10px, 2px);
     }
@@ -598,9 +590,9 @@ button:hover {
         padding-top: 56.3%;
     }
 
-    #hotspotId23 {
-        left: 52% !important;
-        top: 9% !important;
+    #hotspotId22 {
+        left: 50%;
+        top: 80%;
     }
 
     #hotspotId0 {
@@ -653,8 +645,8 @@ button:hover {
         border: 0px solid black;
         color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 3vw;
-        letter-spacing: 0.4vw;
+        font-size: 2.6vw;
+        letter-spacing: 0vw;
     }
 
     #hotspotId6 {
@@ -684,17 +676,12 @@ button:hover {
         letter-spacing: 0vw;
     }
 
-    #hotspotId9 {
-        position: absolute;
-        border: 0px solid black;
-        color: rgba(0, 0, 0, 0);
-        /* margin-right: 10px; */
-        font-size: 2.5vw;
-        letter-spacing: 0vw;
-    }
 
-    #hotspotId10 {
+    #hotspotId9 {
         clip: rect(0px, 13px, 13px, 0px);
+    }
+    #hotspotId10 {
+        clip: rect(0px, 10px, 11px, 0px);
     }
     #hotspotId11 {
         clip: rect(0px, 10px, 11px, 0px);
@@ -729,9 +716,7 @@ button:hover {
     #hotspotId21 {
         clip: rect(0px, 10px, 11px, 0px);
     }
-    #hotspotId22 {
-        clip: rect(0px, 10px, 11px, 0px);
-    }
+
     /* #hotspotId23 {
         clip: rect(0px, 10px, 11px, 0px);
     }

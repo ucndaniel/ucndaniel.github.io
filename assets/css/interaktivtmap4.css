@@ -92,14 +92,14 @@ div>.hotspot.image {
 video:focus {
     outline: none;
 }
-
+/* tekst i højre side af mappet - fontsize til screenreader - skift border til 1px og color til hvilken som helst farve for at se den usynlige tekst som screenreader læser op ved hover*/
 #hotspotId0 {
     position: absolute;
     border: 0px solid black;
     color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
     font-size: 2.2vw;
-    letter-spacing: 2vw;
+    letter-spacing: 0.2vw;
 }
 
 #hotspotId1 {
@@ -108,7 +108,7 @@ video:focus {
     color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
     font-size: 2vw;
-    letter-spacing: 0.8vw;
+    letter-spacing: 0.4vw;
 }
 
 #hotspotId2 {
@@ -135,7 +135,7 @@ video:focus {
     color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
     font-size: 2vw;
-    letter-spacing: 1vw;
+    letter-spacing: 0.1vw;
 }
 
 #hotspotId5 {
@@ -144,7 +144,7 @@ video:focus {
     color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
     font-size: 2vw;
-    letter-spacing: 0.4vw;
+    letter-spacing: 0.2vw;
 }
 
 #hotspotId6 {
@@ -152,8 +152,8 @@ video:focus {
     border: 0px solid black;
     color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 2vw;
-    letter-spacing: 0.4vw;
+    font-size: 1.9vw;
+    letter-spacing: -0.3vw;
 }
 
 #hotspotId7 {
@@ -162,7 +162,7 @@ video:focus {
     color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
     font-size: 2vw;
-    letter-spacing: 0.4vw;
+    letter-spacing: 0.2vw;
 }
 
 #hotspotId8 {
@@ -179,11 +179,11 @@ video:focus {
     border: 0px solid black;
     color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 1.5vw;
+    font-size: 2vw;
     letter-spacing: -0.1vw;
 }
 /* cirkler fullscreen */
-
+/* clip: bruges til at holde tekstelementet inde i cirklerne - til screenreader brugere */
 #hotspotId10 {
     clip: rect(0px, 33px, 30px, 5px);
 }
@@ -239,9 +239,6 @@ video:focus {
     clip: rect(4px, 28px, 28px, 5px);
 }
 #hotspotId28 {
-    clip: rect(4px, 28px, 28px, 5px);
-}
-#hotspotId29 {
     clip: rect(4px, 28px, 28px, 5px);
 }
 
@@ -301,6 +298,10 @@ button:hover {
 .mobileMessage {
     display: none;
 }
+#hotspotId29 {
+    left: 76%;
+    top: 85%;
+    }
 
 @media screen AND (max-width:1205px) { /* 1024 var den før */
     :root {
@@ -390,9 +391,9 @@ button:hover {
         clip: rect(1px, 17px, 15px, 4px);
     }
     #hotspotId29 {
-        clip: rect(1px, 17px, 15px, 4px);
-    }
-    
+        left: 67%;
+        top: 85%;
+        }
 }
 
 
@@ -461,13 +462,14 @@ button:hover {
     #hotspotId28 {
         clip: rect(1px, 15px, 13px, 2px);
     }
-    #hotspotId29 {
-        clip: rect(1px, 15px, 13px, 2px);
-    }
     /* #video1 {
         width: 731px;
         height: 410px;
     } */
+    #hotspotId29 {
+        left: 62%;
+        top: 85%;
+        }
 }
 
 /* additional sizes */
@@ -533,8 +535,9 @@ button:hover {
         clip: rect(0px, 11px, 10px, 0px);
     }
     #hotspotId29 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
+        left: 60%;
+        top: 80%;
+        }
 }
 
 /* MediaQueries for mobile  */
@@ -601,8 +604,9 @@ button:hover {
         clip: rect(1px, 9px, 10px, 2px);
     }
     #hotspotId29 {
-        clip: rect(1px, 9px, 10px, 2px);
-    }
+        left: 50%;
+        top: 80%;
+        }
 }
 
 /* MediaQueries for mobile  */
@@ -615,6 +619,10 @@ button:hover {
         display: block;
         margin-top: 2vw;
     }
+    #hotspotId29 {
+        left: 50%;
+        top: 80%;
+        }
 
     .video-js.vjs-fluid,
     .video-js.vjs-16-9,
@@ -638,8 +646,8 @@ button:hover {
         border: 0px solid black;
         color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 2.8vw;
-        letter-spacing: 2vw;
+        font-size: 2.6vw;
+        letter-spacing: 0.8vw;
     }
 
     #hotspotId1 {
@@ -674,8 +682,8 @@ button:hover {
         border: 0px solid black;
         color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 2.8vw;
-        letter-spacing: 1vw;
+        font-size: 2.5vw;
+        letter-spacing: 0.2vw;
     }
 
     #hotspotId5 {
@@ -684,7 +692,7 @@ button:hover {
         color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
         font-size: 3vw;
-        letter-spacing: 0.4vw;
+        letter-spacing: 0.2vw;
     }
 
     #hotspotId6 {
@@ -692,8 +700,8 @@ button:hover {
         border: 0px solid black;
         color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 3vw;
-        letter-spacing: 0.4vw;
+        font-size: 2.4vw;
+        letter-spacing: -0.2vw;
     }
 
     #hotspotId7 {
@@ -701,7 +709,7 @@ button:hover {
         border: 0px solid black;
         color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 3vw;
+        font-size: 2.7vw;
         letter-spacing: 0.4vw;
     }
 
@@ -710,7 +718,7 @@ button:hover {
         border: 0px solid black;
         color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 3vw;
+        font-size: 2.3vw;
         letter-spacing: 0vw;
     }
 
@@ -780,7 +788,5 @@ button:hover {
     #hotspotId28 {
         clip: rect(0px, 10px, 11px, 0px);
     }
-    #hotspotId29 {
-        clip: rect(0px, 10px, 11px, 0px);
-    }
+    
 }

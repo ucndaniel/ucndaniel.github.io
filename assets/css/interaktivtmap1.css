@@ -94,14 +94,14 @@ div>.hotspot.image {
 video:focus {
     outline: none;
 }
-
+/* tekst i højre side af mappet - fontsize til screenreader - skift border til 1px og color til hvilken som helst farve for at se den usynlige tekst som screenreader læser op ved hover*/
 #hotspotId0 {
     position: absolute;
     border: 0px solid black;
     color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 2.2vw;
-    letter-spacing: 2vw;
+    font-size: 1.7vw;
+    letter-spacing: 1.1vw;
 }
 
 #hotspotId1 {
@@ -136,8 +136,8 @@ video:focus {
     border: 0px solid black;
     color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 2vw;
-    letter-spacing: 1vw;
+    font-size: 1.8vw;
+    letter-spacing: 0.5vw;
 }
 
 #hotspotId5 {
@@ -154,8 +154,8 @@ video:focus {
     border: 0px solid black;
     color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 2vw;
-    letter-spacing: 0.4vw;
+    font-size: 1.7vw;
+    letter-spacing: 0.1vw;
 }
 
 #hotspotId7 {
@@ -163,8 +163,8 @@ video:focus {
     border: 0px solid black;
     color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 2vw;
-    letter-spacing: 0.4vw;
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
 }
 
 #hotspotId8 {
@@ -184,11 +184,19 @@ video:focus {
     font-size: 1.8vw;
     letter-spacing: 0vw;
 }
+#hotspotId10 {
+    position: absolute;
+    border: 0px solid black;
+    color: rgba(0, 0, 0, 0);
+    /* margin-right: 10px; */
+    font-size: 1.8vw;
+    letter-spacing: 0vw;
+}
+
+/* clip: bruges til at holde tekstelementet inde i cirklerne - til screenreader brugere */
+
 /* cirkler fullscreen */
 
-#hotspotId10 {
-    clip: rect(0px, 33px, 30px, 5px);
-}
 #hotspotId11 {
     clip: rect(4px, 28px, 28px, 5px);
 }
@@ -238,6 +246,15 @@ video:focus {
     clip: rect(4px, 28px, 28px, 5px);
 }
 #hotspotId27 {
+    clip: rect(4px, 28px, 28px, 5px);
+}
+#hotspotId28 {
+    clip: rect(4px, 28px, 28px, 5px);
+}
+#hotspotId29 {
+    clip: rect(4px, 28px, 28px, 5px);
+}
+#hotspotId30 {
     clip: rect(4px, 28px, 28px, 5px);
 }
 
@@ -294,6 +311,10 @@ button:hover {
 .video-js {
     background-color: #ff00;
 }
+#hotspotId31 {
+    left: 76%;
+    top: 85%;
+    }
 
 @media screen AND (max-width:1205px) { /* 1024 var den før */
     .mobileMessage {
@@ -317,16 +338,14 @@ button:hover {
         width: 1020px;
         height: 574px;
     } */
-    #hotspotId28 {
-        left: 64% !important;
+    #hotspotId31 {
+    left: 67%;
+    top: 85%;
     }
 
 
 
     /* cirkler */
-    #hotspotId10 {
-        clip: rect(0px, 17px, 17px, 2px);
-    }
     #hotspotId11 {
         clip: rect(1px, 17px, 15px, 4px);
     }
@@ -376,6 +395,17 @@ button:hover {
         clip: rect(1px, 17px, 15px, 4px);
     }
     #hotspotId27 {
+        clip: rect(1px, 17px, 15px, 4px);
+    }
+    #hotspotId28 {
+        clip: rect(1px, 17px, 15px, 4px);
+    }
+    
+    #hotspotId29 {
+        clip: rect(1px, 17px, 15px, 4px);
+    }
+    
+    #hotspotId30 {
         clip: rect(1px, 17px, 15px, 4px);
     }
     
@@ -391,9 +421,6 @@ button:hover {
         --hFont: 4vw;
         --pFont: 3vw;
     }
-    #hotspotId10 {
-        clip: rect(0px, 17px, 17px, 2px);
-    }
     #hotspotId11 {
         clip: rect(1px, 15px, 13px, 2px);
     }
@@ -445,7 +472,19 @@ button:hover {
     #hotspotId27 {
         clip: rect(1px, 15px, 13px, 2px);
     }
-    
+    #hotspotId28 {
+        clip: rect(1px, 15px, 13px, 2px);
+    }
+    #hotspotId29 {
+        clip: rect(1px, 15px, 13px, 2px);
+    }
+    #hotspotId30 {
+        clip: rect(1px, 15px, 13px, 2px);
+    }
+    #hotspotId31 {
+        left: 62%;
+        top: 85%;
+}
     /* #video1 {
         width: 731px;
         height: 410px;
@@ -459,9 +498,6 @@ button:hover {
     display: none;
 }
 
-    #hotspotId10 {
-        clip: rect(0px, 12px, 11px, 0px);  
-    }
     #hotspotId11 {
         clip: rect(0px, 11px, 10px, 0px);
     }
@@ -512,6 +548,19 @@ button:hover {
     }
     #hotspotId27 {
         clip: rect(0px, 11px, 10px, 0px);
+    }
+    #hotspotId28 {
+        clip: rect(0px, 11px, 10px, 0px);
+    }
+    #hotspotId29 {
+        clip: rect(0px, 11px, 10px, 0px);
+    }
+    #hotspotId30 {
+        clip: rect(0px, 11px, 10px, 0px);
+    }
+    #hotspotId31 {
+        left: 60%;
+        top: 80%;
     }
 }
 
@@ -521,9 +570,6 @@ button:hover {
     .mobileMessage {
         display: none;
     }
-    #hotspotId10 {
-        clip: rect(0px, 11px, 11px, 0px);
-    }
     #hotspotId11 {
         clip: rect(1px, 9px, 10px, 2px);
     }
@@ -574,6 +620,19 @@ button:hover {
     }
     #hotspotId27 {
         clip: rect(1px, 9px, 10px, 2px);
+    }
+    #hotspotId28 {
+        clip: rect(1px, 9px, 10px, 2px);
+    }
+    #hotspotId29 {
+        clip: rect(1px, 9px, 10px, 2px);
+    }
+    #hotspotId30 {
+        clip: rect(1px, 9px, 10px, 2px);
+    }
+    #hotspotId31 {
+        left: 50%;
+        top: 80%;
     }
 }
 
@@ -596,9 +655,9 @@ button:hover {
         padding-top: 56.3%;
     }
 
-    #hotspotId28 {
-        left: 52% !important;
-        top: 9% !important;
+    #hotspotId31 {
+        left: 50%;
+        top: 80%;
     }
 .mobileMessage {
     display: block;
@@ -693,10 +752,16 @@ button:hover {
         font-size: 2.5vw;
         letter-spacing: 0vw;
     }
-
     #hotspotId10 {
-        clip: rect(0px, 13px, 13px, 0px);
+        position: absolute;
+        border: 0px solid black;
+        color: rgba(0, 0, 0, 0);
+        /* margin-right: 10px; */
+        font-size: 2.5vw;
+        letter-spacing: 0vw;
     }
+
+
     #hotspotId11 {
         clip: rect(0px, 10px, 11px, 0px);
     }
@@ -748,4 +813,26 @@ button:hover {
     #hotspotId27 {
         clip: rect(0px, 10px, 11px, 0px);
     }
+    #hotspotId28 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId29 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId30 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
 }
+
+/* @media screen AND (max-width:449px) {
+    #hotspotId31 {
+        left: 53% !important;
+        top: 3% !important;
+    }
+}
+@media screen AND (max-width:340px) {
+    #hotspotId31 {
+        left: 49% !important;
+        top: 3% !important;
+    }
+} */
