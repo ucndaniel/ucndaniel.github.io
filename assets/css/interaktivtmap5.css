@@ -97,8 +97,8 @@ video:focus {
     position: absolute;
     border: 0px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 1.7vw;
-    letter-spacing: 1.5vw;
+    font-size: 1.5vw;
+    letter-spacing: 0.8vw;
 }
 
 #hotspotId1 {
@@ -106,7 +106,7 @@ video:focus {
     border: 0px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
     font-size: 1.4vw;
-    letter-spacing: 0.8vw;
+    letter-spacing: 1.1vw;
 }
 
 #hotspotId2 {
@@ -114,30 +114,30 @@ video:focus {
     border: 0px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
     font-size: 1.5vw;
-    letter-spacing: 0.1vw;
+    letter-spacing: 0.7vw;
 }
 
 #hotspotId3 {
     position: absolute;
     border: 0px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 1.6vw;
-    letter-spacing: 0.4vw;
+    font-size: 1.4vw;
+    letter-spacing: 0.3vw;
 }
 
 #hotspotId4 {
     position: absolute;
     border: 0px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 2vw;
-    letter-spacing: 1vw;
+    font-size: 1.5vw;
+    letter-spacing: 0.8vw;
 }
 
 #hotspotId5 {
     position: absolute;
     border: 0px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 2vw;
+    font-size: 1.5vw;
     letter-spacing: 0.4vw;
 }
 
@@ -145,7 +145,7 @@ video:focus {
     position: absolute;
     border: 0px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 2vw;
+    font-size: 1.6vw;
     letter-spacing: 0.4vw;
 }
 
@@ -153,15 +153,15 @@ video:focus {
     position: absolute;
     border: 0px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 2vw;
-    letter-spacing: 0.4vw;
+    font-size: 1.2vw;
+    letter-spacing: 0.2vw;
 }
 
 #hotspotId8 {
     position: absolute;
     border: 0px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
-    font-size: 1.7vw;
+    font-size: 1.4vw;
     letter-spacing: 0vw;
 }
 
@@ -170,18 +170,30 @@ video:focus {
     border: 0px solid black; color: rgba(0, 0, 0, 0);
     /* margin-right: 10px; */
     font-size: 1.4vw;
-    letter-spacing: 0vw;
+    letter-spacing: 0.3vw;
 }
 /* cirkler fullscreen */
 /* clip: bruges til at holde tekstelementet inde i cirklerne - til screenreader brugere */
 #hotspotId10 {
-    clip: rect(0px, 33px, 30px, 5px);
+    position: absolute;
+    border: 0px solid black; color: rgba(0, 0, 0, 0);
+    /* margin-right: 10px; */
+    font-size: 1.4vw;
+    letter-spacing: 0vw;
 }
 #hotspotId11 {
-    clip: rect(4px, 28px, 28px, 5px);
+    position: absolute;
+    border: 0px solid black; color: rgba(0, 0, 0, 0);
+    /* margin-right: 10px; */
+    font-size: 1.4vw;
+    letter-spacing: 0vw;
 }
 #hotspotId12 {
-    clip: rect(4px, 28px, 28px, 5px);
+    position: absolute;
+    border: 0px solid black; color: rgba(0, 0, 0, 0);
+    /* margin-right: 10px; */
+    font-size: 1.4vw;
+    letter-spacing: 0vw;
 }
 #hotspotId13 {
     clip: rect(4px, 28px, 28px, 5px);
@@ -229,6 +241,15 @@ video:focus {
     clip: rect(4px, 28px, 28px, 5px);
 }
 #hotspotId28 {
+    clip: rect(4px, 28px, 28px, 5px);
+}
+#hotspotId29 {
+    clip: rect(4px, 28px, 28px, 5px);
+}
+#hotspotId30 {
+    clip: rect(4px, 28px, 28px, 5px);
+}
+#hotspotId31 {
     clip: rect(4px, 28px, 28px, 5px);
 }
 
@@ -288,7 +309,7 @@ button:hover {
 .mobileMessage {
     display: none;
 }
-#hotspotId29 {
+#hotspotId32 {
     left: 76%;
     top: 85%;
     }
@@ -314,22 +335,14 @@ button:hover {
         width: 1020px;
         height: 574px;
     } */
-    #hotspotId29 {
+    #hotspotId32 {
         left: 67%;
         top: 85%;
         }
 
 
     /* cirkler */
-    #hotspotId10 {
-        clip: rect(0px, 17px, 17px, 2px);
-    }
-    #hotspotId11 {
-        clip: rect(1px, 17px, 15px, 4px);
-    }
-    #hotspotId12 {
-        clip: rect(1px, 17px, 15px, 4px);
-    }
+   
     #hotspotId13 {
         clip: rect(1px, 17px, 15px, 4px);
     }
@@ -376,6 +389,15 @@ button:hover {
         clip: rect(1px, 17px, 15px, 4px);
     }
     #hotspotId28 {
+        clip: rect(1px, 17px, 15px, 4px);
+    }
+    #hotspotId29 {
+        clip: rect(1px, 17px, 15px, 4px);
+    }
+    #hotspotId30 {
+        clip: rect(1px, 17px, 15px, 4px);
+    }
+    #hotspotId31 {
         clip: rect(1px, 17px, 15px, 4px);
     }
     
@@ -391,15 +413,7 @@ button:hover {
     .mobileMessage {
         display: none;
     }
-    #hotspotId10 {
-        clip: rect(0px, 17px, 17px, 2px);
-    }
-    #hotspotId11 {
-        clip: rect(1px, 15px, 13px, 2px);
-    }
-    #hotspotId12 {
-        clip: rect(1px, 15px, 13px, 2px);
-    }
+   
     #hotspotId13 {
         clip: rect(1px, 15px, 13px, 2px);
     }
@@ -448,8 +462,17 @@ button:hover {
     #hotspotId28 {
         clip: rect(1px, 15px, 13px, 2px);
     }
-    
     #hotspotId29 {
+        clip: rect(1px, 15px, 13px, 2px);
+    }
+    #hotspotId30 {
+        clip: rect(1px, 15px, 13px, 2px);
+    }
+    #hotspotId31 {
+        clip: rect(1px, 15px, 13px, 2px);
+    }
+    
+    #hotspotId32 {
         left: 62%;
         top: 85%;
         }
@@ -460,15 +483,7 @@ button:hover {
     .mobileMessage {
         display: none;
     }
-    #hotspotId10 {
-        clip: rect(0px, 12px, 11px, 0px);  
-    }
-    #hotspotId11 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
-    #hotspotId12 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
+   
     #hotspotId13 {
         clip: rect(0px, 11px, 10px, 0px);
     }
@@ -518,6 +533,15 @@ button:hover {
         clip: rect(0px, 11px, 10px, 0px);
     }
     #hotspotId29 {
+        clip: rect(0px, 11px, 10px, 0px);
+    }
+    #hotspotId30 {
+        clip: rect(0px, 11px, 10px, 0px);
+    }
+    #hotspotId31 {
+        clip: rect(0px, 11px, 10px, 0px);
+    }
+    #hotspotId32 {
         left: 60%;
         top: 80%;
         }
@@ -529,15 +553,6 @@ button:hover {
     .mobileMessage {
         display: none;
     }
-    #hotspotId10 {
-        clip: rect(0px, 11px, 11px, 0px);
-    }
-    #hotspotId11 {
-        clip: rect(1px, 9px, 10px, 2px);
-    }
-    #hotspotId12 {
-        clip: rect(1px, 9px, 10px, 2px);
-    }
     #hotspotId13 {
         clip: rect(1px, 9px, 10px, 2px);
     }
@@ -587,6 +602,15 @@ button:hover {
         clip: rect(1px, 9px, 10px, 2px);
     }
     #hotspotId29 {
+        clip: rect(1px, 9px, 10px, 2px);
+    }
+    #hotspotId30 {
+        clip: rect(1px, 9px, 10px, 2px);
+    }
+    #hotspotId31 {
+        clip: rect(1px, 9px, 10px, 2px);
+    }
+    #hotspotId32 {
         left: 50%;
         top: 80%;
         }
@@ -615,26 +639,24 @@ button:hover {
         padding-top: 56.3%;
     }
 
-    #hotspotId29 {
+    #hotspotId32 {
         left: 50%;
         top: 80%;
         }
 
     #hotspotId0 {
         position: absolute;
-        border: 0px solid black;
-        color: green;
+        border: 0px solid black; color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 2.8vw;
-        letter-spacing: 2vw;
+        font-size: 2vw;
+        letter-spacing: 1.2vw;
     }
 
     #hotspotId1 {
         position: absolute;
-        border: 1px solid rgb(0, 0, 0);
-        color: green;
+        border: 0px solid black; color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 2.7vw;
+        font-size: 1.9vw;
         letter-spacing: 0.8vw;
     }
 
@@ -642,7 +664,7 @@ button:hover {
         position: absolute;
         border: 0px solid black; color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 2.6vw;
+        font-size: 2.2vw;
         letter-spacing: 0.1vw;
     }
 
@@ -650,15 +672,15 @@ button:hover {
         position: absolute;
         border: 0px solid black; color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 2.6vw;
-        letter-spacing: 0.4vw;
+        font-size: 2vw;
+        letter-spacing: 0.2vw;
     }
 
     #hotspotId4 {
         position: absolute;
         border: 0px solid black; color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 2.6vw;
+        font-size: 1.8vw;
         letter-spacing: 1vw;
     }
 
@@ -666,7 +688,7 @@ button:hover {
         position: absolute;
         border: 0px solid black; color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 2.6vw;
+        font-size: 2.2vw;
         letter-spacing: 0.4vw;
     }
 
@@ -674,7 +696,7 @@ button:hover {
         position: absolute;
         border: 0px solid black; color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 2.6vw;
+        font-size: 2.2vw;
         letter-spacing: 0.4vw;
     }
 
@@ -682,15 +704,15 @@ button:hover {
         position: absolute;
         border: 0px solid black; color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 2.6vw;
-        letter-spacing: 0.4vw;
+        font-size: 1.8vw;
+        letter-spacing: 0.2vw;
     }
 
     #hotspotId8 {
         position: absolute;
         border: 0px solid black; color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
-        font-size: 2.3vw;
+        font-size: 2vw;
         letter-spacing: 0vw;
     }
 
@@ -699,17 +721,29 @@ button:hover {
         border: 0px solid black; color: rgba(0, 0, 0, 0);
         /* margin-right: 10px; */
         font-size: 2.1vw;
-        letter-spacing: 0vw;
+        letter-spacing: 0.5vw;
     }
 
     #hotspotId10 {
-        clip: rect(0px, 13px, 13px, 0px);
+        position: absolute;
+        border: 0px solid black; color: rgba(0, 0, 0, 0);
+        /* margin-right: 10px; */
+        font-size: 1.9vw;
+        letter-spacing: 0vw;
     }
     #hotspotId11 {
-        clip: rect(0px, 10px, 11px, 0px);
+        position: absolute;
+        border: 0px solid black; color: rgba(0, 0, 0, 0);
+        /* margin-right: 10px; */
+        font-size: 2.1vw;
+        letter-spacing: 0vw;
     }
     #hotspotId12 {
-        clip: rect(0px, 10px, 11px, 0px);
+        position: absolute;
+        border: 0px solid black; color: rgba(0, 0, 0, 0);
+        /* margin-right: 10px; */
+        font-size: 2.1vw;
+        letter-spacing: 0.3vw;
     }
     #hotspotId13 {
         clip: rect(0px, 10px, 11px, 0px);
@@ -754,6 +788,18 @@ button:hover {
         clip: rect(0px, 10px, 11px, 0px);
     }
     #hotspotId27 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId28 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId29 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId30 {
+        clip: rect(0px, 10px, 11px, 0px);
+    }
+    #hotspotId31 {
         clip: rect(0px, 10px, 11px, 0px);
     }
 }
