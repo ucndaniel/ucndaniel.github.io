@@ -906,10 +906,11 @@ const hotspots = [
 
 // permanent point
  {
-     active: true,
+     
+    active: true,
     videoId: "video1",
     markIn: 5,
-     markOut: 501,
+    markOut: 501,
     sizeX: `auto`,
     sizeY: `auto`,
     ui: {
@@ -929,7 +930,7 @@ const hotspots = [
          func: () => {
             // back to map (konstant box)
             videoPlayer.currentTime(0);
-             videoPlayer.play();
+            videoPlayer.play();
             pauseTime = 3.4;
          }
     }
