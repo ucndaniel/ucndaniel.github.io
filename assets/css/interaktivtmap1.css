@@ -577,9 +577,12 @@ button:hover {
         clip: rect(0px, 11px, 10px, 0px);
     }
     #hotspotId31 {
-        left: 60%;
-        top: 80%;
-    }
+        width: 60%;
+        position: fixed;
+        top: 93%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
 }
 
 /* MediaQueries for mobile  */
