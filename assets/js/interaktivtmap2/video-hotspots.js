@@ -1,5 +1,3 @@
-
-
 // A framework for showing time-encoded hotspots on multiple videos.
 // Assumes either video.js or a parent <div> for the video that has the same dimensions as the video.
 
@@ -172,11 +170,11 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 31,
+        markOut: 500,
+        sizeX: 40,
         sizeY: 7,
-        posX: 69,
-        posY: 6.8,
+        posX: 3,
+        posY: 170,
         ui: {
            choice, 
             type: "box",
@@ -186,9 +184,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // Indgang // nyt kort Auditorium
-                videoPlayer.currentTime(156.5);
+                videoPlayer.currentTime(153.2);
                 videoPlayer.play();
-                pauseTime = 170.6;
+                pauseTime = 167.3;
             }
         }
     },
@@ -196,11 +194,11 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 31,
+        markOut: 500,
+        sizeX: 40,
         sizeY: 7,
-        posX: 69,
-        posY: 14.2,
+        posX: 3,
+        posY: 158,
         ui: {
             choice, 
              type: "box",
@@ -210,9 +208,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // Servicecenter // nyt kort Bibliotek
-                videoPlayer.currentTime(175);
+                videoPlayer.currentTime(171.5);
                 videoPlayer.play();
-                pauseTime = 209;
+                pauseTime = 208.3;
             }
         }
     },
@@ -220,15 +218,15 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 31,
+        markOut: 500,
+        sizeX: 40,
         sizeY: 7,
-        posX: 69,
-        posY: 21.6,
+        posX: 3,
+        posY: 146,
         ui: {
             choice, 
              type: "box",
-             text: "Studieadministration"
+             text: "Faglokale"
          },
         hotspot: {
             type: "function",
@@ -245,11 +243,11 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 31,
+        markOut: 500,
+        sizeX: 40,
         sizeY: 7,
-        posX: 69,
-        posY: 29.2,
+        posX: 3,
+        posY: 134,
         ui: {
             choice, 
              type: "box",
@@ -259,9 +257,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // Studievejledning // nyt kort fredagsbar
-                videoPlayer.currentTime(281.7);
+                videoPlayer.currentTime(244);
                 videoPlayer.play();
-                pauseTime = 336;
+                pauseTime = 297.7;
             }
         }
     },
@@ -269,11 +267,11 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 31,
+        markOut: 500,
+        sizeX: 40,
         sizeY: 7,
-        posX: 69,
-        posY: 37,
+        posX: 3,
+        posY: 122,
         ui: {
             choice, 
              type: "box",
@@ -293,11 +291,11 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 31,
+        markOut: 500,
+        sizeX: 40,
         sizeY: 7,
-        posX: 69,
-        posY: 44.5,
+        posX: 3,
+        posY: 110,
         ui: {
             choice, 
              type: "box",
@@ -317,11 +315,11 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 31,
+        markOut: 500,
+        sizeX: 40,
         sizeY: 7,
-        posX: 69,
-        posY: 52.1,
+        posX: 55,
+        posY: 158,
         ui: {
             choice, 
              type: "box",
@@ -331,7 +329,7 @@ const hotspots = [
             type: "function",
             func: () => {
                 // Auditorium // international afdeling
-                videoPlayer.currentTime(213.7);
+                videoPlayer.currentTime(170.7);
                 videoPlayer.play();
                 pauseTime = 243.7;
             }
@@ -341,11 +339,11 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 31,
+        markOut: 500,
+        sizeX: 40,
         sizeY: 7,
-        posX: 69,
-        posY: 59.6,
+        posX: 55,
+        posY: 146,
         ui: {
             choice, 
              type: "box",
@@ -355,9 +353,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // Bibliotek // nyt kort Kantine og spiseområde
-                videoPlayer.currentTime(247.8);
+                videoPlayer.currentTime(211.4);
                 videoPlayer.play();
-                pauseTime = 277;
+                pauseTime = 240.5;
             }
         }
     },
@@ -365,23 +363,23 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 31,
+        markOut: 500,
+        sizeX: 40,
         sizeY: 7,
-        posX: 69,
-        posY: 67.4,
+        posX: 55,
+        posY: 134,
         ui: {
             choice, 
              type: "box",
-             text: "servicecenter"
+             text: "Servicecenter"
          },
         hotspot: {
             type: "function",
             func: () => {
                 // Internationalt kontor // nyt kort servicecenter
-                videoPlayer.currentTime(14.5);
+                videoPlayer.currentTime(15.3);
                 videoPlayer.play();
-                pauseTime = 35;
+                pauseTime = 36.4;
             }
         }
     },
@@ -389,11 +387,11 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 31,
+        markOut: 500,
+        sizeX: 40,
         sizeY: 7,
-        posX: 69,
-        posY: 74.5,
+        posX: 55,
+        posY: 122,
         ui: {
             choice, 
              type: "box",
@@ -403,9 +401,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // Kantine og spiseområde // nyt kort Studieadministration
-                videoPlayer.currentTime(38.8);
+                videoPlayer.currentTime(40);
                 videoPlayer.play();
-                pauseTime = 54.9;
+                pauseTime = 56;
             }
         }
     },
@@ -413,11 +411,11 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 31,
+        markOut: 500,
+        sizeX: 40,
         sizeY: 7,
-        posX: 69,
-        posY: 82,
+        posX: 55,
+        posY: 110,
         ui: {
             choice, 
              type: "box",
@@ -427,9 +425,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // FREDAGSBAR // nyt kort Studievejledning
-                videoPlayer.currentTime(58.7);
+                videoPlayer.currentTime(60.3);
                 videoPlayer.play();
-                pauseTime = 88.3;
+                pauseTime = 90.3;
             }
         }
     },
@@ -907,35 +905,35 @@ const hotspots = [
     // BACK TO MAP POINTS
 
 // permanent point
-{
-    active: true,
+ {
+     active: true,
     videoId: "video1",
     markIn: 5,
-    markOut: 501,
+     markOut: 501,
     sizeX: `auto`,
     sizeY: `auto`,
     ui: {
-        type: "box",
-        style: `border: none;
-        font-size: 20px;
-        color: #fff;
-        text-align: center;
-        background-color: rgb(0 66 80 / 60%);
-        padding: 1vw; 
-        border-radius: .5vw;
-        position: absolute;`,
-        text: "Tilbage til kortet"
-    },
+         type: "box",
+         style: `border: none;
+         font-size: 20px;
+         color: #fff;
+         text-align: center;
+         background-color: rgb(0 66 80 / 60%);
+         padding: 1vw; 
+         border-radius: .5vw;
+         position: absolute;`,
+         text: "Se kortet"
+     },
     hotspot: {
-        type: "function",
-        func: () => {
+         type: "function",
+         func: () => {
             // back to map (konstant box)
             videoPlayer.currentTime(0);
-            videoPlayer.play();
+             videoPlayer.play();
             pauseTime = 3.4;
-        }
+         }
     }
-},  
+ },  
 
 // forskellige points indsat efter bestemte tider
 //  {
