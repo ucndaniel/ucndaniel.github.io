@@ -183,7 +183,7 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // Indgang // nyt kort Auditorium
+                // nyt kort Auditorium
                 videoPlayer.currentTime(153.2);
                 videoPlayer.play();
                 pauseTime = 167.3;
@@ -207,7 +207,7 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // Servicecenter // nyt kort Bibliotek
+                // / nyt kort Bibliotek
                 videoPlayer.currentTime(171.5);
                 videoPlayer.play();
                 pauseTime = 208.3;
@@ -231,8 +231,7 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // Studieadministration // nyt kort Faglokale
-                
+                // / nyt kort Faglokale              
                 videoPlayer.currentTime(93.8);
                 videoPlayer.play();
                 pauseTime = 129.6;
@@ -256,7 +255,7 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // Studievejledning // nyt kort fredagsbar
+                // / nyt kort fredagsbar
                 videoPlayer.currentTime(244);
                 videoPlayer.play();
                 pauseTime = 297.7;
@@ -280,7 +279,7 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // Faglokale // nyt kort Gruppeområde
+                // / nyt kort Gruppeområde
                 videoPlayer.currentTime(132.7);
                 videoPlayer.play();
                 pauseTime = 150;
@@ -304,7 +303,7 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // Gruppeområde // nyt kort hovedindgang
+                //  nyt kort hovedindgang
                 videoPlayer.currentTime(7);
                 videoPlayer.play();
                 pauseTime = 11;
@@ -328,7 +327,7 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // Auditorium // international afdeling
+                // / international afdeling
                 videoPlayer.currentTime(301.4);
                 videoPlayer.play();
                 pauseTime = 331.7;
@@ -352,7 +351,7 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // Bibliotek // nyt kort Kantine og spiseområde
+                //  nyt kort Kantine og spiseområde
                 videoPlayer.currentTime(211.4);
                 videoPlayer.play();
                 pauseTime = 240.5;
@@ -376,7 +375,7 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // Internationalt kontor // nyt kort servicecenter
+                // / nyt kort servicecenter
                 videoPlayer.currentTime(15.3);
                 videoPlayer.play();
                 pauseTime = 36.4;
@@ -400,7 +399,7 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // Kantine og spiseområde // nyt kort Studieadministration
+                // nyt kort Studieadministration
                 videoPlayer.currentTime(40);
                 videoPlayer.play();
                 pauseTime = 56;
@@ -424,7 +423,7 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // FREDAGSBAR // nyt kort Studievejledning
+                // nyt kort Studievejledning
                 videoPlayer.currentTime(60.3);
                 videoPlayer.play();
                 pauseTime = 90.3;
@@ -487,9 +486,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // servicecenter circel
-                videoPlayer.currentTime(14.5);
+                videoPlayer.currentTime(15.3);
                 videoPlayer.play();
-                pauseTime = 35;
+                pauseTime = 36.4;
             }
         }
     },
@@ -513,9 +512,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // studieadministration circel
-                videoPlayer.currentTime(38.8);
+                videoPlayer.currentTime(40);
                 videoPlayer.play();
-                pauseTime = 54.9;
+                pauseTime = 56;
             }
         }
     },
@@ -538,9 +537,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // studievejledning 1 circel
-                videoPlayer.currentTime(58.7);
+                videoPlayer.currentTime(60.3);
                 videoPlayer.play();
-                pauseTime = 88.3;
+                pauseTime = 90.3;
             }
         }
     },
@@ -562,10 +561,10 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // studievejledning 2 circel // auditorium 2
-                videoPlayer.currentTime(156.5);
+                //  // auditorium 2
+                videoPlayer.currentTime(153.2);
                 videoPlayer.play();
-                pauseTime = 170.6;
+                pauseTime = 167.3;
             }
         }
     },
@@ -587,10 +586,10 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // studievejledning 3 circel // bibliotek
-                videoPlayer.currentTime(175);
+                 // bibliotek
+                videoPlayer.currentTime(171.5);
                 videoPlayer.play();
-                pauseTime = 209;
+                pauseTime = 208.3;
             }
         }
     },
@@ -613,9 +612,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // studievejledning 4 circel // bibliotek
-                videoPlayer.currentTime(175);
+                videoPlayer.currentTime(171.5);
                 videoPlayer.play();
-                pauseTime = 209;
+                pauseTime = 208.3;
             }
         }
     },
@@ -663,9 +662,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // faglokale 1 circel
-                videoPlayer.currentTime(92.6);
+                videoPlayer.currentTime(93.8);
                 videoPlayer.play();
-                pauseTime = 131;
+                pauseTime = 129.6;
             }
         }
     },
@@ -689,9 +688,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // faglokale 2 circel
-                videoPlayer.currentTime(92.6);
+                videoPlayer.currentTime(93.8);
                 videoPlayer.play();
-                pauseTime = 131;
+                pauseTime = 129.6;
             }
         }
     },
@@ -715,9 +714,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // faglokale 3 circel
-                videoPlayer.currentTime(92.6);
+                videoPlayer.currentTime(93.8);
                 videoPlayer.play();
-                pauseTime = 131;
+                pauseTime = 129.6;
             }
         }
     },
@@ -792,9 +791,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // gruppeområde 1 circel 
-                videoPlayer.currentTime(135);
+                videoPlayer.currentTime(132.7);
                 videoPlayer.play();
-                pauseTime = 152;
+                pauseTime = 150;
             }
         }
     },
@@ -817,9 +816,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // gruppeområde 2 circle
-                videoPlayer.currentTime(135);
+                videoPlayer.currentTime(132.7);
                 videoPlayer.play();
-                pauseTime = 152;
+                pauseTime = 150;
             }
         }
     },
@@ -843,9 +842,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // gruppeområde 3 circle
-                videoPlayer.currentTime(135);
+                videoPlayer.currentTime(132.7);
                 videoPlayer.play();
-                pauseTime = 152;
+                pauseTime = 150;
             }
         }
     },
@@ -869,9 +868,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // gruppeområde 4 circle
-                videoPlayer.currentTime(135);
+                videoPlayer.currentTime(132.7);
                 videoPlayer.play();
-                pauseTime = 152;
+                pauseTime = 150;
             }
         }
     },
@@ -894,9 +893,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // gruppeområde 5 circle // fredagsbar cirkel
-                videoPlayer.currentTime(281.7);
+                videoPlayer.currentTime(244);
                 videoPlayer.play();
-                pauseTime = 336;
+                pauseTime = 297.7;
             }
         }
     },
