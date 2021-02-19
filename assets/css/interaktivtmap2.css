@@ -68,7 +68,8 @@ header {
     width: 100%;
     height: 100%;
     margin: auto;
-    margin-bottom: 5vw;
+    margin-bottom: 0vw;
+    /* margin-bottom: 5vw; */
 }
 
 /*Video hotspots*/
@@ -100,7 +101,7 @@ video:focus {
         color: #272727;
         font-size: 2vw;
         letter-spacing: 0.1vw;
-        line-height: 1.4;
+        line-height: 1.8;
         font-weight: bold;
         text-align: center;
 }
@@ -111,7 +112,7 @@ video:focus {
         color: #272727;
         font-size: 2vw;
         letter-spacing: 0.1vw;
-        line-height: 1.4;
+        line-height: 1.8;
         font-weight: bold;
         text-align: center;
 }
@@ -122,7 +123,7 @@ video:focus {
         color: #272727;
         font-size: 2vw;
         letter-spacing: 0.1vw;
-        line-height: 1.4;
+        line-height: 1.8;
         font-weight: bold;
         text-align: center;
 }
@@ -133,7 +134,7 @@ video:focus {
         color: #272727;
         font-size: 2vw;
         letter-spacing: 0.1vw;
-        line-height: 1.4;
+        line-height: 1.8;
         font-weight: bold;
         font-size: 2vw;
         text-align: center;
@@ -145,7 +146,7 @@ video:focus {
         color: #272727;
         font-size: 2vw;
         letter-spacing: 0.1vw;
-        line-height: 1.4;
+        line-height: 1.8;
         font-weight: bold;
         text-align: center;
 }
@@ -158,7 +159,7 @@ video:focus {
         letter-spacing: 0.1vw;
         font-weight: bold;
         text-align: center;
-        line-height: 1.4;
+        line-height: 1.8;
 }
 
 #hotspotId6 {
@@ -169,7 +170,7 @@ video:focus {
         letter-spacing: 0.1vw;
         font-weight: bold;
         text-align: center;
-        line-height: 1.4;
+        line-height: 1.8;
 }
 
 #hotspotId7 {
@@ -178,7 +179,7 @@ video:focus {
         color: #272727;
         font-size: 2vw;
         letter-spacing: 0.1vw;
-        line-height: 1.4;
+        line-height: 1.8;
         font-weight: bold;
         text-align: center;
 }
@@ -189,7 +190,7 @@ video:focus {
         color: #272727;
         font-size: 2vw;
         letter-spacing: 0.1vw;
-        line-height: 1.4;
+        line-height: 1.8;
         font-weight: bold;
         text-align: center;
 }
@@ -199,7 +200,7 @@ video:focus {
         border: 2px solid black;
         color: #272727;
         font-size: 2vw;
-        line-height: 1.4;
+        line-height: 1.8;
         letter-spacing: 0.1vw;
         font-weight: bold;
         text-align: center;
@@ -210,7 +211,7 @@ video:focus {
         color: #272727;
         font-size: 2vw;
         letter-spacing: 0.1vw;
-        line-height: 1.4;
+        line-height: 1.8;
         font-weight: bold;
         text-align: center;
 }
@@ -330,8 +331,11 @@ button:hover {
     display: none;
 }
 #hotspotId29 {
-    left: 76%;
-    top: 85%;
+    width: 60%;
+    position: fixed;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     }
 @media screen AND (max-width:1205px) { /* 1024 var den før */
     :root {
@@ -419,9 +423,12 @@ button:hover {
         clip: rect(1px, 17px, 15px, 4px);
     }
     #hotspotId29 {
-    left: 67%;
-    top: 85%;
-    }
+        width: 60%;
+        position: fixed;
+        top: 93%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
 }
 
 
@@ -489,8 +496,11 @@ button:hover {
         clip: rect(1px, 15px, 13px, 2px);
     }
     #hotspotId29 {
-        left: 65%;
-        top: 83%;
+        width: 60%;
+        position: fixed;
+        top: 93%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         }
     /* #video1 {
         width: 731px;
@@ -570,10 +580,13 @@ button:hover {
     #hotspotId28 {
         clip: rect(0px, 11px, 10px, 0px);
     }
-    #hotspotId29 {
-        left: 72%;
-        top: 83%;
-        }
+        #hotspotId29 {
+            width: 60%;
+            position: fixed;
+            top: 93%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
 }
 
 /* MediaQueries for mobile  */
@@ -638,8 +651,11 @@ button:hover {
         clip: rect(1px, 9px, 10px, 2px);
     }
     #hotspotId29 {
-        left: 72%;
-        top: 83%;
+        width: 60%;
+        position: fixed;
+        top: 93%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         }
 }
 
@@ -650,8 +666,11 @@ button:hover {
         --pFont: 3vw;
     }
     #hotspotId29 {
-        left: 72%;
-        top: 83%;
+        width: 60%;
+        position: fixed;
+        top: 93%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         }
     
     .mobileMessage {
