@@ -312,8 +312,11 @@ button:hover {
     background-color: #ff00;
 }
 #hotspotId31 {
-    left: 76%;
-    top: 85%;
+    width: 60%;
+    position: fixed;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     }
 
 @media screen AND (max-width:1205px) { /* 1024 var den før */
@@ -339,8 +342,11 @@ button:hover {
         height: 574px;
     } */
     #hotspotId31 {
-    left: 67%;
-    top: 85%;
+        width: 60%;
+        position: fixed;
+        top: 93%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
 
@@ -482,8 +488,11 @@ button:hover {
         clip: rect(1px, 15px, 13px, 2px);
     }
     #hotspotId31 {
-        left: 62%;
-        top: 85%;
+        width: 60%;
+        position: fixed;
+        top: 93%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 }
     /* #video1 {
         width: 731px;
@@ -640,8 +649,11 @@ button:hover {
         clip: rect(1px, 9px, 10px, 2px);
     }
     #hotspotId31 {
+        width: 60%;
+        position: fixed;
+        top: 93%;
         left: 50%;
-        top: 80%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -665,8 +677,11 @@ button:hover {
     }
 
     #hotspotId31 {
+        width: 60%;
+        position: fixed;
+        top: 93%;
         left: 50%;
-        top: 80%;
+        transform: translate(-50%, -50%);
     }
 .mobileMessage {
     display: block;
