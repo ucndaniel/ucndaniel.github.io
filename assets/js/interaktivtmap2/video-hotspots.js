@@ -233,9 +233,9 @@ const hotspots = [
             func: () => {
                 // Studieadministration // nyt kort Faglokale
                 
-                videoPlayer.currentTime(92.6);
+                videoPlayer.currentTime(93.8);
                 videoPlayer.play();
-                pauseTime = 131;
+                pauseTime = 129.6;
             }
         }
     },
@@ -281,9 +281,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // Faglokale // nyt kort Gruppeområde
-                videoPlayer.currentTime(135);
+                videoPlayer.currentTime(132.7);
                 videoPlayer.play();
-                pauseTime = 152;
+                pauseTime = 150;
             }
         }
     },
@@ -329,9 +329,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // Auditorium // international afdeling
-                videoPlayer.currentTime(170.7);
+                videoPlayer.currentTime(301.4);
                 videoPlayer.play();
-                pauseTime = 243.7;
+                pauseTime = 331.7;
             }
         }
     },
@@ -638,9 +638,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // internationalt kontor circel 
-                videoPlayer.currentTime(213.7);
+                videoPlayer.currentTime(301.4);
                 videoPlayer.play();
-                pauseTime = 243.7;
+                pauseTime = 331.7;
             }
         }
     },
