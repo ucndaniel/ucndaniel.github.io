@@ -681,7 +681,7 @@ button:hover {
         position: absolute;
         border: 1px solid yellow;
         color: #272727;
-        /* margin-right: 10px; */
+        font-size: 3.3vw;
         letter-spacing: 0.1vw;
         font-weight: bold;
         text-align: center;
@@ -690,9 +690,9 @@ button:hover {
 
     #hotspotId1 {
         position: absolute;
-        border: 2px solid black;
+        border: 1px solid black;
         color: #272727;
-        /* margin-right: 10px; */
+        font-size: 3.3vw;
         letter-spacing: 0.1vw;
         font-weight: bold;
         text-align: center;
@@ -700,9 +700,9 @@ button:hover {
 
     #hotspotId2 {
         position: absolute;
-        border: 2px solid blue;
+        border: 1px solid blue;
         color: #272727;
-        /* margin-right: 10px; */
+        font-size: 3.3vw;
         letter-spacing: 0.1vw;
         font-weight: bold;
         text-align: center;
@@ -710,9 +710,9 @@ button:hover {
 
     #hotspotId3 {
         position: absolute;
-        border: 2px solid rgb(120, 150, 206);
+        border: 1px solid rgb(120, 150, 206);
         color: #272727;
-        /* margin-right: 10px; */
+        font-size: 3.3vw;
         letter-spacing: 0.1vw;
         font-weight: bold;
         text-align: center;
@@ -720,9 +720,9 @@ button:hover {
 
     #hotspotId4 {
         position: absolute;
-        border: 2px solid rgb(151, 157, 194);
+        border: 1px solid rgb(151, 157, 194);
         color: #272727;
-        /* margin-right: 10px; */
+        font-size: 3.3vw;
         letter-spacing: 0.1vw;
         font-weight: bold;
         text-align: center;
@@ -730,9 +730,9 @@ button:hover {
 
     #hotspotId5 {
         position: absolute;
-        border: 2px solid black;
+        border: 1px solid black;
         color: #272727;
-        /* margin-right: 10px; */
+        font-size: 3.3vw;
         letter-spacing: 0.1vw;
         font-weight: bold;
         text-align: center;
@@ -740,9 +740,9 @@ button:hover {
 
     #hotspotId6 {
         position: absolute;
-    border: 2px solid red;
+    border: 1px solid red;
     color: #272727;
-    /* margin-right: 10px; */
+    font-size: 3.3vw;
     letter-spacing: 0.1vw;
     font-weight: bold;
     text-align: center;
@@ -750,9 +750,9 @@ button:hover {
 
     #hotspotId7 {
         position: absolute;
-    border: 2px solid palevioletred;
+    border: 1px solid palevioletred;
     color: #272727;
-    /* margin-right: 10px; */
+    font-size: 3.3vw;
     letter-spacing: 0.1vw;
     font-weight: bold;
     text-align: center;
@@ -760,9 +760,9 @@ button:hover {
 
     #hotspotId8 {
         position: absolute;
-    border: 2px solid pink;
+    border: 1px solid pink;
     color: #272727;
-    /* margin-right: 10px; */
+    font-size: 3.3vw;
     letter-spacing: 0.1vw;
     font-weight: bold;
     text-align: center;
@@ -770,18 +770,18 @@ button:hover {
 
     #hotspotId9 {
         position: absolute;
-    border: 2px solid black;
+    border: 1px solid black;
     color: #272727;
-    /* margin-right: 10px; */
+    font-size: 3.3vw;
     letter-spacing: 0.1vw;
     font-weight: bold;
     text-align: center;
     }
     #hotspotId10 {
         position: absolute;
-    border: 2px solid rgb(11, 51, 51);
+    border: 1px solid rgb(11, 51, 51);
     color: #272727;
-    /* margin-right: 10px; */
+    font-size: 3.3vw;
     letter-spacing: 0.1vw;
     font-weight: bold;
     text-align: center;
