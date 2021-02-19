@@ -97,123 +97,126 @@ video:focus {
 
 #hotspotId0 {
     position: absolute;
-        border: 2px solid #ffe5a7; 
-        color: #ffe5a7;
-        font-size: 2vw;
-        letter-spacing: 0.1vw;
-        line-height: 2;
-        font-weight: bold;
-        text-align: center;
-}
-
-#hotspotId1 {
-    position: absolute;
-        border: 2px solid #ffcb4f;
-        color: #ffcb4f;
-        font-size: 2vw;
-        letter-spacing: 0.1vw;
-        line-height: 2;
-        font-weight: bold;
-        text-align: center;
-}
-
-#hotspotId2 {
-    position: absolute;
-        border: 2px solid #0046AD;
-        color: #0046AD;
-        font-size: 2vw;
-        letter-spacing: 0.1vw;
-        line-height: 2;
-        font-weight: bold;
-        text-align: center;
-}
-
-#hotspotId3 {
-    position: absolute;
-        border: 2px solid #6690CE;
-        color: #6690CE;
-        font-size: 2vw;
-        letter-spacing: 0.1vw;
-        line-height: 2;
-        font-weight: bold;
-        font-size: 2vw;
-        text-align: center;
-}
-
-#hotspotId4 {
-    position: absolute;
-        border: 2px solid #BED6DB;
-        color: #BED6DB;
-        font-size: 2vw;
-        letter-spacing: 0.1vw;
-        line-height: 2;
-        font-weight: bold;
-        text-align: center;
-}
-
-#hotspotId5 {
-    position: absolute;
-        border: 2px solid #F7403A;
-        color: #F7403A;
-        font-size: 2vw;
-        letter-spacing: 0.1vw;
-        font-weight: bold;
-        text-align: center;
-        line-height: 2;
-}
-
-#hotspotId6 {
-    position: absolute;
-        border: 2px solid #fa8c89;
-        color: #fa8c89;
-        font-size: 2vw;
-        letter-spacing: 0.1vw;
-        font-weight: bold;
-        text-align: center;
-        line-height: 2;
-}
-
-#hotspotId7 {
-    position: absolute;
-        border: 2px solid #fdc5c4;
-        color: #fdc5c4;
-        font-size: 2vw;
-        letter-spacing: 0.1vw;
-        line-height: 2;
-        font-weight: bold;
-        text-align: center;
-}
-
-#hotspotId8 {
-    position: absolute;
-        border: 2px solid #668E96;
-        color: #668E96;
-        font-size: 2vw;
-        letter-spacing: 0.1vw;
-        line-height: 2;
-        font-weight: bold;
-        text-align: center;
-}
-
-#hotspotId9 {
-    position: absolute;
-        border: 2px solid #222221;
-        color: #222221;
-        font-size: 2vw;
-        line-height: 2;
-        letter-spacing: 0.1vw;
-        font-weight: bold;
-        text-align: center;
-}
-#hotspotId10 {
-    position: absolute;
-        border: 2px solid #004250;
+        border: 0px solid #ffe5a7; 
         color: #004250;
         font-size: 2vw;
         letter-spacing: 0.1vw;
         line-height: 2;
         font-weight: bold;
-        text-align: center;
+        text-align: left;
+}
+
+#hotspotId1 {
+    position: absolute;
+        border: 0px solid #ffcb4f;
+        color: #004250;
+        font-size: 2vw;
+        letter-spacing: 0.1vw;
+        line-height: 2;
+        font-weight: bold;
+        text-align: left;
+}
+
+#hotspotId2 {
+    position: absolute;
+        border: 0px solid #0046AD;
+        color: #004250;
+        font-size: 2vw;
+        letter-spacing: 0.1vw;
+        line-height: 2;
+        font-weight: bold;
+        text-align: left;
+}
+
+#hotspotId3 {
+    position: absolute;
+        border: 0px solid #6690CE;
+        color: #004250;
+        font-size: 2vw;
+        letter-spacing: 0.1vw;
+        line-height: 2;
+        font-weight: bold;
+        font-size: 2vw;
+        text-align: left;
+}
+
+#hotspotId4 {
+    position: absolute;
+        border: 0px solid #BED6DB;
+        color: #004250;
+        font-size: 2vw;
+        letter-spacing: 0.1vw;
+        line-height: 2;
+        font-weight: bold;
+        text-align: left;
+}
+
+#hotspotId5 {
+    position: absolute;
+        border: 0px solid #F7403A;
+        color: #004250;
+        font-size: 2vw;
+        letter-spacing: 0.1vw;
+        font-weight: bold;
+        text-align: left;
+        line-height: 2;
+}
+
+#hotspotId6 {
+    position: absolute;
+        border: 0px solid #fa8c89;
+        color: #004250;
+        font-size: 2vw;
+        letter-spacing: 0.1vw;
+        font-weight: bold;
+        text-align: left;
+        line-height: 2;
+}
+
+#hotspotId7 {
+    position: absolute;
+        border: 0px solid #fdc5c4;
+        color: #004250;
+        font-size: 2vw;
+        letter-spacing: 0.1vw;
+        line-height: 2;
+        font-weight: bold;
+        text-align: left;
+}
+
+#hotspotId8 {
+    position: absolute;
+        border: 0px solid #668E96;
+        color: #004250;
+        font-size: 2vw;
+        letter-spacing: 0.1vw;
+        line-height: 2;
+        font-weight: bold;
+        text-align: left;
+}
+
+#hotspotId9 {
+    position: absolute;
+        border: 0px solid #222221;
+        color: #004250;
+        font-size: 2vw;
+        line-height: 2;
+        letter-spacing: 0.1vw;
+        font-weight: bold;
+        text-align: left;
+}
+#hotspotId10 {
+    position: absolute;
+        border: 0px solid #004250;
+        color: #004250;
+        font-size: 2vw;
+        letter-spacing: 0.1vw;
+        line-height: 2;
+        font-weight: bold;
+        text-align: left;
+}
+.circle1 {
+    width: 2vw;
 }
 /* cirkler fullscreen */
 /* clip: bruges til at holde tekstelementet inde i cirklerne - til screenreader brugere */
@@ -701,122 +704,122 @@ button:hover {
 
     #hotspotId0 {
         position: absolute;
-        border: 1px solid #ffe5a7;
-        color: #ffe5a7;
+        border: 0px solid #ffe5a7;
+        color: #004250;
         font-size: 3.3vw;
         letter-spacing: 0.1vw;
         font-weight: bold;
-        text-align: center;
+        text-align: start;
         line-height: 1.4;
 
     }
 
     #hotspotId1 {
         position: absolute;
-        border: 1px solid #ffcb4f;
-        color: #ffcb4f;
+        border: 0px solid #ffcb4f;
+        color: #004250;
         font-size: 3.3vw;
         letter-spacing: 0.1vw;
         font-weight: bold;
-        text-align: center;
+        text-align: start;
         line-height: 1.4;
     }
 
     #hotspotId2 {
         position: absolute;
-        border: 1px solid 0046AD;
-        color: #0046AD;
+        border: 0px solid 0046AD;
+        color: #004250;
         font-size: 3.3vw;
         letter-spacing: 0.1vw;
         font-weight: bold;
-        text-align: center;
+        text-align: start;
         line-height: 1.4;
     }
 
     #hotspotId3 {
         position: absolute;
-        border: 1px solid #6690CE;
-        color: #6690CE;
+        border: 0px solid #6690CE;
+        color: #004250;
         font-size: 3.3vw;
         letter-spacing: 0.1vw;
         font-weight: bold;
-        text-align: center;
+        text-align: start;
         line-height: 1.4;
     }
 
     #hotspotId4 {
         position: absolute;
-        border: 1px solid #BED6DB;
-        color: #BED6DB;
+        border: 0px solid #BED6DB;
+        color: #004250;
         font-size: 3.3vw;
         letter-spacing: 0.1vw;
         font-weight: bold;
-        text-align: center;
+        text-align: start;
         line-height: 1.4;
     }
 
     #hotspotId5 {
         position: absolute;
-        border: 1px solid #F7403A;
-        color: #F7403A;
+        border: 0px solid #F7403A;
+        color: #004250;
         font-size: 3.3vw;
         letter-spacing: 0.1vw;
         font-weight: bold;
-        text-align: center;
+        text-align: start;
         line-height: 1.4;
     }
 
     #hotspotId6 {
     position: absolute;
-    border: 1px solid #fa8c89;
-    color: #fa8c89;
+    border: 0px solid #fa8c89;
+    color: #004250;
     font-size: 3.3vw;
     letter-spacing: 0.1vw;
     font-weight: bold;
-    text-align: center;
+    text-align: start;
     line-height: 1.4;
     }
 
     #hotspotId7 {
         position: absolute;
-    border: 1px solid #fdc5c4;
-    color: #fdc5c4;
+    border: 0px solid #fdc5c4;
+    color: #004250;
     font-size: 3.3vw;
     letter-spacing: 0.1vw;
     font-weight: bold;
-    text-align: center;
+    text-align: start;
     line-height: 1.4;
     }
 
     #hotspotId8 {
         position: absolute;
-    border: 1px solid #668E96;
-    color: #668E96;
+    border: 0px solid #668E96;
+    color: #004250;
     font-size: 3.3vw;
     letter-spacing: 0.1vw;
     font-weight: bold;
-    text-align: center;
+    text-align: start;
     line-height: 1.4;
     }
 
     #hotspotId9 {
         position: absolute;
-    border: 1px solid #222221;
-    color: #222221;
-    font-size: 3.3vw;
-    letter-spacing: 0.1vw;
-    font-weight: bold;
-    text-align: center;
-    line-height: 1.4;
-    }
-    #hotspotId10 {
-        position: absolute;
-    border: 1px solid #004250;
+    border: 0px solid #222221;
     color: #004250;
     font-size: 3.3vw;
     letter-spacing: 0.1vw;
     font-weight: bold;
-    text-align: center;
+    text-align: start;
+    line-height: 1.4;
+    }
+    #hotspotId10 {
+        position: absolute;
+    border: 0px solid #004250;
+    color: #004250;
+    font-size: 3.3vw;
+    letter-spacing: 0.1vw;
+    font-weight: bold;
+    text-align: start;
     line-height: 1.4;
     }
 

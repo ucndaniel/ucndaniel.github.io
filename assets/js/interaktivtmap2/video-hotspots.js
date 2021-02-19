@@ -171,14 +171,14 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 500,
-        sizeX: 47,
+        sizeX: `auto`,
         sizeY: 11,
-        posX: 2,
+        posX: 14,
         posY: 180,
         ui: {
            choice, 
             type: "box",
-            text: "Auditorium"
+            text: "<span> <img class='circle1' src='../assets/images/circles/yellow1.svg' </span> Auditorium"
         },
         hotspot: {
             type: "function",
@@ -187,6 +187,7 @@ const hotspots = [
                 videoPlayer.currentTime(153.2);
                 videoPlayer.play();
                 pauseTime = 167.3;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -195,14 +196,14 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 500,
-        sizeX: 47,
+        sizeX: `auto`,
         sizeY: 11,
-        posX: 2,
+        posX: 14,
         posY: 165,
         ui: {
             choice, 
              type: "box",
-             text: "Bibliotek"
+             text: "<span> <img class='circle1' src='../assets/images/circles/yellow2.svg' </span> Bibliotek"
          },
         hotspot: {
             type: "function",
@@ -211,6 +212,7 @@ const hotspots = [
                 videoPlayer.currentTime(171.5);
                 videoPlayer.play();
                 pauseTime = 208.3;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -219,14 +221,14 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 500,
-        sizeX: 47,
+        sizeX: `auto`,
         sizeY: 11,
-        posX: 2,
+        posX: 14,
         posY: 150,
         ui: {
             choice, 
              type: "box",
-             text: "Faglokale"
+             text: "<span> <img class='circle1' src='../assets/images/circles/blue1.svg' </span> Faglokale"
          },
         hotspot: {
             type: "function",
@@ -235,6 +237,7 @@ const hotspots = [
                 videoPlayer.currentTime(93.8);
                 videoPlayer.play();
                 pauseTime = 129.6;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -243,14 +246,14 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 500,
-        sizeX: 47,
+        sizeX: `auto`,
         sizeY: 11,
-        posX: 2,
+        posX: 14,
         posY: 135,
         ui: {
             choice, 
              type: "box",
-             text: "Fredagsbar"
+             text: "<span> <img class='circle1' src='../assets/images/circles/blue2.svg' </span> Fredagsbar"
          },
         hotspot: {
             type: "function",
@@ -259,6 +262,7 @@ const hotspots = [
                 videoPlayer.currentTime(244);
                 videoPlayer.play();
                 pauseTime = 297.7;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -267,14 +271,14 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 500,
-        sizeX: 47,
+        sizeX: `auto`,
         sizeY: 11,
-        posX: 2,
+        posX: 14,
         posY: 120,
         ui: {
             choice, 
              type: "box",
-             text: "Gruppeområde"
+             text: "<span> <img class='circle1' src='../assets/images/circles/lightblue.svg' </span> Gruppeområde <span>" 
          },
         hotspot: {
             type: "function",
@@ -283,6 +287,7 @@ const hotspots = [
                 videoPlayer.currentTime(132.7);
                 videoPlayer.play();
                 pauseTime = 150;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -291,14 +296,14 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 500,
-        sizeX: 47,
+        sizeX: `auto`,
         sizeY: 11,
-        posX: 2,
+        posX: 14,
         posY: 105,
         ui: {
             choice, 
              type: "box",
-             text: "Hovedindgang"
+             text: "<span> <img class='circle1' src='../assets/images/circles/red.svg' </span> Hovedindgang"
          },
         hotspot: {
             type: "function",
@@ -307,6 +312,7 @@ const hotspots = [
                 videoPlayer.currentTime(7);
                 videoPlayer.play();
                 pauseTime = 11;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -315,14 +321,14 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 500,
-        sizeX: 47,
+        sizeX: 40,
         sizeY: 11,
         posX: 50,
         posY: 165,
         ui: {
             choice, 
              type: "box",
-             text: "International afdeling"
+             text: "<span> <img class='circle1' src='../assets/images/circles/pink2.svg' </span> International afdeling"
          },
         hotspot: {
             type: "function",
@@ -331,6 +337,7 @@ const hotspots = [
                 videoPlayer.currentTime(301.4);
                 videoPlayer.play();
                 pauseTime = 331.7;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -339,14 +346,14 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 500,
-        sizeX: 47,
+        sizeX: `auto`,
         sizeY: 11,
         posX: 50,
         posY: 150,
         ui: {
             choice, 
              type: "box",
-             text: "Kantine og spiseområde"
+             text: "<span> <img class='circle1' src='../assets/images/circles/pink1.svg' </span> Kantine og spiseområde"
          },
         hotspot: {
             type: "function",
@@ -355,6 +362,7 @@ const hotspots = [
                 videoPlayer.currentTime(211.4);
                 videoPlayer.play();
                 pauseTime = 240.5;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -363,14 +371,14 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 500,
-        sizeX: 47,
+        sizeX: `auto`,
         sizeY: 11,
         posX: 50,
         posY: 135,
         ui: {
             choice, 
              type: "box",
-             text: "Servicecenter"
+             text: "<span> <img class='circle1' src='../assets/images/circles/greyish.svg' </span> Servicecenter"
          },
         hotspot: {
             type: "function",
@@ -379,6 +387,7 @@ const hotspots = [
                 videoPlayer.currentTime(15.3);
                 videoPlayer.play();
                 pauseTime = 36.4;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -387,14 +396,14 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 500,
-        sizeX: 47,
+        sizeX: `auto`,
         sizeY: 11,
         posX: 50,
         posY: 120,
         ui: {
             choice, 
              type: "box",
-             text: "Studieadministration"
+             text: "<span> <img class='circle1' src='../assets/images/circles/black.svg' </span> Studieadministration"
          },
         hotspot: {
             type: "function",
@@ -403,6 +412,7 @@ const hotspots = [
                 videoPlayer.currentTime(40);
                 videoPlayer.play();
                 pauseTime = 56;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -411,14 +421,14 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 500,
-        sizeX: 47,
+        sizeX: `auto`,
         sizeY: 11,
         posX: 50,
         posY: 105,
         ui: {
             choice, 
              type: "box",
-             text: "Studievejledning"
+             text: "<span> <img class='circle1' src='../assets/images/circles/darkblue.svg' </span> Studievejledning"
          },
         hotspot: {
             type: "function",
@@ -427,6 +437,7 @@ const hotspots = [
                 videoPlayer.currentTime(60.3);
                 videoPlayer.play();
                 pauseTime = 90.3;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -464,6 +475,7 @@ const hotspots = [
                 videoPlayer.currentTime(7);
                 videoPlayer.play();
                 pauseTime = 11;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -489,6 +501,7 @@ const hotspots = [
                 videoPlayer.currentTime(15.3);
                 videoPlayer.play();
                 pauseTime = 36.4;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -515,6 +528,7 @@ const hotspots = [
                 videoPlayer.currentTime(40);
                 videoPlayer.play();
                 pauseTime = 56;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -540,6 +554,7 @@ const hotspots = [
                 videoPlayer.currentTime(60.3);
                 videoPlayer.play();
                 pauseTime = 90.3;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -565,6 +580,7 @@ const hotspots = [
                 videoPlayer.currentTime(153.2);
                 videoPlayer.play();
                 pauseTime = 167.3;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -590,6 +606,7 @@ const hotspots = [
                 videoPlayer.currentTime(171.5);
                 videoPlayer.play();
                 pauseTime = 208.3;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -615,6 +632,7 @@ const hotspots = [
                 videoPlayer.currentTime(171.5);
                 videoPlayer.play();
                 pauseTime = 208.3;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -640,6 +658,7 @@ const hotspots = [
                 videoPlayer.currentTime(301.4);
                 videoPlayer.play();
                 pauseTime = 331.7;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -665,6 +684,7 @@ const hotspots = [
                 videoPlayer.currentTime(93.8);
                 videoPlayer.play();
                 pauseTime = 129.6;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -691,6 +711,7 @@ const hotspots = [
                 videoPlayer.currentTime(93.8);
                 videoPlayer.play();
                 pauseTime = 129.6;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -717,6 +738,7 @@ const hotspots = [
                 videoPlayer.currentTime(93.8);
                 videoPlayer.play();
                 pauseTime = 129.6;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -743,6 +765,7 @@ const hotspots = [
                 videoPlayer.currentTime(211.4);
                 videoPlayer.play();
                 pauseTime = 240.5;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -768,6 +791,7 @@ const hotspots = [
                 videoPlayer.currentTime(211.4);
                 videoPlayer.play();
                 pauseTime = 240.5;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -794,6 +818,7 @@ const hotspots = [
                 videoPlayer.currentTime(132.7);
                 videoPlayer.play();
                 pauseTime = 150;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -819,6 +844,7 @@ const hotspots = [
                 videoPlayer.currentTime(132.7);
                 videoPlayer.play();
                 pauseTime = 150;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -845,6 +871,7 @@ const hotspots = [
                 videoPlayer.currentTime(132.7);
                 videoPlayer.play();
                 pauseTime = 150;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -871,6 +898,7 @@ const hotspots = [
                 videoPlayer.currentTime(132.7);
                 videoPlayer.play();
                 pauseTime = 150;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -896,6 +924,7 @@ const hotspots = [
                 videoPlayer.currentTime(244);
                 videoPlayer.play();
                 pauseTime = 297.7;
+                window.scrollTo(0, -100);
             }
         }
     },
