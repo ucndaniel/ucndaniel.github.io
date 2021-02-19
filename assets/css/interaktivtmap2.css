@@ -521,11 +521,10 @@ button:hover {
     height: 0;
 }
 
-
-
 .video1-dimensions.vjs-fluid {
     padding-top: 49.8%;
 }
+
     #hotspotId11 {
         clip: rect(0px, 11px, 10px, 0px);
     }
