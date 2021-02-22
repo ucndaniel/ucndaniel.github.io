@@ -219,9 +219,7 @@ video:focus {
     width: 2vw;
     margin-right: 1vw;
 }
-span {
-    display: flex;
-}
+
 
 /* cirkler fullscreen */
 /* clip: bruges til at holde tekstelementet inde i cirklerne - til screenreader brugere */
