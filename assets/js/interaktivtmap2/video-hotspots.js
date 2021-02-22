@@ -321,7 +321,7 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 500,
-        sizeX: 40,
+        sizeX: 50,
         sizeY: 11,
         posX: 50,
         posY: 165,
