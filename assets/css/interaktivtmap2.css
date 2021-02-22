@@ -93,6 +93,10 @@ div>.hotspot.image {
 video:focus {
     outline: none;
 }
+
+.vjs-poster {
+    background-size: cover;
+}
 /* tekst i højre side af mappet - fontsize til screenreader - skift border til 1px og color til hvilken som helst farve for at se den usynlige tekst som screenreader læser op ved hover*/
 
 #hotspotId0 {
