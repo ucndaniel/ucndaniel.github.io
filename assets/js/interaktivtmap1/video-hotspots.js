@@ -461,7 +461,7 @@ const hotspots = [
            choiceCircle, 
             type: "box",
             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-            text: "indgang"
+           // text: "indgang"
         },
         hotspot: {
             type: "function",
@@ -487,7 +487,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-             text: "Servicecenter"
+            // text: "Servicecenter"
          },
         hotspot: {
             type: "function",
@@ -514,7 +514,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-             text: "Studieadministration"
+            // text: "Studieadministration"
          },
         hotspot: {
             type: "function",
@@ -540,7 +540,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-             text: "Studievejledning"
+            // text: "Studievejledning"
          },
         hotspot: {
             type: "function",
@@ -566,7 +566,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-             text: "Studievejledning"
+            // text: "Studievejledning"
          },
         hotspot: {
             type: "function",
@@ -592,7 +592,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-             text: "Studievejledning"
+            // text: "Studievejledning"
          },
         hotspot: {
             type: "function",
@@ -618,7 +618,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-             text: "Studievejledning"
+            // text: "Studievejledning"
          },
         hotspot: {
             type: "function",
@@ -644,7 +644,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-             text: "Studievejledning"
+            // text: "Studievejledning"
          },
         hotspot: {
             type: "function",
@@ -670,7 +670,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-             text: "Faglokale"
+            // text: "Faglokale"
          },
         hotspot: {
             type: "function",
@@ -697,7 +697,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-             text: "Faglokale"
+            // text: "Faglokale"
          },
         hotspot: {
             type: "function",
@@ -724,7 +724,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-             text: "Faglokale"
+            // text: "Faglokale"
          },
         hotspot: {
             type: "function",
@@ -751,7 +751,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-             text: "Faglokale"
+            // text: "Faglokale"
          },
         hotspot: {
             type: "function",
@@ -778,7 +778,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-             text: "Gruppeområde"
+            // text: "Gruppeområde"
          },
         hotspot: {
             type: "function",
@@ -804,7 +804,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-             text: "Gruppeområde"
+            // text: "Gruppeområde"
          },
         hotspot: {
             type: "function",
@@ -831,7 +831,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-             text: "gruppeområde"
+            // text: "gruppeområde"
          },
         hotspot: {
             type: "function",
@@ -858,7 +858,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-             text: "Bibliotek"
+            // text: "Bibliotek"
          },
         hotspot: {
             type: "function",
@@ -884,7 +884,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-             text: "International afdeling"
+            // text: "International afdeling"
          },
         hotspot: {
             type: "function",
@@ -910,7 +910,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-             text: "kantine og spiseområde"
+            //// text: "kantine og spiseområde"
          },
         hotspot: {
             type: "function",
@@ -936,7 +936,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-             text: "auditorium"
+            // // text: "auditorium"
          },
         hotspot: {
             type: "function",
@@ -962,7 +962,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
-             text: "fredagsbar"
+            // // text: "fredagsbar"
          },
         hotspot: {
             type: "function",
