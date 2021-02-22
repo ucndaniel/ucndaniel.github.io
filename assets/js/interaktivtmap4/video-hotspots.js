@@ -168,27 +168,28 @@ let backToMap = {
 // hotspot = hvornår skal dette punkt hoppe til i tiden (currentTime) og hvornår skal den pause videoen (pauseTime)
 // se mere i bunden af dokumentet om hotspots
 const hotspots = [
-        {
+    {
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 23,
-        sizeY: 7,
-        posX: 76,
-        posY: 4.2,
+        markOut: 500,
+        sizeX: 50,
+        sizeY: 11,
+        posX: 50,
+        posY: 190,
         ui: {
            choice, 
             type: "box",
-            text: "auditorium"
+            text: "<span> <img class='circle1' src='../assets/images/circles/yellow1.svg' </span> Auditorium"
         },
         hotspot: {
             type: "function",
             func: () => {
-                // Indgang // nyt kort auditorium
+                // nyt kort auditorium
                 videoPlayer.currentTime(150);
                 videoPlayer.play();
                 pauseTime = 168.3;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -196,23 +197,24 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 23,
-        sizeY: 7,
-        posX: 76,
-        posY: 11.2,
+        markOut: 500,
+        sizeX: `auto`,
+        sizeY: 11,
+        posX: 10,
+        posY: 190,
         ui: {
             choice, 
              type: "box",
-             text: "bibliotek"
+             text: "<span> <img class='circle1' src='../assets/images/circles/yellow2.svg' </span> Bibliotek"
          },
         hotspot: {
             type: "function",
             func: () => {
-                // Servicecenter // nyt kort bibliotek
+                // / nyt kort Bibliotek
                 videoPlayer.currentTime(172.4);
                 videoPlayer.play();
                 pauseTime = 205;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -220,23 +222,24 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 23,
-        sizeY: 7,
-        posX: 76,
-        posY: 18.2,
+        markOut: 500,
+        sizeX: `auto`,
+        sizeY: 11,
+        posX: 10,
+        posY: 170,
         ui: {
             choice, 
              type: "box",
-             text: "faglokale"
+             text: "<span> <img class='circle1' src='../assets/images/circles/blue1.svg' </span> Faglokale"
          },
         hotspot: {
             type: "function",
             func: () => {
-                // Studieadministration // nyt kort faglokale
+                // nyt kort Faglokale    
                 videoPlayer.currentTime(86.4);
                 videoPlayer.play();
                 pauseTime = 126.5;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -244,23 +247,24 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 23,
-        sizeY: 7,
-        posX: 76,
-        posY: 25.3,
+        markOut: 500,
+        sizeX: `auto`,
+        sizeY: 11,
+        posX: 10,
+        posY: 150,
         ui: {
             choice, 
              type: "box",
-             text: "fredagsbar"
+             text: "<span> <img class='circle1' src='../assets/images/circles/blue2.svg' </span> Fredagsbar"
          },
         hotspot: {
             type: "function",
             func: () => {
-                // Studievejledning // nyt kort fredagsbar
+                // / nyt kort fredagsbar
                 videoPlayer.currentTime(239.5);
                 videoPlayer.play();
                 pauseTime = 260;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -268,23 +272,24 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 23,
-        sizeY: 7,
-        posX: 76,
-        posY: 32.3,
+        markOut: 500,
+        sizeX: `auto`,
+        sizeY: 11,
+        posX: 10,
+        posY: 130,
         ui: {
             choice, 
              type: "box",
-             text: "gruppeområde"
+             text: "<span> <img class='circle1' src='../assets/images/circles/lightblue.svg' </span> Gruppeområde <span>" 
          },
         hotspot: {
             type: "function",
             func: () => {
-                // Faglokale // nyt kort gruppeområde
+                // / nyt kort Gruppeområde
                 videoPlayer.currentTime(129);
                 videoPlayer.play();
                 pauseTime = 146.5;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -292,23 +297,24 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 23,
-        sizeY: 7,
-        posX: 76,
-        posY: 39.9,
+        markOut: 500,
+        sizeX: `auto`,
+        sizeY: 11,
+        posX: 10,
+        posY: 110,
         ui: {
             choice, 
              type: "box",
-             text: "hovedindgang"
+             text: "<span> <img class='circle1' src='../assets/images/circles/red.svg' </span> Hovedindgang"
          },
         hotspot: {
             type: "function",
             func: () => {
-                // Gruppeområde // nyt kort hovedindgang
+                //  nyt kort hovedindgang
                 videoPlayer.currentTime(7);
                 videoPlayer.play();
                 pauseTime = 12.4;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -316,23 +322,24 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 23,
-        sizeY: 7,
-        posX: 76,
-        posY: 46.4,
+        markOut: 500,
+        sizeX: `auto`,
+        sizeY: 11,
+        posX: 50,
+        posY: 170,
         ui: {
             choice, 
              type: "box",
-             text: "kantine og spiseområde"
+             text: "<span> <img class='circle1' src='../assets/images/circles/pink1.svg' </span> Kantine og spiseområde"
          },
         hotspot: {
             type: "function",
             func: () => {
-                // Auditorium // nyt kort kantine og spiseområde
+                //  nyt kort Kantine og spiseområde
                 videoPlayer.currentTime(208.4);
                 videoPlayer.play();
                 pauseTime = 235.3;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -340,23 +347,24 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 23,
-        sizeY: 7,
-        posX: 76,
-        posY: 53.8,
+        markOut: 500,
+        sizeX: `auto`,
+        sizeY: 11,
+        posX: 50,
+        posY: 150,
         ui: {
             choice, 
              type: "box",
-             text: "servicecenter"
+             text: "<span> <img class='circle1' src='../assets/images/circles/greyish.svg' </span> Servicecenter"
          },
         hotspot: {
             type: "function",
-            func: () => { 
-                // Bibliotek // nyt kort servicecenter
+            func: () => {
+                // / nyt kort servicecenter
                 videoPlayer.currentTime(15.4);
                 videoPlayer.play();
                 pauseTime = 31.7;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -364,23 +372,24 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 23,
-        sizeY: 7,
-        posX: 76,
-        posY: 61.3,
+        markOut: 500,
+        sizeX: `auto`,
+        sizeY: 11,
+        posX: 50,
+        posY: 130,
         ui: {
             choice, 
              type: "box",
-             text: "studieadministration"
+             text: "<span> <img class='circle1' src='../assets/images/circles/black.svg' </span> Studieadministration"
          },
         hotspot: {
             type: "function",
             func: () => {
-                // Kantine og spiseområde // nyt kort studieadministration
+                // nyt kort Studieadministration
                 videoPlayer.currentTime(35);
                 videoPlayer.play();
                 pauseTime = 50;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -388,23 +397,24 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 0,
-        markOut: 4.1,
-        sizeX: 23,
-        sizeY: 7,
-        posX: 76,
-        posY: 68.4,
+        markOut: 500,
+        sizeX: `auto`,
+        sizeY: 11,
+        posX: 50,
+        posY: 110,
         ui: {
             choice, 
              type: "box",
-             text: "studievejledning"
+             text: "<span> <img class='circle1' src='../assets/images/circles/darkblue.svg' </span> Studievejledning"
          },
         hotspot: {
             type: "function",
             func: () => {
-                // Fredagsbar // nyt kort studievejledning
+                // nyt kort Studievejledning
                 videoPlayer.currentTime(53.8);
                 videoPlayer.play();
                 pauseTime = 83;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -417,15 +427,15 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 2.7,
-        sizeY: 4.7,
-        posX: 7.4,
-        posY: 59.5,
+        sizeX: 4,
+        sizeY: 6,
+        posX: 11,
+        posY: 67.5,
         ui:  {
            choiceCircle, 
             type: "box",
-            style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-            text: "hovedindgang"
+            style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red; background-color: red;`,
+            // text: "hovedindgang"
         },
         hotspot: {
             type: "function",
@@ -434,6 +444,7 @@ const hotspots = [
                 videoPlayer.currentTime(7);
                 videoPlayer.play();
                 pauseTime = 12.4;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -442,15 +453,15 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 2.7,
-        sizeY: 4.7,
-        posX: 42.2,
-        posY: 76,
+        sizeX: 4,
+        sizeY: 6,
+        posX: 60,
+        posY: 86,
         ui:  {
            choiceCircle, 
             type: "box",
-            style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-            text: "hovedindgang"
+            style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+            // text: "hovedindgang"
         },
         hotspot: {
             type: "function",
@@ -459,6 +470,7 @@ const hotspots = [
                 videoPlayer.currentTime(7);
                 videoPlayer.play();
                 pauseTime = 12.4;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -467,15 +479,15 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 2.7,
-        sizeY: 4.7,
-        posX: 46.2,
-        posY: 73.5,
+        sizeX: 4,
+        sizeY: 6,
+        posX: 65.8,
+        posY: 83.5,
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "Servicecenter"
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+            //  text: "Servicecenter"
          },
         hotspot: {
             type: "function",
@@ -484,6 +496,7 @@ const hotspots = [
                 videoPlayer.currentTime(15.4);
                 videoPlayer.play();
                 pauseTime = 31.7;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -493,15 +506,15 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 2.3,
-        sizeY: 4.4,
-        posX: 63.2,
-        posY: 58.5,
+        sizeX: 4,
+        sizeY: 6,
+        posX: 90,
+        posY: 68,
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "Studieadministration"
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+            //  text: "Studieadministration"
          },
         hotspot: {
             type: "function",
@@ -510,6 +523,7 @@ const hotspots = [
                 videoPlayer.currentTime(35);
                 videoPlayer.play();
                 pauseTime = 50;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -518,15 +532,15 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 2.3,
-        sizeY: 4.4,
-        posX: 60.3,
-        posY: 58.4,
+        sizeX: 4,
+        sizeY: 6,
+        posX: 84.3,
+        posY: 66.4,
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "Studievejledning"
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             // text: "Studievejledning"
          },
         hotspot: {
             type: "function",
@@ -535,6 +549,7 @@ const hotspots = [
                videoPlayer.currentTime(53.8);
                 videoPlayer.play();
                 pauseTime = 83;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -543,15 +558,15 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 2.3,
-        sizeY: 4.4,
-        posX: 64.9,
-        posY: 57.4,
+        sizeX: 4,
+        sizeY: 6,
+        posX: 94.4,
+        posY: 66.4,
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "Studievejledning"
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             // text: "Studievejledning"
          },
         hotspot: {
             type: "function",
@@ -560,6 +575,7 @@ const hotspots = [
                 videoPlayer.currentTime(53.8);
                 videoPlayer.play();
                 pauseTime = 83;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -568,15 +584,15 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 2.3,
-        sizeY: 4.4,
+        sizeX: 4,
+        sizeY: 6,
         posX: 1.4,
-        posY: 35.7,
+        posY: 39.7,
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "Faglokale"
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             // text: "Faglokale"
          },
         hotspot: {
             type: "function",
@@ -585,6 +601,7 @@ const hotspots = [
                 videoPlayer.currentTime(86.4);
                 videoPlayer.play();
                 pauseTime = 126.5;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -593,15 +610,15 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 2.3,
-        sizeY: 4.4,
-        posX: 5.1,
-        posY: 42.9,
+        sizeX: 4,
+        sizeY: 6,
+        posX: 7.1,
+        posY: 47.9,
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "Faglokale"
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             // text: "Faglokale"
          },
         hotspot: {
             type: "function",
@@ -610,6 +627,7 @@ const hotspots = [
                 videoPlayer.currentTime(86.4);
                 videoPlayer.play();
                 pauseTime = 126.5;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -618,15 +636,15 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 2.3,
-        sizeY: 4.4,
-        posX: 5.1,
-        posY: 59.2,
+        sizeX: 4,
+        sizeY: 6,
+        posX: 6.4,
+        posY: 67.2,
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "Faglokale"
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             // text: "Faglokale"
          },
         hotspot: {
             type: "function",
@@ -635,6 +653,7 @@ const hotspots = [
                 videoPlayer.currentTime(86.4);
                 videoPlayer.play();
                 pauseTime = 126.5;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -643,15 +662,15 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 2.7,
-        sizeY: 4.7,
-        posX: 14.9,
-        posY: 39.5,
+        sizeX: 4,
+        sizeY: 6,
+        posX: 21.6,
+        posY: 43,
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "gruppeområde"
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             // text: "gruppeområde"
          },
         hotspot: {
             type: "function",
@@ -660,6 +679,7 @@ const hotspots = [
                 videoPlayer.currentTime(129);
                 videoPlayer.play();
                 pauseTime = 146.5;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -669,15 +689,15 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 2.3,
-        sizeY: 4.4,
-        posX: 25.7,
-        posY: 51.6,
+        sizeX: 4,
+        sizeY: 6,
+        posX: 34.7,
+        posY: 58.1,
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "gruppeområde"
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             // text: "gruppeområde"
          },
         hotspot: {
             type: "function",
@@ -686,6 +706,7 @@ const hotspots = [
                 videoPlayer.currentTime(129);
                 videoPlayer.play();
                 pauseTime = 146.5;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -695,15 +716,15 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 2.3,
-        sizeY: 4.4,
-        posX: 3.7,
-        posY: 48.9,
+        sizeX: 4,
+        sizeY: 6,
+        posX: 4.2,
+        posY: 58,
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "gruppeområde"
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             // text: "gruppeområde"
          },
         hotspot: {
             type: "function",
@@ -712,6 +733,7 @@ const hotspots = [
                 videoPlayer.currentTime(129);
                 videoPlayer.play();
                 pauseTime = 146.5;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -721,15 +743,15 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 2.3,
-        sizeY: 4.4,
-        posX: 48.2,
-        posY: 65.7,
+        sizeX: 4,
+        sizeY: 6,
+        posX: 68.9,
+        posY: 74,
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "gruppeområde"
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             // text: "gruppeområde"
          },
         hotspot: {
             type: "function",
@@ -738,6 +760,7 @@ const hotspots = [
                 videoPlayer.currentTime(129);
                 videoPlayer.play();
                 pauseTime = 146.5;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -747,15 +770,15 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 2.3,
-        sizeY: 4.4,
-        posX: 11.1,
-        posY: 58,
+        sizeX: 4,
+        sizeY: 6,
+        posX: 15.4,
+        posY: 66,
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "Auditorium"
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             // text: "Auditorium"
          },
         hotspot: {
             type: "function",
@@ -764,6 +787,7 @@ const hotspots = [
                 videoPlayer.currentTime(150);
                 videoPlayer.play();
                 pauseTime = 168.3;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -772,15 +796,15 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 2.3,
-        sizeY: 4.4,
-        posX: 28.4,
-        posY: 51.4,
+        sizeX: 4,
+        sizeY: 6,
+        posX: 40.9,
+        posY: 57.6,
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "Fredagsbar"
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             // text: "Fredagsbar"
          },
         hotspot: {
             type: "function",
@@ -789,6 +813,7 @@ const hotspots = [
                 videoPlayer.currentTime(239.5);
                 videoPlayer.play();
                 pauseTime = 260;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -798,15 +823,15 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 2.3,
-        sizeY: 4.4,
-        posX: 44.5,
-        posY: 61,
+        sizeX: 4,
+        sizeY: 6,
+        posX: 63.5,
+        posY: 69,
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "Bibliotek"
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             // text: "Bibliotek"
          },
         hotspot: {
             type: "function",
@@ -815,6 +840,7 @@ const hotspots = [
                 videoPlayer.currentTime(172.4);
                 videoPlayer.play();
                 pauseTime = 205;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -824,15 +850,15 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 2.3,
-        sizeY: 4.4,
-        posX: 49.9,
-        posY: 52.5,
+        sizeX: 4,
+        sizeY: 6,
+        posX: 71.4,
+        posY: 59.1,
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "Bibliotek"
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             // text: "Bibliotek"
          },
         hotspot: {
             type: "function",
@@ -841,6 +867,7 @@ const hotspots = [
                 videoPlayer.currentTime(172.4);
                 videoPlayer.play();
                 pauseTime = 205;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -849,15 +876,15 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 2.3,
-        sizeY: 4.4,
-        posX: 16.3,
-        posY: 55,
+        sizeX: 4,
+        sizeY: 6,
+        posX: 16.7,
+        posY: 49,
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "kantine og spiseområde"
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             // text: "kantine og spiseområde"
          },
         hotspot: {
             type: "function",
@@ -866,6 +893,7 @@ const hotspots = [
                 videoPlayer.currentTime(208.4);
                 videoPlayer.play();
                 pauseTime = 235.3;
+                window.scrollTo(0, -100);
             }
         }
     },
@@ -874,15 +902,15 @@ const hotspots = [
         videoId: "video1",
         markIn: 0,
         markOut: 4.1,
-        sizeX: 2.3,
-        sizeY: 4.4,
-        posX: 11.9,
-        posY: 43,
+        sizeX: 4,
+        sizeY: 6,
+        posX: 23.9,
+        posY: 63,
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             text: "kantine og spiseområde"
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             // text: "kantine og spiseområde"
          },
         hotspot: {
             type: "function",
@@ -891,6 +919,7 @@ const hotspots = [
                 videoPlayer.currentTime(208.4);
                 videoPlayer.play();
                 pauseTime = 235.3;
+                window.scrollTo(0, -100);
             }
         }
     },
