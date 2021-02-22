@@ -312,7 +312,6 @@ button:hover {
         --hFont: 4vw;
         --pFont: 3vw;
     }
-  
 }
 
 /* additional sizes */
@@ -338,11 +337,7 @@ button:hover {
         --hFont: 6vw;
         --pFont: 3vw;
     }
-    .mobileMessage {
-        display: block;
-        margin-top: 2vw;
-    }
-  
+
 
     .video-js.vjs-fluid,
     .video-js.vjs-16-9,
@@ -471,7 +466,5 @@ button:hover {
     text-align: start;
     line-height: 1.4;
     }
-
-
     
 }
