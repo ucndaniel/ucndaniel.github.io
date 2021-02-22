@@ -434,7 +434,7 @@ const hotspots = [
         ui:  {
            choiceCircle, 
             type: "box",
-            style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red; background-color: red;`,
+            style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
             // text: "hovedindgang"
         },
         hotspot: {
@@ -460,7 +460,7 @@ const hotspots = [
         ui:  {
            choiceCircle, 
             type: "box",
-            style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+            style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
             // text: "hovedindgang"
         },
         hotspot: {
@@ -486,7 +486,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
             //  text: "Servicecenter"
          },
         hotspot: {
@@ -513,7 +513,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
             //  text: "Studieadministration"
          },
         hotspot: {
@@ -539,7 +539,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "Studievejledning"
          },
         hotspot: {
@@ -565,7 +565,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "Studievejledning"
          },
         hotspot: {
@@ -591,7 +591,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "Faglokale"
          },
         hotspot: {
@@ -617,7 +617,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "Faglokale"
          },
         hotspot: {
@@ -643,7 +643,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "Faglokale"
          },
         hotspot: {
@@ -669,7 +669,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "gruppeområde"
          },
         hotspot: {
@@ -696,7 +696,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "gruppeområde"
          },
         hotspot: {
@@ -723,7 +723,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "gruppeområde"
          },
         hotspot: {
@@ -750,7 +750,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "gruppeområde"
          },
         hotspot: {
@@ -777,7 +777,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "Auditorium"
          },
         hotspot: {
@@ -803,7 +803,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "Fredagsbar"
          },
         hotspot: {
@@ -830,7 +830,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "Bibliotek"
          },
         hotspot: {
@@ -857,7 +857,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "Bibliotek"
          },
         hotspot: {
@@ -883,7 +883,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "kantine og spiseområde"
          },
         hotspot: {
@@ -909,7 +909,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: red;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "kantine og spiseområde"
          },
         hotspot: {
