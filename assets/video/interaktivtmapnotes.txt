@@ -1,3 +1,0 @@
-*preload javascript
-*video load speed
-*startside til alle links
