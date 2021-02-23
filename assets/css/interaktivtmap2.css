@@ -539,68 +539,14 @@ button:hover {
     padding-top: 49.8%;
 }
 
-    /* #hotspotId11 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
-    #hotspotId12 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
-    #hotspotId13 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
-    #hotspotId14 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
-    #hotspotId15 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
-    #hotspotId16 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
-    #hotspotId17 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
-    #hotspotId18 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
-    #hotspotId19 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
-    #hotspotId20 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
-    #hotspotId21 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
-    #hotspotId22 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
-    #hotspotId23 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
-    #hotspotId24 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
-    #hotspotId25 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
-    #hotspotId26 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
-    #hotspotId27 {
-        clip: rect(0px, 11px, 10px, 0px);
-    }
-    #hotspotId28 {
-        clip: rect(0px, 11px, 10px, 0px);
-    } */
-        #hotspotId29 {
-            width: 40%;
+    } 
+    #hotspotId29 {
+    width: 40%;
     position: fixed;
     top: 6%;
     left: 76%;
     transform: translate(-50%, -50%);
             }
-}
 
 /* MediaQueries for mobile  */
 
