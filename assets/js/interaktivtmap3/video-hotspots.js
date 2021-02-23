@@ -176,7 +176,7 @@ const hotspots = [
         sizeX: `auto`,
         sizeY: 11,
         posX: 3,
-        posY: 100,
+        posY: 105,
         ui: {
            choice, 
             type: "box",
@@ -201,7 +201,7 @@ const hotspots = [
         sizeX: `auto`,
         sizeY: 11,
         posX: 50,
-        posY: 100,
+        posY: 105,
         ui: {
             choice, 
              type: "box",
@@ -226,7 +226,7 @@ const hotspots = [
         sizeX: `auto`,
         sizeY: 11,
         posX: 3,
-        posY: 120,
+        posY: 125,
         ui: {
             choice, 
              type: "box",
@@ -251,7 +251,7 @@ const hotspots = [
         sizeX: `auto`,
         sizeY: 11,
         posX: 50,
-        posY: 120,
+        posY: 125,
         ui: {
             choice, 
              type: "box",
@@ -276,7 +276,7 @@ const hotspots = [
         sizeX: `auto`,
         sizeY: 11,
         posX: 3,
-        posY: 140,
+        posY: 145,
         ui: {
             choice, 
              type: "box",
@@ -301,7 +301,7 @@ const hotspots = [
         sizeX: `auto`,
         sizeY: 11,
         posX: 50,
-        posY: 140,
+        posY: 145,
         ui: {
             choice, 
              type: "box",
@@ -326,7 +326,7 @@ const hotspots = [
         sizeX: `auto`,
         sizeY: 11,
         posX: 3,
-        posY: 160,
+        posY: 165,
         ui: {
             choice, 
              type: "box",
@@ -351,7 +351,7 @@ const hotspots = [
         sizeX: `auto`,
         sizeY: 11,
         posX: 50,
-        posY: 160,
+        posY: 165,
         ui: {
             choice, 
              type: "box",
@@ -376,7 +376,7 @@ const hotspots = [
         sizeX: `auto`,
         sizeY: 11,
         posX: 3,
-        posY: 180,
+        posY: 185,
         ui: {
             choice, 
              type: "box",
