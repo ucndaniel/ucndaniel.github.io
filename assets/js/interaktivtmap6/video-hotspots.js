@@ -542,7 +542,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: #004250;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
              // text: "Studievejledning"
          },
         hotspot: {
@@ -646,7 +646,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: #0046AD;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "Faglokale"
          },
         hotspot: {
@@ -673,7 +673,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: #0046AD;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "Faglokale"
          },
         hotspot: {
@@ -700,7 +700,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: #0046AD;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "Faglokale"
          },
         hotspot: {
@@ -727,7 +727,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: #0046AD;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "Faglokale"
          },
         hotspot: {
@@ -754,7 +754,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: #0046AD;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); `,
              // text: "Faglokale"
          },
         hotspot: {
@@ -807,7 +807,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: #BED6DB;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
              // text: "Gruppeområde"
          },
         hotspot: {
@@ -834,7 +834,7 @@ const hotspots = [
         ui:  {
             choiceCircle, 
              type: "box",
-             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0); background-color: #BED6DB;`,
+             style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
              // text: "Gruppeområde"
          },
         hotspot: {
