@@ -175,8 +175,8 @@ const hotspots = [
         markOut: 500,
         sizeX: `auto`,
         sizeY: 11,
-        posX: 10,
-        posY: 180,
+        posX: 3,
+        posY: 100,
         ui: {
            choice, 
             type: "box",
@@ -200,8 +200,8 @@ const hotspots = [
         markOut: 500,
         sizeX: `auto`,
         sizeY: 11,
-        posX: 10,
-        posY: 160,
+        posX: 50,
+        posY: 100,
         ui: {
             choice, 
              type: "box",
@@ -225,8 +225,8 @@ const hotspots = [
         markOut: 500,
         sizeX: `auto`,
         sizeY: 11,
-        posX: 10,
-        posY: 140,
+        posX: 3,
+        posY: 120,
         ui: {
             choice, 
              type: "box",
@@ -250,7 +250,7 @@ const hotspots = [
         markOut: 500,
         sizeX: `auto`,
         sizeY: 11,
-        posX: 10,
+        posX: 50,
         posY: 120,
         ui: {
             choice, 
@@ -275,8 +275,8 @@ const hotspots = [
         markOut: 500,
         sizeX: `auto`,
         sizeY: 11,
-        posX: 10,
-        posY: 100,
+        posX: 3,
+        posY: 140,
         ui: {
             choice, 
              type: "box",
@@ -301,7 +301,7 @@ const hotspots = [
         sizeX: `auto`,
         sizeY: 11,
         posX: 50,
-        posY: 160,
+        posY: 140,
         ui: {
             choice, 
              type: "box",
@@ -325,8 +325,8 @@ const hotspots = [
         markOut: 500,
         sizeX: `auto`,
         sizeY: 11,
-        posX: 50,
-        posY: 140,
+        posX: 3,
+        posY: 160,
         ui: {
             choice, 
              type: "box",
@@ -351,7 +351,7 @@ const hotspots = [
         sizeX: `auto`,
         sizeY: 11,
         posX: 50,
-        posY: 120,
+        posY: 160,
         ui: {
             choice, 
              type: "box",
@@ -375,8 +375,8 @@ const hotspots = [
         markOut: 500,
         sizeX: `auto`,
         sizeY: 11,
-        posX: 50,
-        posY: 100,
+        posX: 3,
+        posY: 180,
         ui: {
             choice, 
              type: "box",
@@ -1076,7 +1076,7 @@ const hotspots = [
         markOut: 21,
         sizeX: 30,
         sizeY: 32,
-        posX: 52,
+        posX: 50,
         posY: 6,
         ui: {
             type: "image",
