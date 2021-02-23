@@ -873,7 +873,7 @@ const hotspots = [
         markOut: 4.1,
         sizeX: 4,
         sizeY: 6,
-        posX: 55,
+        posX: 57,
         posY: 39.9,
         ui:  {
             choiceCircle, 
