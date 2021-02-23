@@ -655,6 +655,11 @@ button:hover {
         top: 9% !important;
     } */
 
+    .circle1 {
+        width: 3vw;
+        margin-right: 1vw;
+    }
+
     #hotspotId0 {
         position: absolute;
         border: 0px solid #ffe5a7;

@@ -390,7 +390,10 @@ button:hover {
         padding-top: 56.3%;
     }
 
-    
+    .circle1 {
+        width: 3vw;
+        margin-right: 1vw;
+    }
 
     #hotspotId0 {
         position: absolute;

@@ -338,7 +338,10 @@ button:hover {
         --pFont: 3vw;
     }
 
-
+    .circle1 {
+        width: 3vw;
+        margin-right: 1vw;
+    }
     .video-js.vjs-fluid,
     .video-js.vjs-16-9,
     .video-js.vjs-4-3 {
