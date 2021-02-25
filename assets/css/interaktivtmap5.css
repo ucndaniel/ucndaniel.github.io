@@ -565,6 +565,11 @@ button:hover {
         --hFont: 6vw;
         --pFont: 3vw;
     }
+
+    .video-js .vjs-big-play-button {
+        display: none;
+    
+    }
     .mobileMessage {
         display: block;
         margin-top: 2vw;
