@@ -471,7 +471,10 @@ button:hover {
     pointer-events: none;
 }
 
+.video-js .vjs-big-play-button {
+    background-color: #00415044;
 
+}
 
 .video-js:hover .vjs-big-play-button:hover {
     background-color: #004250;
