@@ -89,6 +89,12 @@ div>.hotspot.image {
     background-position: center;
 }
 
+
+.vjs-big-play-centered .vjs-big-play-button {
+    display: none;
+}
+
+
 video:focus {
     outline: none;
 }
@@ -462,10 +468,7 @@ button:hover {
     pointer-events: none;
 }
 
-.video-js .vjs-big-play-button {
-    display: none;
 
-}
 
 .video-js:hover .vjs-big-play-button:hover {
     background-color: #004250;
@@ -565,10 +568,8 @@ button:hover {
         --hFont: 6vw;
         --pFont: 3vw;
     }
-
-    .video-js .vjs-big-play-button {
+    .vjs-big-play-button {
         display: block;
-    
     }
     .mobileMessage {
         display: block;
@@ -736,5 +737,8 @@ button:hover {
     font-weight: bold;
     text-align: start;
     line-height: 1.4;
+    }
+    .vjs-has-started .vjs-big-play-button {
+        display: none;
     }
 }
