@@ -180,7 +180,7 @@ const hotspots = [
         ui: {
            choice, 
             type: "box",
-            text: "<span> <img class='circle1' src='assets/images/circles/yellow1.svg' </span> Auditorium"
+            text: "<span> <img class='circle1' src='../assets/images/circles/yellow1.svg' </span> Auditorium"
         },
         hotspot: {
             type: "function",
@@ -205,7 +205,7 @@ const hotspots = [
         ui: {
             choice, 
              type: "box",
-             text: "<span> <img class='circle1' src='assets/images/circles/yellow2.svg' </span> Bibliotek"
+             text: "<span> <img class='circle1' src='../assets/images/circles/yellow2.svg' </span> Bibliotek"
          },
         hotspot: {
             type: "function",
@@ -230,7 +230,7 @@ const hotspots = [
         ui: {
             choice, 
              type: "box",
-             text: "<span> <img class='circle1' src='assets/images/circles/blue1.svg' </span> Faglokale"
+             text: "<span> <img class='circle1' src='../assets/images/circles/blue1.svg' </span> Faglokale"
          },
         hotspot: {
             type: "function",
@@ -255,7 +255,7 @@ const hotspots = [
         ui: {
             choice, 
              type: "box",
-             text: "<span> <img class='circle1' src='assets/images/circles/blue2.svg' </span> Fredagsbar"
+             text: "<span> <img class='circle1' src='../assets/images/circles/blue2.svg' </span> Fredagsbar"
          },
         hotspot: {
             type: "function",
@@ -280,7 +280,7 @@ const hotspots = [
         ui: {
             choice, 
              type: "box",
-             text: "<span> <img class='circle1' src='assets/images/circles/lightblue.svg' </span> Gruppeområde <span>" 
+             text: "<span> <img class='circle1' src='../assets/images/circles/lightblue.svg' </span> Gruppeområde <span>" 
          },
         hotspot: {
             type: "function",
@@ -305,7 +305,7 @@ const hotspots = [
         ui: {
             choice, 
              type: "box",
-             text: "<span> <img class='circle1' src='assets/images/circles/red.svg' </span> Hovedindgang"
+             text: "<span> <img class='circle1' src='../assets/images/circles/red.svg' </span> Hovedindgang"
          },
         hotspot: {
             type: "function",
@@ -330,7 +330,7 @@ const hotspots = [
         ui: {
             choice, 
              type: "box",
-             text: "<span> <img class='circle1' src='assets/images/circles/pink2.svg' </span> International afdeling"
+             text: "<span> <img class='circle1' src='../assets/images/circles/pink2.svg' </span> International afdeling"
          },
         hotspot: {
             type: "function",
@@ -355,7 +355,7 @@ const hotspots = [
         ui: {
             choice, 
              type: "box",
-             text: "<span> <img class='circle1' src='assets/images/circles/pink1.svg' </span> Kantine og spiseområde"
+             text: "<span> <img class='circle1' src='../assets/images/circles/pink1.svg' </span> Kantine og spiseområde"
          },
         hotspot: {
             type: "function",
@@ -380,7 +380,7 @@ const hotspots = [
         ui: {
             choice, 
              type: "box",
-             text: "<span> <img class='circle1' src='assets/images/circles/greyish.svg' </span> Servicecenter"
+             text: "<span> <img class='circle1' src='../assets/images/circles/greyish.svg' </span> Servicecenter"
          },
         hotspot: {
             type: "function",
@@ -405,7 +405,7 @@ const hotspots = [
         ui: {
             choice, 
              type: "box",
-             text: "<span> <img class='circle1' src='assets/images/circles/black.svg' </span> Studieadministration"
+             text: "<span> <img class='circle1' src='../assets/images/circles/black.svg' </span> Studieadministration"
          },
         hotspot: {
             type: "function",
@@ -431,7 +431,7 @@ const hotspots = [
         ui: {
             choice, 
              type: "box",
-             text: "<span> <img class='circle1' src='assets/images/circles/darkblue.svg' </span> Studievejledning"
+             text: "<span> <img class='circle1' src='../assets/images/circles/darkblue.svg' </span> Studievejledning"
          },
         hotspot: {
             type: "function",

@@ -4,7 +4,7 @@ const content = {
     "autoplay": 'muted',
     "muted": false,
     "responsive": true,
-    "poster": "assets/images/ucnlogo2.png"
+    "poster": "../assets/images/ucnlogo2.png"
 }
 var videoPlayer = videojs("video1", content);
 
