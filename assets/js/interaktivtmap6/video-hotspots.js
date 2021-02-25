@@ -980,7 +980,7 @@ const hotspots = [
         padding: 1vw; 
         border-radius: .5vw;
         position: absolute;`,
-        text: "Tilbage til kortet"
+        text: "Se kortet"
     },
     hotspot: {
         type: "function",
