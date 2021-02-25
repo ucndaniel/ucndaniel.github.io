@@ -90,9 +90,9 @@ div>.hotspot.image {
 }
 
 
-.vjs-big-play-centered .vjs-big-play-button {
+/* .vjs-big-play-centered .vjs-big-play-button {
     display: none;
-}
+} */
 
 
 video:focus {
@@ -737,11 +737,5 @@ button:hover {
     font-weight: bold;
     text-align: start;
     line-height: 1.4;
-    }
-    .vjs-big-play-button .vjs-big-play-centered {
-        display: block;
-    }
-    .vjs-has-started {
-        display: none;
     }
 }
