@@ -96,6 +96,7 @@ div>.hotspot.image {
 
 span {
     display: flex;
+    align-items: center;
 }
 video:focus {
     outline: none;
