@@ -326,6 +326,13 @@ button:hover {
         --hFont: 6vw;
         --pFont: 3vw;
     }
+    #hotspotId22 {
+        width: 52%;
+        position: fixed;
+        top: 10%;
+        left: 73%;
+        transform: translate(-50%, -50%);
+        }
     .mobileMessage {
         display: block;
         margin-top: 2vw;
