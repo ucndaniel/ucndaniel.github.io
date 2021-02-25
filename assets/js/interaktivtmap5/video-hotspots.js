@@ -589,7 +589,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute;color: rgba(0, 0, 0, 0);`,
-             title: "studievejledning"
+             title: "Studievejledning"
          },
         hotspot: {
             type: "function",
@@ -826,8 +826,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute;color: rgba(0, 0, 0, 0);`,
-             // text: "main street"
-             title: "Main Street"
+             title: "Main street"
          },
         hotspot: {
             type: "function",
@@ -854,7 +853,6 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute;color: rgba(0, 0, 0, 0);`,
-             // text: "fredagsbar"
              title: "Fredagsbar"
          },
         hotspot: {
@@ -882,7 +880,6 @@ const hotspots = [
              type: "box",
              style: `border-radius: 50%; position: absolute;color: rgba(0, 0, 0, 0);`,
              title: "Boghandlen"
-             // text: "boghandlen"
          },
         hotspot: {
             type: "function",
@@ -962,7 +959,7 @@ const hotspots = [
             choiceCircle, 
              type: "box",
              style: `border-radius: 50%; position: absolute; color: rgba(0, 0, 0, 0);`,
-             title: "kantine og spiseområde"
+             title: "Kantine og spiseområde"
          },
         hotspot: {
             type: "function",
