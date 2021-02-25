@@ -94,6 +94,10 @@ div>.hotspot.image {
 video:focus {
     outline: none;
 }
+span {
+    display: flex;
+    align-items: center;
+}
 .vjs-poster {
     background-size: cover;
 }
