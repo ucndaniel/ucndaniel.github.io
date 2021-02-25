@@ -94,7 +94,9 @@ div>.hotspot.image {
     display: none;
 } */
 
-
+span {
+    display: flex;
+}
 video:focus {
     outline: none;
 }
