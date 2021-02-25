@@ -945,7 +945,7 @@ const hotspots = [
         padding: 1vw; 
         border-radius: .5vw;
         position: absolute;`,
-        text: "Se kortet"
+        text: "Tilbage til kortet"
     },
     hotspot: {
         type: "function",
