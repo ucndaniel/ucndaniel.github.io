@@ -227,7 +227,7 @@ video:focus {
         font-weight: bold;
         text-align: left;
 }
-#hotspotId12 {
+ #hotspotId12 {
     position: absolute;
         border: 0px solid #004250;
         color: #004250;
@@ -237,7 +237,7 @@ video:focus {
         font-weight: bold;
         text-align: left;
 }
-
+/*
 #hotspotId13[title]:hover::after {
     content: attr(title);
     position: absolute;
@@ -427,7 +427,7 @@ video:focus {
     font-weight: bold;
     border: 3px solid #004250;
     padding: 5px;
-} 
+}  */
 
 .circle1 {
     width: 2vw;
@@ -569,7 +569,13 @@ button:hover {
         display: block;
         margin-top: 2vw;
     }
-
+    #hotspotId32 {
+        width: 49%;
+        position: fixed;
+        top: 10%;
+        left: 73%;
+        transform: translate(-50%, -50%);
+        }
     .video-js.vjs-fluid,
     .video-js.vjs-16-9,
     .video-js.vjs-4-3 {
