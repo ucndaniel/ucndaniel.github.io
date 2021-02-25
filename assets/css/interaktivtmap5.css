@@ -100,6 +100,7 @@ video:focus {
 }
 .vjs-poster {
     background-size: cover;
+    display: none;
 }
 /* tekst i højre side af mappet - fontsize til screenreader - skift border til 1px og color til hvilken som helst farve for at se den usynlige tekst som screenreader læser op ved hover*/
 
