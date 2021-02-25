@@ -738,6 +738,9 @@ button:hover {
     text-align: start;
     line-height: 1.4;
     }
+    .vjs-big-play-button .vjs-big-play-centered {
+        display: block;
+    }
     .vjs-has-started {
         display: none;
     }
