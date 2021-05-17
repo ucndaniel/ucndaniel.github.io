@@ -1284,16 +1284,18 @@ footer p {
         display: grid;
         grid-template-areas: 'box1' 'box2' 'box3' 'box4' 'box5';
         width: 90vw;
-        
         margin: auto;
-        margin-top: 50px;
+        margin-top: 20px;
     }
     .boxOne, .boxTwo, .boxThree, .boxFour, .boxFive {
         padding: 11px;
         align-self: center;
-        width: 80vw;
+        width: 90vw;
         margin: auto;
-        
+        padding-top: 20px;
+    }
+    .boxFour, .boxTwo {
+        padding-top: 5px;
     }
     .boxOne h3, .boxThree h3 {
         font-size: 2.8vw;
@@ -1411,7 +1413,7 @@ footer p {
         font-weight: 400;
         line-height: 40px;
         max-width: 204px;
-        margin-top: 5vw;
+        margin-top: 10vw;
     }
     .textProject1 {
         font-size: 16px;
@@ -1425,7 +1427,7 @@ footer p {
     footer {
         grid-template-areas: 'githubText' 'github' 'emailText' 'email' 'somethingText' 'something';
         grid-template-columns: 1fr;
-        margin-top: 20vw;
+        margin-top: 40vw;
     }
     .githubText {
         margin-bottom: 0;
@@ -1433,7 +1435,7 @@ footer p {
     }
     .emailText {
         margin-bottom: 0;
-        padding-top: 10px;
+        padding-top: 25px;
     }
     .something img {
         margin: 5px;
@@ -1441,7 +1443,7 @@ footer p {
     }
     .somethingText {
         margin-bottom: 0;
-        padding-top: 10px;
+        padding-top: 30px;
     }
     .github {
         margin: 10px;
@@ -1584,12 +1586,13 @@ footer p {
         padding-top: 7.5vw;
         margin: auto;
     }
-    .boxOne h3, .boxThree h3 {
+    .boxOne h3 {
         font-size: 5vw;
     }
-    .boxFive h3 {
+    .boxFive h3, .boxThree h3{
         text-align: left;
         font-size: 5vw;
+        margin-top: 7vw;
     }
 
     .image-gallery {
