@@ -15,7 +15,7 @@
 // funktion til billedeskift
 function makeMeCool() 
 {
-        document.getElementById("image").src = "../assets/images/standarddan.jpg";  
+        document.getElementById("image").src = "../assets/images/mig.jpg";  
     }
 
     function makeMeNormal() 

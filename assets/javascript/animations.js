@@ -21,13 +21,3 @@ anime({
     easing: 'linear'
   });
 
-  window.
-onload
-= function() {
-  Particles.
-init
-({
-    selector: 
-'.background'
-  });
-};

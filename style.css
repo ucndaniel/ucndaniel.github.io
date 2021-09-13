@@ -10,7 +10,7 @@ html {
 
 /* colors: #343A42 - #CCE0D1 - #5BB7AA */
 
-.bgWrapper {
+/* .bgWrapper {
     position: relative;
   }
   .bgWrapper::before {
@@ -23,9 +23,9 @@ html {
     filter: opacity(0.1);
   }
   .bgWrapper-inside {
-    /* This will make it stack on top of the ::before */
+     This will make it stack on top of the ::before 
     position: relative;
-  }
+  } */
 body {
     /* background: linear-gradient(#5BB7AA, #5BB7AA, #923777) center no-repeat fixed;
     background-size: cover;
@@ -51,10 +51,10 @@ body {
         } */
     /* background: #F6C332; EAB449 anden gul */
     /* background: #AAE1D1; */
-    /* background: #FBE598; anden gul */
+    /* background: #FBE598; anden gul 
     /* background: #E8CF3F; */
     position: relative;
-    background-color: #c5e6e5;
+    background: rgb(0, 0, 0);
     z-index: 2;
     color: #292626;
     margin: 0;
@@ -83,7 +83,7 @@ background-size: cover;    */
 h1, h2, h3, h4, h5 {
     font-size: 1.6vw;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
     font-style: normal;
 }
@@ -107,6 +107,11 @@ p, li, a {
 
 /* header start */
 
+.headerContainer {
+    border-bottom: #ffffff 1px solid;
+ 
+}
+
 header {
     width: 80%;
     display: grid;
@@ -122,10 +127,10 @@ header {
     text-decoration: none;
     align-self: center;
     color: #272727;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
     letter-spacing: 0.2vw;
-    color: #000;
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px #ff1f8f;
     /* -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #272627;
@@ -151,13 +156,13 @@ nav ul {
     justify-self: end;
     grid-gap: 1vw;
 }
-
+/* 
 .divider {
     align-self: center;
     color: #000;
     text-shadow: 1px 1px #ff1f8f;
     transition: ease-in-out 0.1s;
-}
+} */
 
 nav li {
     display: grid;
@@ -171,10 +176,10 @@ nav li a {
     width: max-content;
     margin: 5px;
     opacity: 1;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-decoration: none;
     letter-spacing: 0.1em;
-    color: #000;
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px #ff1f8f;
     font-weight: bold;
     /* -webkit-text-fill-color: transparent;
@@ -184,7 +189,7 @@ nav li a {
                           2px 2px #ff1f8f,
                           3px 3px #000000; */
     transition: ease-in-out 0.1s;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .activePage {
@@ -210,14 +215,15 @@ nav li a:hover {
     margin-bottom: 4vw;
 }
 
-/* .spaceShipGoBrrBrr {
+ .spaceShipGoBrrBrr {
+     color: white;
         width: 5vw;
         height: 5vw;
         position: absolute;
         top: 22vw;
         left: -10vw;
         overflow: hidden;
-    } */
+    } 
 
 .shadow {
     filter: drop-shadow(3px 3px 2px #ff1f8f);
@@ -275,13 +281,26 @@ section p {
 
 .boxMiddle {
     width: 22.5vw;
-    color: black;
+    min-height: 14rem;
+    color: rgb(255, 255, 255);
     display: grid;
     padding: 1vw;
-    padding-top: 0.7vw;
     /* border-right: 1px solid #ff1f8f; borders */
     border-left: 0;
     border-top: 0;
+    background: rgba(0, 0, 0, 0.253);
+    border: white 1px solid;
+    border-top-color: #ff1f8f;
+    border-left-color: #ff1f8f;
+    border-bottom-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    object-fit: contain;
+    box-shadow: #f7e017 4px 4px;
+
+
+    /* -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px; */
 }
 
 .boxRight {
@@ -296,7 +315,7 @@ section p {
 .boxMiddle div h1 {
     font-size: 1.6vw;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 600;
     text-shadow: 1px 1px #ff1f8f;
     margin-bottom: 0.5vw;
@@ -304,9 +323,9 @@ section p {
 
 .boxMiddle div h1 a {
     font-size: 1.6vw;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 600;
     text-shadow: 1px 1px #ff1f8f;
     margin-bottom: 0.5vw;
@@ -328,12 +347,13 @@ section p {
 }
 
 .links {
-    color: #000;
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px #ff1f8f;
 }
 
 .links:hover {
     color: #ccc;
+    text-decoration: underline;
 }
 
 .section2 {
@@ -401,7 +421,7 @@ a.icon:hover {
 .textProject1 {
     font-size: 1.4vw;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 600;
     text-shadow: 1px 1px #ff1f8f;
     margin-bottom: 0.5vw;
@@ -427,7 +447,7 @@ a.icon:hover {
 /* button */
 
 .btnFp {
-    color: #000;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     display: block;
     background-color: rgba(0, 0, 0, 0);
@@ -1004,19 +1024,21 @@ a.icon:hover {
 /* projekt-individuelle END */
 
 /* footer start */
-
+.footerContainer {
+    background: white;
+}
 footer {
     display: grid;
     grid-area: footer;
     grid-template-areas: 'githubText emailText somethingText' 'github email something';
     color: #fff;
     align-items: center;
-    padding: 140px;
+    padding: 120px;
     grid-template-columns: 1fr 1fr 1fr;
     width: 90%;
     /* height: 12vw; */
     margin: auto;
-    border-top: 0.01vw solid #000; 
+    /* border-top: 0.01vw solid #000;  */
     font-weight: bold;
     clear: both;
     margin-top: 12vw;
