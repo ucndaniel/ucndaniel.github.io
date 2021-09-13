@@ -54,9 +54,9 @@ body {
     /* background: #FBE598; anden gul 
     /* background: #E8CF3F; */
     position: relative;
-    background: rgb(0, 0, 0);
+    background: rgb(21, 23, 36);
     z-index: 2;
-    color: #292626;
+    color: #fff;
     margin: 0;
     /* background by SVGBackgrounds.com */
     /* pyramide 1 
@@ -66,7 +66,7 @@ background-attachment: fixed;
 background-size: cover;   */
     /* pyramide 2
 background-color: #c8ffdd;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23272727' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23ff1f8f' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23272727' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23ff1f8f' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23272727' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23ff1f8f' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23272727' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ff1f8f' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23272727' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23ff1f8f' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23272727' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23ff1f8f' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23272727' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23f7e017' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23272727' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23f7e017' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23272727' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23f7e017' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23272727' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23f7e017' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23272727' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23f7e017' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23272727' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23f7e017' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
 background-attachment: fixed;
 background-size: cover; */
     /* cirkulær baggrund  */
@@ -108,7 +108,7 @@ p, li, a {
 /* header start */
 
 .headerContainer {
-    border-bottom: #ffffff 1px solid;
+    border-bottom: #f7e017 3px solid;
  
 }
 
@@ -121,22 +121,34 @@ header {
 
 .logo {
     align-self: center;
+    position: relative;
+   
+}
+.logo img {
+    width: 4rem;
+    
 }
 
 .logo a {
     text-decoration: none;
     align-self: center;
-    color: #272727;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
     letter-spacing: 0.2vw;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px #ff1f8f;
+    color: #fff;
+    /* text-shadow: 1px 1px #f7e017;  */
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
     /* -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #272627;
     text-shadow: 
-                          2px 2px #ff1f8f; */
+                          2px 2px #000; */
     font-size: 1.6vw;
+    
 }
 
 nav {
@@ -160,33 +172,32 @@ nav ul {
 .divider {
     align-self: center;
     color: #000;
-    text-shadow: 1px 1px #ff1f8f;
+    text-shadow: 1px 1px #f7e017;
     transition: ease-in-out 0.1s;
 } */
 
 nav li {
     display: grid;
     opacity: 1;
-    color: #343A42;
     align-items: center;
     justify-self: center;
 }
 
 nav li a {
     width: max-content;
-    margin: 5px;
+    margin: 20px;
     opacity: 1;
     font-size: 1.2em;
     text-decoration: none;
     letter-spacing: 0.1em;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px #ff1f8f;
+    color: #fff;
+    /* text-shadow: 1px 1px #f7e017; */
     font-weight: bold;
     /* -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #272627;
     text-shadow: 
-                          2px 2px #ff1f8f,
+                          2px 2px #f7e017,
                           3px 3px #000000; */
     transition: ease-in-out 0.1s;
     font-family: 'Josefin Sans', sans-serif;
@@ -215,7 +226,7 @@ nav li a:hover {
     margin-bottom: 4vw;
 }
 
- .spaceShipGoBrrBrr {
+ /* .spaceShipGoBrrBrr {
      color: white;
         width: 5vw;
         height: 5vw;
@@ -223,20 +234,20 @@ nav li a:hover {
         top: 22vw;
         left: -10vw;
         overflow: hidden;
-    } 
+    }  */
 
 .shadow {
-    filter: drop-shadow(3px 3px 2px #ff1f8f);
+    filter: drop-shadow(0.1px 0.1px 4px #f7e017);
     /* animation: shadow 1500ms ease-in-out; */
 }
 
 /* @keyframes shadow {
         0% {
-            filter: drop-shadow(3px 3px 50px #ff1f8f);
+            filter: drop-shadow(3px 3px 50px #f7e017);
         }
 
         100% {
-            filter: drop-shadow(3px 3px 2px #ff1f8f);
+            filter: drop-shadow(3px 3px 2px #f7e017);
         }
     } */
 
@@ -248,7 +259,7 @@ nav li a:hover {
     text-align: center;
     font-size: 6vw;
     letter-spacing: 0.4vw;
-    background: linear-gradient( 135deg, #ff1f8f 10%, black 84%);
+    background: linear-gradient( 135deg, #f7e017 10%, black 84%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -281,21 +292,21 @@ section p {
 
 .boxMiddle {
     width: 22.5vw;
-    min-height: 14rem;
+    min-height: 12rem;
     color: rgb(255, 255, 255);
     display: grid;
     padding: 1vw;
-    /* border-right: 1px solid #ff1f8f; borders */
+    /* border-right: 1px solid #f7e017; borders */
     border-left: 0;
     border-top: 0;
-    background: rgba(0, 0, 0, 0.253);
+    background: rgba(0, 0, 0, 0.075);
     border: white 1px solid;
-    border-top-color: #ff1f8f;
-    border-left-color: #ff1f8f;
-    border-bottom-color: rgb(0, 0, 0);
-    border-right-color: rgb(0, 0, 0);
+    border-top-color: #f7e11700;
+    border-left-color: #f7e11700;
+    border-bottom-color: rgb(21, 23, 36);
+    border-right-color: rgb(21, 23, 36);
     object-fit: contain;
-    box-shadow: #f7e017 4px 4px;
+    box-shadow: #f7e017 3px 3px;
 
 
     /* -webkit-border-radius: 10px;
@@ -315,9 +326,9 @@ border-radius: 10px; */
 .boxMiddle div h1 {
     font-size: 1.6vw;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-weight: 600;
-    text-shadow: 1px 1px #ff1f8f;
+    /* text-shadow: 1px 1px #f7e017; */
     margin-bottom: 0.5vw;
 }
 
@@ -325,16 +336,18 @@ border-radius: 10px; */
     font-size: 1.6vw;
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-weight: 600;
-    text-shadow: 1px 1px #ff1f8f;
+     /* text-shadow: 1px 1px #f7e017;  */
     margin-bottom: 0.5vw;
 }
-
+.boxMiddle div span {
+    text-shadow: 2px 2px #f7e017;
+}
 .boxMiddle div h1 a:hover {
     transition: ease-in-out 0.1s;
     -webkit-text-stroke-color: #42393e;
-    border-bottom: 5px ridge #ff1f8f;
+    border-bottom: 5px ridge #f7e017;
 }
 
 .boxMiddle ul {
@@ -347,12 +360,12 @@ border-radius: 10px; */
 }
 
 .links {
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px #ff1f8f;
+    color: #f7e017;
+    text-decoration: underline;
 }
 
 .links:hover {
-    color: #ccc;
+    
     text-decoration: underline;
 }
 
@@ -421,9 +434,9 @@ a.icon:hover {
 .textProject1 {
     font-size: 1.4vw;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #f7e017;
     font-weight: 600;
-    text-shadow: 1px 1px #ff1f8f;
+    /* text-shadow: 1px 1px #f7e017; */
     margin-bottom: 0.5vw;
 }
 
@@ -447,18 +460,18 @@ a.icon:hover {
 /* button */
 
 .btnFp {
-    color: rgb(255, 255, 255);
+    color: #fff;
     cursor: pointer;
     display: block;
     background-color: rgba(0, 0, 0, 0);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 45px;
     margin: 0 0 2em;
     max-width: 230px;
     margin-top: 5vw;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform:uppercase;
     width: 100%;
     position: absolute;
     margin-left: auto;
@@ -481,12 +494,12 @@ a.icon:hover {
 }
 
 .btnFpStyle:hover {
-    border: 1px solid;
+    border: 1px solid ;
     outline: 1px solid;
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, .2);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 0 30px #f7e1175b;
     outline-color: rgba(255, 255, 255, 0);
     outline-offset: 15px;
-    text-shadow: 1px 1px 2px #c6d4da;
+    
 }
 
 /* landingpage end */
@@ -523,13 +536,15 @@ a.icon:hover {
 }
 
 .pageTitleCS {
-    font-size: 1.6vw;
+    font-size: 3rem;
+    color: #f7e017;
     text-decoration: none;
-    text-shadow: 1px 1px #ff1f8f;
+    
 }
 
 .projectsTitleText span {
     font-weight: bold;
+    color: #f7e017;
 }
 
 .sectionGridProjects {
@@ -642,14 +657,18 @@ a.icon:hover {
     width: 90%;
     margin: auto;
 }
-
+.coolFirst {
+    font-weight: bolder;
+     border-bottom: 1px #f7e017 solid;
+     font-size: 1.5rem;
+     width: 100%;
+ }
 .cool {
-    color: #000;
-    text-shadow: 1px 1px #ff1f8f;
-    border-bottom: 1px #ff1f8f solid;
-    font-size: 1.2vw;
+   font-weight: bolder;
+    border-bottom: 1px #f7e017 solid;
+    font-size: 1.5rem;
     /* margin-bottom: 1vw; */
-    margin-top: 1vw;
+    margin-top: 3vw;
     width: 100%;
 }
 
@@ -736,7 +755,7 @@ a.icon:hover {
 }
 
 .arrowBtn1 {
-    background-color: #ff1f8fa4;
+    background-color: #f7e017a4;
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -797,8 +816,9 @@ a.icon:hover {
     padding: 20px;
     padding-top: 89px;
     padding-left: 0;
-    color: #000;
-    text-shadow: 1px 1px #ff1f8f;
+    color: #f7e017;
+    
+    font-size: 3rem;
 }
 
 .caseStudyImageTop {
@@ -870,8 +890,8 @@ a.icon:hover {
 
 .caseStudyImgContainer a {
     font-size: 16px;
-    color: #000;
-    text-shadow: 1px 1px #ff1f8f;
+    color: #fff;
+    text-shadow: 1px 1px #f7e017;
 }
 
 .caseStudyImgContainer h2 {
@@ -926,8 +946,8 @@ a.icon:hover {
 }
 
 .boxFive a {
-    color: #000;
-    text-shadow: 1px 1px #ff1f8f;
+    color: #fff;
+    text-shadow: 1px 1px #f7e017;
 }
 
 .boxFive a:hover {
@@ -936,8 +956,8 @@ a.icon:hover {
 
 .boxFive h3 {
     text-align: center;
-    color: #000;
-    text-shadow: 1px 1px #ff1f8f;
+    color: #fff;
+    text-shadow: 1px 1px #f7e017;
 }
 
 .caseStudyImgContainer a, h2 {
@@ -945,8 +965,8 @@ a.icon:hover {
 }
 
 .boxOne h3, .boxThree h3 {
-    color: #000;
-    text-shadow: 1px 1px #ff1f8f;
+    color: #fff;
+    text-shadow: 1px 1px #f7e017;
 }
 
 .imgBoxes {
@@ -963,8 +983,8 @@ a.icon:hover {
 
 .descriptionLink {
     font-size: 12px;
-    color: #000;
-    text-shadow: 1px 1px #ff1f8f;
+    color: #fff;
+    text-shadow: 1px 1px #f7e017;
 }
 .imgBoxes img {
     width: 100%;
@@ -1025,20 +1045,20 @@ a.icon:hover {
 
 /* footer start */
 .footerContainer {
-    background: white;
+    background: #f7e017;
 }
 footer {
     display: grid;
     grid-area: footer;
     grid-template-areas: 'githubText emailText somethingText' 'github email something';
-    color: #fff;
+    color: #f7e017;
     align-items: center;
-    padding: 120px;
+    padding: 180px;
     grid-template-columns: 1fr 1fr 1fr;
     width: 90%;
     /* height: 12vw; */
     margin: auto;
-    /* border-top: 0.01vw solid #000;  */
+    
     font-weight: bold;
     clear: both;
     margin-top: 12vw;
@@ -1047,7 +1067,8 @@ footer {
 }
 
 footer p {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 .githubContainer {
@@ -1072,7 +1093,7 @@ footer p {
 }
 
 .fa {
-    color: #272727;
+    color: #000000;
     transition: 1s;
 }
 
@@ -1081,8 +1102,7 @@ footer p {
 }
 
 .fa-envelope {
-    color: #000;
-    text-shadow: 1px 1px #ff1f8f;
+    color: #0e0d0d;
     margin: 5px;
 }
 
@@ -1118,16 +1138,14 @@ footer p {
     grid-area: githubText;
     text-align: center;
     margin-bottom: 5px;
-    color: #000;
-    text-shadow: 1px 1px #ff1f8f;
+    color: #000000;
 }
 
 .emailText {
     grid-area: emailText;
     text-align: center;
     margin-bottom: 5px;
-    color: #000;
-    text-shadow: 1px 1px #ff1f8f;
+    color: #000000;
     font-style: normal;
 }
 
@@ -1135,8 +1153,7 @@ footer p {
     grid-area: somethingText;
     text-align: center;
     margin-bottom: 5px;
-    color: #000;
-    text-shadow: 1px 1px #ff1f8f;
+   color: #000000;
 }
 
 .icon {
@@ -1202,7 +1219,7 @@ footer p {
     .boxMiddle {
         height: 25vw;
         width: 45vw;
-        color: black;
+    
         display: inline-block;
         padding: 1vw;
         padding-top: 0.7vw;
@@ -1225,7 +1242,7 @@ footer p {
     .pageTitleCS {
         font-size: 3vw;
         text-decoration: none;
-        text-shadow: 1px 1px #ff1f8f;
+        text-shadow: 1px 1px #f7e017;
     }
     .sectionGridProjects {
         display: grid;
@@ -1355,6 +1372,7 @@ footer p {
         margin-top: 4vw;
         width: 100%;
         font-size: 2.5vw;
+    
     }
     .btnFp2 {
         margin-top: 3vw;
@@ -1519,7 +1537,7 @@ footer p {
         /* border: 1px solid #000000; */
         /* border-bottom: 0; */
         /* border-top: 0; */
-        background: #ff1f8f;
+        background: #f7e017;
         z-index: 2;
         display: none;
     /* flex-direction: column; */
@@ -1549,7 +1567,7 @@ footer p {
         color: #292626;
     }
     a.icon {
-        background: #ff1f8f;
+        background: #f7e017;
         position: absolute;
         right: 48px;
         /* top: 30px; */
@@ -1580,7 +1598,7 @@ footer p {
     .pageTitleCS {
         font-size: 6vw;
         text-decoration: none;
-        text-shadow: 1px 1px #ff1f8f;
+        text-shadow: 1px 1px #f7e017;
     }
     .box1 h2, .box2 h2, .box3 h2, .box4 h2, .box5 h2, .box6 h2, .box7 h2 {
         border: none;
