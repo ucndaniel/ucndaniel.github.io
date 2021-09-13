@@ -107,10 +107,10 @@ p, li, a {
 
 /* header start */
 
-.headerContainer {
-    border-bottom: #f7e017 3px solid;
+/* .headerContainer {
+    border-bottom: #f7e017 3px solid; 
  
-}
+} */
 
 header {
     width: 80%;
@@ -222,7 +222,7 @@ nav li a:hover {
     /* font-size: 6vw; */
     margin: auto;
     margin-top: 4vw;
-    width: 40vw;
+    width: 30vw;
     margin-bottom: 4vw;
 }
 
