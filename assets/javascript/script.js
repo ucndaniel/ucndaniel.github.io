@@ -66,7 +66,7 @@ function spinthewheel() {
 
   
   setTimeout(() => {
-  var items = Array('../assets/images/movies/palmsprings.jpg', '../assets/images/movies/prisoners.jpg', '../assets/images/movies/thesuicidesquad.jpg', '../assets/images/backgroundr.jpg');
+  var items = Array('../assets/images/movies/palmsprings.jpg', '../assets/images/movies/prisoners.jpg', '../assets/images/movies/thesuicidesquad.jpg', '../assets/images/movies/superbad.jpg', '../assets/images/movies/exmachina.jpg', '../assets/images/movies/marrowbone.jpg');
   var item = items[Math.floor(Math.random()*items.length)];
   document.getElementById("wheel").src = item;
 
