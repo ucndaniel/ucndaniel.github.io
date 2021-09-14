@@ -15,7 +15,8 @@
 // funktion til billedeskift
 function makeMeCool() 
 {
-        document.getElementById("image").src = "../assets/images/mig.jpg";  
+        document.getElementById("image").src = "../assets/images/mig.jpg";
+        
     }
 
     function makeMeNormal() 
@@ -57,6 +58,22 @@ function makeMeCool()
         }
       }
 
+function spinthewheel() {
+  let spinThatWheel = document.getElementById("wheel");
+  let noTouching = document.getElementById("spinBtn");
+  spinThatWheel.classList.toggle("spin");
+  noTouching.classList.add("spinBtn");
+
+  
+  setTimeout(() => {
+  var items = Array('../assets/images/movies/palmsprings.jpg', '../assets/images/movies/prisoners.jpg', '../assets/images/movies/thesuicidesquad.jpg', '../assets/images/backgroundr.jpg');
+  var item = items[Math.floor(Math.random()*items.length)];
+  document.getElementById("wheel").src = item;
+
+  spinThatWheel.classList.remove("spin");
+  noTouching.classList.remove("spinBtn");
+  }, 2000);
+}
 
 
 // GEMT TIL SENERE
@@ -133,3 +150,4 @@ function makeMeCool()
 //     }
 // }
 // video.hotspots.init();
+
