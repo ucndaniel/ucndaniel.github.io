@@ -206,6 +206,7 @@ nav li a {
 
 .activePage {
     text-decoration: underline;
+    color: #f7e017;
 }
 
 nav li a:hover {
@@ -1386,6 +1387,7 @@ animation-timing-function: ease;
     }
     .activePage {
         text-decoration: none;
+        color: black;
     }
     .boxMiddle {
     width: 22.5vw;
@@ -1846,6 +1848,7 @@ animation-timing-function: ease;
     }
     .activePage {
         text-decoration: none;
+        color: black;
     }
     /* other pages */
    
