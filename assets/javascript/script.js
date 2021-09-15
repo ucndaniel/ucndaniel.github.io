@@ -72,7 +72,7 @@ function spinthewheel() {
 
   spinThatWheel.classList.remove("spin");
   noTouching.classList.remove("spinBtn");
-  }, 2000);
+  }, 1800);
 }
 
 
