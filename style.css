@@ -938,8 +938,8 @@ a.icon:hover {
 
 .caseStudyImgContainer a {
     font-size: 16px;
-    color: #fff;
-    text-shadow: 1px 1px #f7e017;
+    color: #f7e017;
+    
 }
 
 .caseStudyImgContainer h2 {
@@ -955,7 +955,6 @@ a.icon:hover {
     grid-template-areas: 'box1 box2' 'box3 box4' 'box5 box5';
     margin: auto;
     width: 80vw;
-   
     margin-top: 50px;
 }
 
@@ -994,8 +993,8 @@ a.icon:hover {
 }
 
 .boxFive a {
-    color: #fff;
-    text-shadow: 1px 1px #f7e017;
+    color: #f7e017;
+    
 }
 
 .boxFive a:hover {
@@ -1004,8 +1003,8 @@ a.icon:hover {
 
 .boxFive h3 {
     text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px #f7e017;
+    color: #f7e017;
+    
 }
 
 .caseStudyImgContainer a, h2 {
@@ -1013,8 +1012,8 @@ a.icon:hover {
 }
 
 .boxOne h3, .boxThree h3 {
-    color: #fff;
-    text-shadow: 1px 1px #f7e017;
+    color: #f7e017;
+    
 }
 
 .imgBoxes {
@@ -1032,7 +1031,7 @@ a.icon:hover {
 .descriptionLink {
     font-size: 12px;
     color: #fff;
-    text-shadow: 1px 1px #f7e017;
+    
 }
 .imgBoxes img {
     width: 100%;
@@ -1052,7 +1051,7 @@ a.icon:hover {
     display: grid;
     width: 80vw;
     margin: auto;
-    background-color: #c8ffef;
+    background: rgba(0, 0, 0, 0.075);
 }
 .illustratorIntro {
     width: 80vw;
@@ -1922,7 +1921,7 @@ animation-timing-function: ease;
         display: grid;
         width: 90vw;
         margin: auto;
-        background-color: #c8ffef;
+        background: rgba(0, 0, 0, 0.075);
     }
     .aeImg {
         padding: 2vw;
