@@ -116,7 +116,7 @@ header {
     width: 80%;
     display: grid;
     grid-template-areas: 'a b';
-    grid-template-columns: 40%;
+    grid-template-columns: 35%;
     margin: auto;
 }
 
@@ -192,6 +192,7 @@ nav li a {
     text-decoration: none;
     letter-spacing: 0.1em;
     color: #fff;
+    font-variant: all-small-caps;
     /* text-shadow: 1px 1px #f7e017; */
     font-weight: bold;
     /* -webkit-text-fill-color: transparent;
@@ -339,6 +340,7 @@ border-radius: 10px; */
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
     color: #f7e017;
+    font-variant-caps: all-small-caps;
     font-weight: 600;
      /* text-shadow: 1px 1px #f7e017;  */
     margin-bottom: 0.5vw;
@@ -923,7 +925,7 @@ a.icon:hover {
 }
 
 .caseStudyImageTop6 {
-    background-image: url(assets/images/zoo.PNG);
+    background-image: url(assets/images/rahbekprint.PNG);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1272,7 +1274,7 @@ animation-timing-function: ease;
 @media only screen and (max-width: 980px) {
     header {
         height: 15vw;
-        grid-template-columns: 80%;
+        grid-template-columns: 65%;
     }
     p, li, a {
         font-size: 2.6vw;
@@ -1389,6 +1391,11 @@ animation-timing-function: ease;
         text-decoration: none;
         color: black;
     }
+
+#welcome {
+    width: 47vw
+}
+    
     .boxMiddle {
     width: 22.5vw;
     min-height: 12rem;
@@ -1431,7 +1438,8 @@ animation-timing-function: ease;
         display: grid;
         grid-template-areas: 'welcome welcome' '1 2' '3 4';
         margin: auto;
-        width: 90vw;
+        width: 95vw;
+        row-gap: 1em;
     }
     .boxMiddle {
         height: 25vw;
@@ -1643,7 +1651,7 @@ animation-timing-function: ease;
     }
     .boxMiddle {
         height: auto;
-        width: 100%;
+        width: 80%;
        
         display: inline-block;
         padding: 2rem;
@@ -1753,10 +1761,10 @@ animation-timing-function: ease;
         width: 3rem;
     }
     .logo a {
-        font-size: 0.8rem;
-        left: 27%;
-        top: 50%; 
-        transform: translate(0%, -50%); 
+        font-size: 1.3rem;
+        left: 20%;
+        top: 50%;
+        transform: translate(0%, -50%);
     }
     nav {
         height: min-content;
