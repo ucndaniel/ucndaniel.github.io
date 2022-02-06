@@ -933,6 +933,15 @@ a.icon:hover {
     height: 28vw;
     margin: auto;
 }
+.caseStudyImageTop7 {
+    background-image: url(assets/images/zoo.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 58vw;
+    height: 28vw;
+    margin: auto;
+}
 
 .caseStudyImgContainer {
     width: 59%;
@@ -1507,6 +1516,11 @@ animation-timing-function: ease;
     
     .caseStudyImgContainer {
         width: 90%;
+        margin: auto;
+    }
+    .caseStudyImageTop7 {
+        width: 77vw;
+        height: 38vw;
         margin: auto;
     }
     .caseStudyImageTop6 {
