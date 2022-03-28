@@ -10,18 +10,35 @@
 //         }
 //       }
 
+// funktion til read more
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Læs mere...";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Læs mindre...";
+    moreText.style.display = "inline";
+  }
+}
 
 
 // funktion til billedeskift
 function makeMeCool() 
 {
-        document.getElementById("image").src = "../assets/images/mig.jpg";
+        document.getElementById("image").src = "../assets/images/profile-2.png";
         
     }
 
     function makeMeNormal() 
 {
-        document.getElementById("image").src = "../assets/images/cooldan.jpg"; 
+        document.getElementById("image").src = "../assets/images/cool.png"; 
     }
 
 
