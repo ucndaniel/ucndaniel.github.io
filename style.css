@@ -1695,6 +1695,12 @@ animation-timing-function: ease;
         height: 38vw;
         margin: auto;
     }
+
+    .caseStudyImageTop8 {
+        width: 77vw;
+        height: 38vw;
+        margin: auto;
+    }
     .caseStudyImageTop6 {
         width: 77vw;
         height: 38vw;
@@ -1879,6 +1885,7 @@ animation-timing-function: ease;
         padding: 0px;
         padding-top: 3rem;
         margin: auto;
+        margin-top: 2rem;
     }
     .contentBox1 {
         padding-top: 8rem;
@@ -2147,5 +2154,9 @@ animation-timing-function: ease;
     #wheel {
         width: 17rem;
         margin-top: 3em;
+    }
+
+    .description {
+        text-align: center;
     }
  }
