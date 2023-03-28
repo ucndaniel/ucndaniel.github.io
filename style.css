@@ -973,6 +973,16 @@ font-size: 0.8rem;
     margin: auto;
 }
 
+.caseStudyImageTop8 {
+    background-image: url(assets/images/komgodthjem2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 58vw;
+    height: 28vw;
+    margin: auto;
+}
+
 .caseStudyImgContainer {
     width: 59%;
     margin: auto;
@@ -1080,6 +1090,12 @@ font-size: 0.8rem;
     height: 100%;
     background-repeat: no-repeat;
     object-fit: cover;
+}
+.imgBoxes img {
+width: auto;
+    height: 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
 }
 
 .boxFiveOutro {
@@ -1747,7 +1763,7 @@ animation-timing-function: ease;
         width: 73vw;
         height: 45vw;
         background-repeat: no-repeat;
-        object-fit: cover;
+        object-fit: contain;
     }
     /* ABOUT ME */
     .sectionGrid-aboutme {
@@ -2052,6 +2068,7 @@ animation-timing-function: ease;
     .caseStudyTitle {
        padding-bottom: 2rem;
         padding-top: 3rem;
+        font-size: 32px;
     }
     .container1 {
         width: 80%;
