@@ -982,6 +982,15 @@ font-size: 0.8rem;
     height: 28vw;
     margin: auto;
 }
+.caseStudyImageTop9 {
+    background-image: url(assets/images/econtic3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 58vw;
+    height: 28vw;
+    margin: auto;
+}
 
 .caseStudyImgContainer {
     width: 59%;
@@ -1697,6 +1706,11 @@ animation-timing-function: ease;
     }
 
     .caseStudyImageTop8 {
+        width: 77vw;
+        height: 38vw;
+        margin: auto;
+    }
+    .caseStudyImageTop9 {
         width: 77vw;
         height: 38vw;
         margin: auto;
