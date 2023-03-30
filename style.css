@@ -2076,6 +2076,7 @@ animation-timing-function: ease;
     .box1 h2, .box2 h2, .box3 h2, .box4 h2, .box5 h2, .box6 h2, .box7 h2 {
         border: none;
         font-size: 1.2rem;
+        margin-top: 3rem;
         
     }
     .box1 img, .box2 img, .box3 img, .box4 img, .box5 img, .box6 img, .box7 img {
