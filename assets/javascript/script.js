@@ -83,7 +83,7 @@ function spinthewheel() {
 
   
   setTimeout(() => {
-  var items = Array('../assets/images/movies/palmsprings.jpg', '../assets/images/movies/prisoners.jpg', '../assets/images/movies/thesuicidesquad.jpg', '../assets/images/movies/superbad.jpg', '../assets/images/movies/exmachina.jpg', '../assets/images/movies/marrowbone.jpg');
+  var items = Array('../assets/images/movies/palmsprings.jpg', '../assets/images/movies/prisoners.jpg', '../assets/images/movies/thesuicidesquad.jpg', '../assets/images/movies/superbad.jpg', '../assets/images/movies/exmachina.jpg', '../assets/images/movies/marrowbone.jpg', '../assets/images/movies/americanpsycho.png', '../assets/images/movies/annihilation.png', '../assets/images/movies/arrival.png', '../assets/images/movies/blackphone.png', '../assets/images/movies/bullettrain.png', '../assets/images/movies/deathatafuneral.png', '../assets/images/movies/dune.png', '../assets/images/movies/eeoao.png', '../assets/images/movies/eternalsunshine.png', '../assets/images/movies/grundbudapesthotel.png', '../assets/images/movies/lastnightinsoho.png', '../assets/images/movies/littlemisssunshine.png', '../assets/images/movies/maverick.png', '../assets/images/movies/ridersofjustice.png', '../assets/images/movies/themenu.png', '../assets/images/movies/theniceguys.png', '../assets/images/movies/thenorthman.png', '../assets/images/movies/zodiac.png');
   var item = items[Math.floor(Math.random()*items.length)];
   document.getElementById("wheel").src = item;
 
