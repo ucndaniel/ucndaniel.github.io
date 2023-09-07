@@ -982,6 +982,15 @@ font-size: 0.8rem;
     height: 28vw;
     margin: auto;
 }
+.caseStudyImageTop9 {
+    background-image: url(assets/images/econtic3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 58vw;
+    height: 28vw;
+    margin: auto;
+}
 
 .caseStudyImgContainer {
     width: 59%;
@@ -1701,6 +1710,11 @@ animation-timing-function: ease;
         height: 38vw;
         margin: auto;
     }
+    .caseStudyImageTop9 {
+        width: 77vw;
+        height: 38vw;
+        margin: auto;
+    }
     .caseStudyImageTop6 {
         width: 77vw;
         height: 38vw;
@@ -2062,6 +2076,7 @@ animation-timing-function: ease;
     .box1 h2, .box2 h2, .box3 h2, .box4 h2, .box5 h2, .box6 h2, .box7 h2 {
         border: none;
         font-size: 1.2rem;
+        margin-top: 3rem;
         
     }
     .box1 img, .box2 img, .box3 img, .box4 img, .box5 img, .box6 img, .box7 img {
