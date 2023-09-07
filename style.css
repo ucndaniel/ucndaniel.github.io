@@ -2160,3 +2160,82 @@ animation-timing-function: ease;
         text-align: center;
     }
  }
+
+
+
+
+
+ .testarea {
+    background-color: #272727;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        'a b'
+        'a b';
+        grid-auto-columns: 65% 35%;
+        
+}
+
+ .testarea h1 {
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 49px;
+    /* Introducing the AuroTrap */
+font-family: 'Merriweather';
+font-style: normal;
+font-weight: 700;
+font-size: 55px;
+line-height: 69px;
+color: #EDF1FF;
+
+
+ }
+ .testarea p {
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 175.68%;
+/* or 35px */
+margin-bottom: 20px;
+ }
+
+ .textareaT {
+    grid-area: b;
+    place-self: center;
+    padding-right: 28%;
+    padding-left: 8%;
+    padding-top: 20%;
+    padding-top: 25%;
+    padding-bottom: 25%;
+}
+
+ .testareaIMG1 {
+background-image: url(assets/images/testing/IMG_8973.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 0%;
+clip-path: polygon(0 0, 95% 0%, 89% 100%, 0% 100%);
+background-position-y: 18%;
+ }
+
+ .testareaIMG2 {
+    background-image: url(assets/images/testing/IMG_0004.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 89% 0%, 82% 100%, 0% 100%);
+    background-position-y: 18%;
+}
+
+
+.testbutton {
+    background-color: #16672E;
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 6px;
+}
