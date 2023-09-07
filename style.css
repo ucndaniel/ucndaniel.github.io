@@ -2180,7 +2180,7 @@ animation-timing-function: ease;
 
 
 
- .testarea {
+ /* .testarea {
     background-color: #272727;
     width: 100%;
     display: grid;
@@ -2195,7 +2195,6 @@ animation-timing-function: ease;
     font-size: 55px;
     text-align: center;
     margin-bottom: 49px;
-    /* Introducing the AuroTrap */
 font-family: 'Merriweather';
 font-style: normal;
 font-weight: 700;
@@ -2211,7 +2210,6 @@ font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 175.68%;
-/* or 35px */
 margin-bottom: 20px;
  }
 
@@ -2253,4 +2251,4 @@ background-position-y: 18%;
     font-weight: 700;
     font-size: 18px;
     border-radius: 6px;
-}
+} */
