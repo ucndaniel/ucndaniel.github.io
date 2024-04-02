@@ -735,7 +735,7 @@ animation-timing-function: ease;
         font-size: 32px;
     }
     .container1 {
-        width: 80%;
+        width: 100%;
         justify-content: center; 
     }
     .coolFirst {
@@ -769,9 +769,11 @@ animation-timing-function: ease;
     }
 
     #wheel {
-        width: 17rem;
+        width: 15rem;
+        height: 22rem;
         margin-top: 3em;
-        background-size: cover;
+        background-size: contain;
+        margin-bottom: 10px;
     }
 
     .description {
