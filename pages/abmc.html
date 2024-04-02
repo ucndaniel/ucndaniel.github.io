@@ -20,15 +20,24 @@
         <main class="content">
             <div id="floating-images"></div>
             <div class="container1">
-                <h1 class="caseStudyTitle movieTimeTitle">apropos filmklub</h1>
+                <h1 class="title animate">apropos filmklub</h1>
             </div>
             <section class="container2"> 
                 <h1>UGENS FILM ER</h1>
                 <img id="wheel"> </img>
-                <a href="https://www.imdb.com/title/tt0246578/?ref_=tt_mv_close class=" target="_blank" class="btnFp3 btnFpStyle"> Link til IMDB </a>    
-            </section> 
+                <div>
+                <a href="https://www.imdb.com/title/tt0246578/?ref_=tt_mv_close class=" target="_blank"  rel="noopener noreferrer" class="btnFp3 btnFpStyle"> Link til IMDB </a>
+                <a href="https://docs.google.com/spreadsheets/d/1EBwPVm_A7AiyYFu3CQJfl9KpyA3t8kp3FdIr_BsR4Fg/edit#gid=0" target="_blank" rel="noopener noreferrer">Link til Sheets</a>    
+            </div>
+            </section>
+
         </main>
     </div>
     <script src="../assets/javascript/moviepick.js" defer></script>
+    <script>
+        window.addEventListener('load', function() {
+          document.getElementById('headerText').classList.add('animate');
+        });
+      </script>
 </body>
 </html>
