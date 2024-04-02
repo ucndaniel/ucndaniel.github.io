@@ -64,11 +64,15 @@ function startRainingImages() {
       // Add more images as desired
   ];
 
-  // Create a new image every 300 milliseconds for a continuous effect
+  const maxImages = 20; // Maximum number of images allowed on screen
+
   setInterval(() => {
-    const imageSrc = images[Math.floor(Math.random() * images.length)];
-    createRainImage(imageSrc);
-}, 400); // Adjust the interval for more or less frequent "rain"
+      const currentImages = document.querySelectorAll('.floating-img').length;
+      if (currentImages < maxImages) {
+          const imageSrc = images[Math.floor(Math.random() * images.length)];
+          createRainImage(imageSrc);
+      }
+  }, 600); // Adjust time as needed
 }
 
 // Initiate raining images when the window loads
