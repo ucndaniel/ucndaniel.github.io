@@ -771,6 +771,7 @@ animation-timing-function: ease;
     #wheel {
         width: 17rem;
         margin-top: 3em;
+        background-size: cover;
     }
 
     .description {
