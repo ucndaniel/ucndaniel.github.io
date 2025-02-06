@@ -1,0 +1,216 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(10, 10, 10, 0.8), rgba(0, 0, 0, 1));
+    z-index: -1;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.header-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #ff6f61, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.header-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #cccccc;
+}
+
+/* Main Content */
+.main-content {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.temp {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.movie-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 60px;
+    color: #ffcc00;
+}
+
+.movie-wheel {
+    width: 300px;
+    height: 444px;
+    object-fit: contain;
+    margin: 0 auto 30px;
+    border: 1px solid #ffcc00;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-primary {
+    background-color: #ff4a3d;
+    color: #ffffff;
+    border: 2px solid #ff4a3d;
+}
+
+.btn-primary:hover {
+    background-color: #f83c2f;
+    border-color: #f83c2f;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+}
+
+.btn-secondary:hover {
+  
+    transform: translateY(-3px);
+}
+
+/* Movie Details */
+.movie-details {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.movie-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.movie-info, .movie-director, .movie-cast, .movie-plot {
+    font-size: 1.1rem;
+    color: #cccccc;
+    margin: 10px 0;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Add space between items */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.movie-info span {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add space between icon and text */
+}
+
+.movie-info i, .movie-director i, .movie-cast i, .movie-plot i {
+    color: #ffcc00;
+}
+
+.movie-plot {
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 1140px) {
+
+    .temp {
+        display: flex;
+        gap: 40px;
+        flex-direction: column-reverse;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .header-title {
+        font-size: 2.5rem;
+    }
+
+    .header-subtitle {
+        font-size: 1.2rem;
+    }
+
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
