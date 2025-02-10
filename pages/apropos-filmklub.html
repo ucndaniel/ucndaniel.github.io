@@ -41,54 +41,103 @@
         </section>
         </section>
     </main>
-
+   
     <script>
-        // Replace with your OMDb API key
-        const API_KEY = 'cdb05236';
+// Replace with your OMDb API key
+const OMDb_API_KEY = 'cdb05236';
 
-        // Replace with the IMDb ID of the weekly movie
-        const MOVIE_ID = 'tt0206634'; // Example: IMDb ID for "Children of Men"
+// Replace with your Google Apps Script web app URL
+const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbyTLucEfbGyNeWsQnhJllFl28RxzXeixY3opytPdVG0_Bo-dWnPr-D6d0Sh_ERJsHpA/exec';
 
-        // Function to fetch movie data from OMDb API
-        async function fetchMovieData(imdbId) {
-            const response = await fetch(`https://www.omdbapi.com/?i=${imdbId}&apikey=${API_KEY}`);
-            const data = await response.json();
-            return data;
+// Function to fetch movie ID from Google Sheets using JSONP
+function fetchMovieIdFromSheet() {
+    return new Promise((resolve, reject) => {
+        // Create a script element for JSONP
+        const script = document.createElement('script');
+        script.src = `${WEB_APP_URL}?callback=handleMovieId`;
+        document.body.appendChild(script);
+
+        // Define the callback function
+        window.handleMovieId = function (data) {
+            document.body.removeChild(script); // Clean up the script element
+            delete window.handleMovieId; // Clean up the callback function
+            resolve(data.movieId === 'No movie ID found' ? null : data.movieId);
+        };
+
+        // Handle errors
+        script.onerror = () => {
+            document.body.removeChild(script); // Clean up the script element
+            delete window.handleMovieId; // Clean up the callback function
+            reject(new Error('Failed to fetch movie ID'));
+        };
+    });
+}
+
+// Function to fetch movie data from OMDb API
+async function fetchMovieData(imdbId) {
+    try {
+        const response = await fetch(`https://www.omdbapi.com/?i=${imdbId}&apikey=${OMDb_API_KEY}`);
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
+        const data = await response.json();
+        if (data.Response === 'False') throw new Error(data.Error);
+
+        return data;
+    } catch (error) {
+        console.error('Error fetching movie data:', error);
+        return null;
+    }
+}
+
+// Function to update the movie poster, details, and IMDb link
+async function updateWeeklyMovie() {
+    try {
+        // Show loading text while fetching data
+        const movieDetails = document.getElementById('movie-details');
+        movieDetails.innerHTML = `<p>Loading movie details...</p>`;
+
+        // Fetch the movie ID from the Google Sheet
+        const movieId = await fetchMovieIdFromSheet();
+        if (!movieId) {
+            movieDetails.innerHTML = `<p>No movie found for this week.</p>`;
+            return;
         }
 
-        // Function to update the movie poster, details, and IMDb link
-        async function updateWeeklyMovie() {
-            try {
-                const movieData = await fetchMovieData(MOVIE_ID);
-
-                // Update the movie poster
-                const wheel = document.getElementById('wheel');
-                wheel.style.backgroundImage = `url(${movieData.Poster})`;
-
-                // Update the IMDb link
-                const imdbLink = document.getElementById('imdb-link');
-                imdbLink.href = `https://www.imdb.com/title/${MOVIE_ID}/`;
-
-               // Update the movie details
-const movieDetails = document.getElementById('movie-details');
-movieDetails.innerHTML = `
-    <h3 class="movie-title">${movieData.Title}</h3>
-    <div class="movie-info">
-        <span><i class="fas fa-calendar-alt"></i> ${movieData.Year}</span>
-        <span><i class="fas fa-clock"></i> ${movieData.Runtime}</span>
-        <span><i class="fas fa-star"></i> ${movieData.imdbRating}/10</span>
-    </div>
-    <p class="movie-director"><i class="fas fa-user"></i> Directed by: ${movieData.Director}</p>
-    <p class="movie-cast"><i class="fas fa-users"></i> Starring: ${movieData.Actors}</p>
-    <p class="movie-plot"><i class="fas fa-book-open"></i> ${movieData.Plot}</p>
-`;
-            } catch (error) {
-                console.error('Error fetching movie data:', error);
-            }
+        // Fetch movie data from OMDb API
+        const movieData = await fetchMovieData(movieId);
+        if (!movieData) {
+            movieDetails.innerHTML = `<p>Could not retrieve movie details. Please try again later.</p>`;
+            return;
         }
 
-        // Call the function to update the weekly movie
-        updateWeeklyMovie();
+        // Update the movie poster
+        const wheel = document.getElementById('wheel');
+        wheel.style.backgroundImage = `url(${movieData.Poster})`;
+
+        // Update the IMDb link
+        const imdbLink = document.getElementById('imdb-link');
+        imdbLink.href = `https://www.imdb.com/title/${movieId}/`;
+
+        // Update the movie details
+        movieDetails.innerHTML = `
+            <h3 class="movie-title">${movieData.Title}</h3>
+            <div class="movie-info">
+                <span><i class="fas fa-calendar-alt"></i> ${movieData.Year}</span>
+                <span><i class="fas fa-clock"></i> ${movieData.Runtime}</span>
+                <span><i class="fas fa-star"></i> ${movieData.imdbRating}/10</span>
+            </div>
+            <p class="movie-director"><i class="fas fa-user"></i> Directed by: ${movieData.Director}</p>
+            <p class="movie-cast"><i class="fas fa-users"></i> Starring: ${movieData.Actors}</p>
+            <p class="movie-plot"><i class="fas fa-book-open"></i> ${movieData.Plot}</p>
+        `;
+    } catch (error) {
+        console.error('Unexpected error:', error);
+        document.getElementById('movie-details').innerHTML = `<p>Error loading movie details.</p>`;
+    }
+}
+
+// Call the function to update the weekly movie
+updateWeeklyMovie();
     </script>
 </body>
 </html>

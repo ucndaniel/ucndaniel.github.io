@@ -168,6 +168,19 @@ body {
     font-style: italic;
     line-height: 1.6;
 }
+.movie-cast {
+    align-items: start;
+}
+
+.movie-cast i {
+    padding-top: 5px;
+}
+.movie-plot {
+    align-items: start;
+}
+.movie-plot i {
+    padding-top: 5px;
+}
 
 /* Animations */
 @keyframes fadeInUp {
