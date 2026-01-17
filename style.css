@@ -641,7 +641,7 @@ html[data-panel-theme="light"] .rail-item:hover {
     }
 }
 .pfimg {
-    max-width: 200px;
+    max-width: 140px;
 }
 .card {
     border: 1px solid var(--card-border);
