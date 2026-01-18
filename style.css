@@ -1154,7 +1154,7 @@ h6 {
 
     .card {
         padding: 12px;
-        gap: 12px;
+        gap: 8px;
     }
 
     .about {
@@ -1208,6 +1208,7 @@ h6 {
 .hero-actions
  {
     gap: 8px;
+    margin-top: 24px;
 }
     .projects-grid {
         grid-template-columns: 1fr;
@@ -1224,4 +1225,14 @@ h6 {
     .button {
         width: 100%;
     }
+    .card-content h3 {
+    font-size: 1.2rem;
+    margin: 12px 0;
+}
+
+.hero-card__stat > div:nth-child(2) {
+    display: none;
+}
+
+
 }
