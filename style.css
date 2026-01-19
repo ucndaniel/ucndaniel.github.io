@@ -9,96 +9,92 @@
 /* Redesign 2026 */
 :root {
     color-scheme: light;
-    --bg: #ffffff; /* Theme B section 1 */
-    --surface: #ffffff; /* pure white */
-    --text: #020617; /* near-black */
-    --muted: #475569; /* slate muted */
-    --border: #e2e8f0; /* muted slate */
-    --accent: #0f766e; /* single accent (teal) */
-    --accent-soft: #f1f5f9; /* pale blue-gray */
+    --bg: #ffffff;
+    --text: #020617;
+    --text-secondary: #1f2937;
+    --muted: var(--text-secondary);
+    --border: #e2e8f0;
+    --accent: #0f766e;
+    --accent-soft: #f1f5f9;
     --shadow: 0 18px 60px rgba(2, 6, 23, 0.14);
 
     --card-bg: rgba(255, 255, 255, 0.86);
     --card-border: rgba(2, 6, 23, 0.12);
     --card-fg: #020617;
-    --card-muted: #475569;
+    --card-muted: var(--text-secondary);
 
     --badge-bg: rgba(2, 6, 23, 0.06);
     --badge-border: rgba(2, 6, 23, 0.12);
     --badge-fg: rgba(2, 6, 23, 0.72);
 
-    --tag-bg: rgba(15, 118, 110, 0.10);
+    --tag-bg: #0f766e;
     --tag-border: rgba(15, 118, 110, 0.28);
-    --tag-fg: #0f766e;
+    --tag-fg: #ffffff;
 
     --modal-bg: rgba(255, 255, 255, 0.96);
     --modal-fg: #020617;
     --modal-border: rgba(2, 6, 23, 0.14);
     --modal-backdrop: rgba(2, 6, 23, 0.55);
 
-    /* Theme B — Light Journey → Dark Finale (prefers-color-scheme: light) */
-    --p1-bg: #ffffff;
-    --p2-bg: #f1f5f9;
-    --p3-bg: #e2e8f0;
-    --p4-bg: #cbd5e1;
-    --p5-bg: radial-gradient(900px circle at 50% 46%, rgba(15, 118, 110, 0.08) 0%, rgba(15, 118, 110, 0) 58%),
-        linear-gradient(180deg, #0b0b0c 0%, #18181b 100%);
+    /* Unified background/foreground across all sections */
+    --p1-bg: var(--bg);
+    --p2-bg: var(--bg);
+    --p3-bg: var(--bg);
+    --p4-bg: var(--bg);
+    --p5-bg: var(--bg);
+    --p1-fg: var(--text);
+    --p2-fg: var(--text);
+    --p3-fg: var(--text);
+    --p4-fg: var(--text);
+    --p5-fg: var(--text);
+    --p1-muted: var(--text-secondary);
+    --p2-muted: var(--text-secondary);
+    --p3-muted: var(--text-secondary);
+    --p4-muted: var(--text-secondary);
+    --p5-muted: var(--text-secondary);
 
-    --p1-fg: #020617;
-    --p2-fg: #020617;
-    --p3-fg: #020617;
-    --p4-fg: #020617;
-    --p5-fg: #f8fafc;
-
-    --p1-muted: #475569;
-    --p2-muted: #475569;
-    --p3-muted: #475569;
-    --p4-muted: #475569;
-    --p5-muted: #9ca3af;
+    /* Layout */
     --radius: 4px;
     --header-h: 76px;
     --header-top: 12px;
     --safe-top: calc(var(--header-top) + var(--header-h) + 20px);
+    --spacing-section: clamp(60px, 10vh, 120px);
+    --spacing-hero-top: clamp(120px, 20vh, 240px);
+    --spacing-hero-bottom: clamp(60px, 10vh, 120px);
+    --spacing-footer: clamp(80px, 12vh, 160px);
 
-    /* Chrome defaults = for dark panels (Theme B section 5) */
+    /* Chrome UI (light theme default) */
     --header-fg: rgba(248, 250, 252, 0.92);
     --header-muted: rgba(156, 163, 175, 0.9);
     --header-outline: rgba(248, 250, 252, 0.28);
     --header-hover: rgba(248, 250, 252, 0.12);
-
     --rail-fg: rgba(248, 250, 252, 0.82);
     --rail-dot: rgba(248, 250, 252, 0.45);
     --rail-active: #ffffff;
     --rail-bg: rgba(255, 255, 255, 0.12);
     --rail-border: rgba(255, 255, 255, 0.18);
 
-    /* Utility tones used across components */
-    --tone-1: var(--accent);
-    --tone-2: #334155; /* slate dark */
-    --tone-3: #ffffff; /* pure white */
-    --tone-4: #f1f5f9; /* pale blue-gray */
-    --tone-5: #020617; /* near-black */
-    --tone-6: #e2e8f0; /* muted slate */
-
+    /* Texture effects */
     --panel-light-field: none;
     --panel-noise: none;
 }
 
+/* Dark mode */
 @media (prefers-color-scheme: dark) {
     html:not([data-user-scheme]) {
         color-scheme: dark;
-        --bg: #09090b;
-        --surface: #ffffff;
+        --bg: #151b23;
         --text: #e5e7eb;
-        --muted: #9ca3af;
+        --text-secondary: rgba(229, 231, 235, 0.72);
+        --muted: var(--text-secondary);
         --border: rgba(229, 231, 235, 0.16);
         --accent-soft: rgba(15, 118, 110, 0.18);
         --shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
 
-        --card-bg: rgba(24, 24, 27, 0.72);
+        --card-bg: #262c36;
         --card-border: rgba(229, 231, 235, 0.14);
         --card-fg: #e5e7eb;
-        --card-muted: #9ca3af;
+        --card-muted: var(--text-secondary);
 
         --badge-bg: rgba(248, 250, 252, 0.08);
         --badge-border: rgba(248, 250, 252, 0.14);
@@ -113,27 +109,6 @@
         --modal-border: rgba(229, 231, 235, 0.14);
         --modal-backdrop: rgba(0, 0, 0, 0.72);
 
-        /* Theme A — Dark Journey → Light Reveal */
-        --p1-bg: #09090b;
-        --p2-bg: linear-gradient(180deg, #09090b 0%, #18181b 100%);
-        --p3-bg: #18181b;
-        --p4-bg: #27272a;
-        --p5-bg: radial-gradient(900px circle at 50% 46%, rgba(15, 118, 110, 0.10) 0%, rgba(15, 118, 110, 0) 58%),
-            linear-gradient(180deg, #0b0b0c 0%, #18181b 100%);
-
-        --p1-fg: #e5e7eb;
-        --p2-fg: #e5e7eb;
-        --p3-fg: #e5e7eb;
-        --p4-fg: #e5e7eb;
-        --p5-fg: #e5e7eb;
-
-        --p1-muted: #9ca3af;
-        --p2-muted: #9ca3af;
-        --p3-muted: #9ca3af;
-        --p4-muted: #9ca3af;
-        --p5-muted: #9ca3af;
-
-        /* Chrome defaults = for dark panels (Theme A sections 1–4) */
         --header-fg: rgba(229, 231, 235, 0.92);
         --header-muted: rgba(156, 163, 175, 0.9);
         --header-outline: rgba(229, 231, 235, 0.24);
@@ -149,18 +124,18 @@
 
 html[data-user-scheme="dark"] {
     color-scheme: dark;
-    --bg: #09090b;
-    --surface: #ffffff;
+    --bg: #151b23;
     --text: #e5e7eb;
-    --muted: #9ca3af;
+    --text-secondary: rgba(229, 231, 235, 0.72);
+    --muted: var(--text-secondary);
     --border: rgba(229, 231, 235, 0.16);
     --accent-soft: rgba(15, 118, 110, 0.18);
     --shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
 
-    --card-bg: rgba(24, 24, 27, 0.72);
+    --card-bg: #262c36;
     --card-border: rgba(229, 231, 235, 0.14);
     --card-fg: #e5e7eb;
-    --card-muted: #9ca3af;
+    --card-muted: var(--text-secondary);
 
     --badge-bg: rgba(248, 250, 252, 0.08);
     --badge-border: rgba(248, 250, 252, 0.14);
@@ -175,27 +150,6 @@ html[data-user-scheme="dark"] {
     --modal-border: rgba(229, 231, 235, 0.14);
     --modal-backdrop: rgba(0, 0, 0, 0.72);
 
-    /* Theme A — Dark Journey → Light Reveal */
-    --p1-bg: #09090b;
-    --p2-bg: linear-gradient(180deg, #09090b 0%, #18181b 100%);
-    --p3-bg: #18181b;
-    --p4-bg: #27272a;
-    --p5-bg: radial-gradient(900px circle at 50% 46%, rgba(15, 118, 110, 0.10) 0%, rgba(15, 118, 110, 0) 58%),
-        linear-gradient(180deg, #0b0b0c 0%, #18181b 100%);
-
-    --p1-fg: #e5e7eb;
-    --p2-fg: #e5e7eb;
-    --p3-fg: #e5e7eb;
-    --p4-fg: #e5e7eb;
-    --p5-fg: #e5e7eb;
-
-    --p1-muted: #9ca3af;
-    --p2-muted: #9ca3af;
-    --p3-muted: #9ca3af;
-    --p4-muted: #9ca3af;
-    --p5-muted: #9ca3af;
-
-    /* Chrome defaults = for dark panels (Theme A sections 1–4) */
     --header-fg: rgba(229, 231, 235, 0.92);
     --header-muted: rgba(156, 163, 175, 0.9);
     --header-outline: rgba(229, 231, 235, 0.24);
@@ -208,6 +162,7 @@ html[data-user-scheme="dark"] {
     --rail-border: rgba(229, 231, 235, 0.16);
 }
 
+/* Light/dark chrome theme overrides */
 html[data-panel-theme="light"] {
     --rail-fg: rgba(2, 6, 23, 0.72);
     --rail-dot: rgba(2, 6, 23, 0.28);
@@ -239,15 +194,37 @@ html {
     font-family: "Mona Sans", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    background: var(--bg);
 }
 
 body {
-    font-family: "Mona Sans", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
-    background: var(--bg);
+    background: transparent;
     color: var(--text);
     line-height: 1.3;
     overflow-x: hidden;
-    scroll-snap-type: y mandatory;
+
+    position: relative;
+    isolation: isolate;
+
+}
+
+p {
+    max-width: 800px;
+    color: var(--text-secondary);
+}
+
+/* Unified grain/texture overlay (single layer for the whole page) */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+
+    background-image: var(--panel-light-field), var(--panel-noise);
+    background-repeat: no-repeat, repeat;
+    background-position: 36% 42%, 0 0;
+    background-size: cover, 240px 240px;
 }
 
 a {
@@ -362,11 +339,7 @@ html[data-scheme="light"] .theme-toggle .theme-icon--moon {
     display: flex;
     gap: 48px;
     align-items: center;
-    height: 100vh;
-    height: 100svh;
-    padding: var(--safe-top) 0 32px;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    padding: var(--spacing-hero-top) 0 var(--spacing-hero-bottom);
     position: relative;
     color: var(--p1-fg);
 }
@@ -384,36 +357,19 @@ html[data-scheme="light"] .theme-toggle .theme-icon--moon {
 }
 
 .hero::after,
+.hero::before,
 .section::after,
-.footer::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 100vw;
-    transform: translateX(-50%);
-    pointer-events: none;
-    background-image: var(--panel-light-field), var(--panel-noise);
-    background-repeat: no-repeat, repeat;
-    background-position: 36% 42%, 0 0;
-    background-size: cover, 240px 240px;
-    z-index: -1;
+.footer::after,
+.footer::before {
+    display: none;
 }
 
 .eyebrow {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 0.75rem;
-    color: var(--p1-muted);
+    color: var(--text-secondary);
     margin-bottom: 16px;
-}
-
-
-.hero .eyebrow,
-.hero .lead,
-.hero .muted {
-    color: var(--p1-muted);
 }
 
 .hero-text h1 {
@@ -425,7 +381,7 @@ html[data-scheme="light"] .theme-toggle .theme-icon--moon {
 
 .lead {
     font-size: 1.1rem;
-    color: var(--muted);
+    
     max-width: 560px;
 }
 
@@ -472,19 +428,13 @@ html[data-scheme="light"] .theme-toggle .theme-icon--moon {
     font-weight: 400;
     margin-top: 4px;
     font-size: 0.9rem;
+    color: var(--card-fg);
 }
 
 .section {
     margin-bottom: 0;
-    height: 100vh;
-    height: 100svh;
-    padding: var(--safe-top) 0 32px;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    padding: var(--spacing-section) 0;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 /* Left rail: current + adjacent sections */
@@ -556,10 +506,6 @@ html[data-panel-theme="light"] .rail-item:hover {
     font-size: clamp(1.8rem, 3vw, 2.4rem);
 }
 
-.section-heading p {
-    color: var(--muted);
-}
-
 #work::before,
 #projects::before,
 #about::before {
@@ -571,6 +517,7 @@ html[data-panel-theme="light"] .rail-item:hover {
     width: 100vw;
     transform: translateX(-50%);
     z-index: -2;
+    display: none;
 }
 
 #work::before {
@@ -596,6 +543,8 @@ html[data-panel-theme="light"] .rail-item:hover {
     transform-origin: left center;
     transition: transform 1200ms cubic-bezier(0.2, 0.8, 0.2, 1);
     will-change: transform;
+    margin-bottom: 1em;
+    margin-top: 0.6em;
 }
 
 .footer .section-line {
@@ -604,34 +553,6 @@ html[data-panel-theme="light"] .rail-item:hover {
 
 .section-heading.reveal.is-visible .section-line {
     transform: scaleX(1);
-}
-
-#work {
-    color: var(--p2-fg);
-}
-
-#work .muted,
-#work .section-heading p {
-    color: var(--p2-muted);
-}
-
-#projects {
-    color: var(--p3-fg);
-}
-
-#projects .muted,
-#projects .section-heading p {
-    color: var(--p3-muted);
-}
-
-#about {
-    color: var(--p4-fg);
-}
-
-#about .muted,
-#about .section-heading p,
-#about .lead {
-    color: var(--p4-muted);
 }
 
 #work .card,
@@ -645,8 +566,65 @@ html[data-panel-theme="light"] .rail-item:hover {
 
 .featured-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 48px;
+}
+
+.featured-case {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.featured-case__media {
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--radius);
+    border: 1px solid var(--card-border);
+}
+
+.featured-case__media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    transition: transform 380ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.featured-case:has(.button:hover) .featured-case__media img,
+.featured-case:has(.button:focus) .featured-case__media img {
+    transform: scale(1.035);
+}
+
+.featured-case__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.featured-case__content .tag {
+    align-self: flex-start;
+}
+
+.featured-case__content h3 {
+    margin: 0;
+}
+
+.featured-case__content .muted {
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.featured-case__content .button {
+    gap: 10px;
+    padding: 10px 16px;
+}
+
+.featured-case__content .button svg {
+    width: 18px;
+    height: 18px;
 }
 
 .projects-grid {
@@ -655,27 +633,9 @@ html[data-panel-theme="light"] .rail-item:hover {
     gap: 20px;
 }
 
-#projects .projects-grid {
-    height: calc(80vh - var(--safe-top) - 120px);
-    overflow: auto;
-    overscroll-behavior: contain;
-    padding-right: 8px;
-    padding-bottom: 56px;
-    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 calc(100% - 56px), transparent 100%);
-    mask-image: linear-gradient(to bottom, #000 0%, #000 calc(100% - 56px), transparent 100%);
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-}
-
-@supports (height: 100svh) {
-    #projects .projects-grid {
-        height: calc(80svh - var(--safe-top) - 120px);
-    }
-}
 .pfimg {
     max-width: 140px;
+    border-radius: 12px;
 }
 .card {
     border: 1px solid var(--card-border);
@@ -724,7 +684,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Mona Sans", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
     font-stretch: expanded;
     letter-spacing: 0.02em;
 }
@@ -898,17 +857,73 @@ h6 {
 }
 
 .about {
-  display: flex;
+    display: flex;
     flex-direction: row;
-    gap: 32px;
+    gap: clamp(24px, 6vw, 62px);
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.about-description {
+    flex: 1 1 0;
+    min-width: 0;
 }
 
 .about-details {
-        display: flex;
-    gap: 20px;
+    display: flex;
     flex-direction: column;
+    gap: 20px;
+    flex: 0 0 360px;
+    max-width: 360px;
+    width: 100%;
+}
+
+.about-details .stat-label {
+    margin-bottom: 10px;
+}
+
+.cv-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.cv-item {
+    position: relative;
+    padding-left: 16px;
+    border-left: 1px solid rgba(148, 163, 184, 0.35);
+    display: grid;
+    gap: 4px;
+}
+
+html[data-panel-theme="dark"] .cv-item {
+    border-left-color: rgba(148, 163, 184, 0.22);
+}
+
+.cv-item::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 0.55em;
+    width: 9px;
+    height: 9px;
+    border-radius: 999px;
+    background: var(--accent);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.16);
+}
+
+.cv-title {
+    font-weight: 600;
+}
+
+.cv-at {
+    font-weight: 500;
+}
+
+.cv-meta {
+    font-size: 0.9rem;
 }
 
 .footer {
@@ -917,14 +932,10 @@ h6 {
     justify-content: center;
     align-items: center;
     gap: 24px;
-    padding: var(--safe-top) 0 32px;
+    padding: var(--spacing-footer) 0;
     border-radius: 0;
     background: transparent;
     color: var(--p5-fg);
-    height: 100vh;
-    height: 100svh;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
     position: relative;
 }
 
@@ -961,11 +972,11 @@ h6 {
     display: flex;
     gap: 16px;
     font-size: 0.9rem;
-    color: var(--p5-muted);
+    color: var(--text-secondary);
 }
 
 .muted {
-    color: var(--muted);
+    color: var(--text-secondary);
 }
 
 .modal {
@@ -992,6 +1003,10 @@ h6 {
     position: relative;
     z-index: 1;
     width: min(90vw, 720px);
+    max-height: calc(100vh - 48px);
+    max-height: calc(100svh - 48px);
+    display: flex;
+    flex-direction: column;
     background: var(--modal-bg);
     color: var(--modal-fg);
     border: 1px solid var(--modal-border);
@@ -1002,10 +1017,18 @@ h6 {
     -webkit-backdrop-filter: blur(10px);
 }
 
+.modal-media {
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+
 .modal-media img {
     display: block;
     width: 100%;
     height: auto;
+    max-height: 46vh;
+    max-height: 46svh;
+    object-fit: cover;
     transform: scale(1);
     transition: transform 320ms ease;
 }
@@ -1018,6 +1041,9 @@ h6 {
     display: grid;
     gap: 12px;
     padding: 20px 24px 24px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    flex: 1 1 auto;
 }
 
 .modal-actions {
@@ -1159,8 +1185,13 @@ h6 {
 
     .about {
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
         justify-content: center;
+    }
+
+    .about-details {
+        flex: 1 1 auto;
+        max-width: none;
     }
     .footer {
         flex-direction: column;
