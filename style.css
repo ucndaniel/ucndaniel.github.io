@@ -61,7 +61,7 @@
 
     /* Fluid responsive spacing (scales automatically without media queries) */
     --spacing-section: clamp(60px, 10vh, 120px);
-    --spacing-hero-top: clamp(120px, 15vh, 240px);
+    --spacing-hero-top: clamp(120px, 20vh, 240px);
     --spacing-hero-bottom: clamp(80px, 12vh, 160px);
     --spacing-footer: clamp(80px, 12vh, 160px);
 
