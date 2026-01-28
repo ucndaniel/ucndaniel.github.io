@@ -9,7 +9,7 @@
 /* Redesign 2026 */
 :root {
     color-scheme: light;
-    --bg: #ffffff;
+    --bg: #f8f9fa;
     --text: #020617;
     --text-secondary: #1f2937;
     --muted: var(--text-secondary);
@@ -18,8 +18,8 @@
     --accent-soft: #f1f5f9;
     --shadow: 0 18px 60px rgba(2, 6, 23, 0.14);
 
-    --card-bg: rgba(255, 255, 255, 0.86);
-    --card-border: rgba(2, 6, 23, 0.12);
+    --card-bg: rgba(255, 255, 255, 0.92);
+    --card-border: rgba(2, 6, 23, 0.08);
     --card-fg: #020617;
     --card-muted: var(--text-secondary);
 
@@ -31,7 +31,7 @@
     --tag-border: rgba(15, 118, 110, 0.28);
     --tag-fg: #ffffff;
 
-    --modal-bg: rgba(255, 255, 255, 0.96);
+    --modal-bg: rgba(255, 255, 255, 0.98);
     --modal-fg: #020617;
     --modal-border: rgba(2, 6, 23, 0.14);
     --modal-backdrop: rgba(2, 6, 23, 0.55);
@@ -185,11 +185,6 @@ html[data-panel-theme="dark"] {
     --panel-noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.06'/%3E%3C/svg%3E");
 }
 
-html,
-body {
-    height: 100%;
-}
-
 html {
     font-family: "Mona Sans", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
     scroll-behavior: smooth;
@@ -202,6 +197,7 @@ body {
     color: var(--text);
     line-height: 1.3;
     overflow-x: hidden;
+    min-height: 100vh;
 
     position: relative;
     isolation: isolate;
@@ -255,13 +251,50 @@ a {
     border: 0;
     border-radius: var(--radius);
     color: var(--header-fg);
-    transition: color 320ms ease;
+    transition: background 320ms ease, color 320ms ease, backdrop-filter 320ms ease, box-shadow 320ms ease;
+}
+
+.site-header.scrolled {
+    background: rgba(255, 255, 255, 0.86);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 2px 12px rgba(2, 6, 23, 0.08);
+    border: 1px solid rgba(2, 6, 23, 0.08);
+    color: var(--text);
+}
+
+.site-header.scrolled .site-nav {
+    color: var(--text-secondary);
+}
+
+@media (prefers-color-scheme: dark) {
+    html:not([data-user-scheme]) .site-header.scrolled {
+        background: rgba(38, 44, 54, 0.86);
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(229, 231, 235, 0.08);
+        color: var(--text);
+    }
+    
+    html:not([data-user-scheme]) .site-header.scrolled .site-nav {
+        color: var(--text-secondary);
+    }
+}
+
+html[data-user-scheme="dark"] .site-header.scrolled {
+    background: rgba(38, 44, 54, 0.86);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(229, 231, 235, 0.08);
+    color: var(--text);
+}
+
+html[data-user-scheme="dark"] .site-header.scrolled .site-nav {
+    color: var(--text-secondary);
 }
 
 .brand {
-    font-weight: 700;
+    font-weight: 900;
     font-size: 1.2rem;
     letter-spacing: 0.02em;
+    font-stretch: expanded;
 }
 
 .site-nav {
@@ -462,7 +495,10 @@ html[data-scheme="light"] .theme-toggle .theme-icon--moon {
     font: inherit;
     cursor: pointer;
     padding: 6px 0px;
-    transition: color 320ms ease, opacity 320ms ease, background-color 200ms ease;
+    transition: color 320ms cubic-bezier(0.4, 0, 0.2, 1), 
+                opacity 320ms cubic-bezier(0.4, 0, 0.2, 1), 
+                visibility 320ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 200ms ease;
 }
 
 
@@ -832,7 +868,6 @@ h6 {
 
 .button.primary:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow);
 }
 
 .button.ghost {
@@ -1124,9 +1159,7 @@ html[data-panel-theme="dark"] .cv-item {
 }
 
 @media (max-width: 900px) {
-    .theme-toggle {
-        display: none;
-    }
+
 
     :root {
         --header-h: 64px;
