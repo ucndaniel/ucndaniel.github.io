@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Grunnet | Om mig</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="nav-container">
+            <a href="../../index.html" class="logo">
+                <img src="../images/Asset 3.svg" alt="Daniel Grunnet logo">
+            </a>
+            <nav>
+                <ul id="navbar">
+                    <li><a href="../../index.html">Forside</a></li>
+                    <li class="dropdown">
+                        <a href="projects.html">Case Studies <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="umf.html">Ungdomsringens musikfestival</a></li>
+                            <li><a href="svalegaarden.html">Svalegaarden Mest</a></li>
+                            <li><a href="loop.html">Loop Fitness</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aboutme.html" class="active">Om mig</a></li>
+                </ul>
+                <button class="mobile-toggle" onclick="toggleNav()" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Om mig</h1>
+        </div>
+
+        <section class="about-section">
+            <div class="about-grid">
+                <div class="about-image-container">
+                    <div class="about-image">
+                        <img src="../images/standarddan.jpg" alt="Daniel Grunnet" id="image">
+                    </div>
+                    <div class="about-toggle-buttons">
+                        <button class="about-toggle-btn" onclick="makeMeCool()">Normal Daniel</button>
+                        <button class="about-toggle-btn" onclick="makeMeNormal()">Cool Daniel</button>
+                    </div>
+                </div>
+
+                <div class="about-text-content">
+                    <h2>Hvem er Daniel?</h2>
+                    <p>Hello there, mit navn er Daniel Grunnet og jeg er en 23-årig
+                        multimediedesignstuderende, som er i gang med 2. semester på UCN i Aalborg.<br>
+                        Jeg har en stor interesse for film, og her også filmiske teknikker. Deraf udsprang min interesse for
+                        faget, hvor jeg fandt en interesse i kodning og de forskellige måder man kan designe på.</p>
+
+                    <h2>Hvad kan Daniel?</h2>
+                    <p>Jeg kan finde frem til den bedst mulige løsning for hvem end der har brug for den. I arbejdet med
+                        brugergrænseflader, kommer virksomhederne og brugernes ønsker i første række, når jeg arbejder med projekter.</p>
+
+                    <h2>Hvad får man fra Daniel?</h2>
+                    <p>Jeg er nede på jorden, møder til tiden og er god til at samarbejde med andre.
+                        Udover det, så er jeg meget god til at fokusere på det jeg foretager mig, og jeg kan holde mig
+                        fokuseret i lang tid ad gangen <em>(et tak til "the return of the king extended edition")</em></p>
+
+                    <h2>Kontakt mig</h2>
+                    <p>Vil du vide mere om hvad jeg kan?<br>
+                        Kontakt mig på <a href="mailto:dangrunnet@outlook.com">dangrunnet@outlook.com</a> eller på telefon: 40 29 75 21</p>
+
+                    <h2>Se mit CV her</h2>
+                    <a href="../../CV.pdf" class="btn btn-primary" style="margin-top: 8px;">
+                        <span>Se CV</span>
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-item">
+                <h3>Github</h3>
+                <a href="https://github.com/ucndaniel" target="_blank" rel="noopener noreferrer">
+                    <img src="../images/GitHub-Mark/PNG/GitHub-Mark-Light-64px.png" alt="GitHub" class="footer-icon">
+                </a>
+            </div>
+            <div class="footer-item">
+                <h3>Email</h3>
+                <a href="mailto:dangrunnet@outlook.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    dangrunnet@outlook.com
+                </a>
+            </div>
+            <div class="footer-item">
+                <h3>Linkedin</h3>
+                <a href="https://www.linkedin.com/in/daniel-grunnet-1a2a8a1a6/" target="_blank" rel="noopener noreferrer">
+                    <img src="../images/LI-Logo.png" alt="LinkedIn" class="footer-icon linkedin-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>

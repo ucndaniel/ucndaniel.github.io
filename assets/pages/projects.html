@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Grunnet | Case Studies</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="nav-container">
+            <a href="../../index.html" class="logo">
+                <img src="../images/Asset 3.svg" alt="Daniel Grunnet logo">
+            </a>
+            <nav>
+                <ul id="navbar">
+                    <li><a href="../../index.html">Forside</a></li>
+                    <li class="dropdown">
+                        <a href="projects.html" class="active">Case Studies <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="umf.html">Ungdomsringens musikfestival</a></li>
+                            <li><a href="svalegaarden.html">Svalegaarden Mest</a></li>
+                            <li><a href="loop.html">Loop Fitness</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aboutme.html">Om mig</a></li>
+                </ul>
+                <button class="mobile-toggle" onclick="toggleNav()" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Case Studies</h1>
+            <p>Her kan ses en samling af nogle projekter, jeg har arbejdet på i forbindelse med studiet.
+                Hvert projekt har haft hvert deres særprægede mål, og er gennem <strong>brugerundersøgelser, analyser og kravspecifikationer</strong> realiseret
+                ved brug af <strong>HTML, CSS og javascript.</strong></p>
+        </div>
+
+        <section class="projects-section">
+            <div class="projects-grid">
+                <a href="umf.html" class="project-card">
+                    <div class="project-card-image">
+                        <img src="../images/umf.PNG" alt="Ungdomsringens musikfestival">
+                    </div>
+                    <div class="project-card-body">
+                        <div>
+                            <h2>Ungdomsringens musikfestival</h2>
+                            <p>Seneste projekt</p>
+                        </div>
+                        <span class="project-card-link">Se case study <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="svalegaarden.html" class="project-card">
+                    <div class="project-card-image">
+                        <img src="../images/sgm.PNG" alt="Svalegaarden Mest">
+                    </div>
+                    <div class="project-card-body">
+                        <div>
+                            <h2>Svalegaarden Mest</h2>
+                            <p>Første eksamensproject</p>
+                        </div>
+                        <span class="project-card-link">Se case study <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="loop.html" class="project-card">
+                    <div class="project-card-image">
+                        <img src="../images/loop.PNG" alt="Loop Fitness">
+                    </div>
+                    <div class="project-card-body">
+                        <div>
+                            <h2>Loop Fitness</h2>
+                            <p>Redesign af Loop Fitness</p>
+                        </div>
+                        <span class="project-card-link">Se case study <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-item">
+                <h3>Github</h3>
+                <a href="https://github.com/ucndaniel" target="_blank" rel="noopener noreferrer">
+                    <img src="../images/GitHub-Mark/PNG/GitHub-Mark-Light-64px.png" alt="GitHub" class="footer-icon">
+                </a>
+            </div>
+            <div class="footer-item">
+                <h3>Email</h3>
+                <a href="mailto:dangrunnet@outlook.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    dangrunnet@outlook.com
+                </a>
+            </div>
+            <div class="footer-item">
+                <h3>Linkedin</h3>
+                <a href="https://www.linkedin.com/in/daniel-grunnet-1a2a8a1a6/" target="_blank" rel="noopener noreferrer">
+                    <img src="../images/LI-Logo.png" alt="LinkedIn" class="footer-icon linkedin-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>

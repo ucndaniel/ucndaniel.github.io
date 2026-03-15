@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Grunnet | Loop Fitness</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="nav-container">
+            <a href="../../index.html" class="logo">
+                <img src="../images/Asset 3.svg" alt="Daniel Grunnet logo">
+            </a>
+            <nav>
+                <ul id="navbar">
+                    <li><a href="../../index.html">Forside</a></li>
+                    <li class="dropdown">
+                        <a href="projects.html" class="active">Case Studies <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="umf.html">Ungdomsringens musikfestival</a></li>
+                            <li><a href="svalegaarden.html">Svalegaarden Mest</a></li>
+                            <li><a href="loop.html">Loop Fitness</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aboutme.html">Om mig</a></li>
+                </ul>
+                <button class="mobile-toggle" onclick="toggleNav()" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="case-study-hero">
+            <h1>Loop Fitness</h1>
+            <div class="case-study-top-image-bg" style="background-image: url('../images/loop.PNG'); background-size: cover;"></div>
+            <a href="http://des-iis.ucn.dk/mmda0919/1081026/sem1/tema3/" target="_blank" rel="noopener noreferrer" class="case-study-link">
+                Se løsningen her <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+        </div>
+
+        <section class="case-study-content">
+            <div class="case-study-grid">
+                <div class="case-study-block">
+                    <h3>Opgaven</h3>
+                    <p>Opgaven er lavet i 1. semester, og var den tredje opgave jeg lavede på studiet.<br>
+                        Jeg fik med mine medstuderende til opgave at udvikle et <span>microsite</span> til Loop Fitness, i forbindelse med en kampagne for deres fitnesscenter i Svenstrup.
+                        Formålet med kampagnen var at få folk til at tilmelde sig, før nytår, så der var her også et fokus på måden vi kunne få folk ind før nytår.</p>
+                </div>
+                <div class="case-study-image-block">
+                    <img src="../images/loop1.png" alt="Loop Fitness projekt">
+                </div>
+            </div>
+
+            <div class="case-study-grid">
+                <div class="case-study-block">
+                    <h3>Analyse og design</h3>
+                    <p>Vi startede med at lave en kategorisering, for at finde frem til målgruppen af Loop Fitness kunder, hvor vi derefter interviewede dem og analyserede det efterfølgende.
+                        Her fandt vi frem til nogle fokuspunkter til micrositet, som vi derefter havde med til næste step, hvor vi begyndte at idégenerere.
+                        Her sketchede vi forskellige muligheder, igen med tanke på de punkter vi fandt frem til i brugerundersøgelsen. Derefter lavede vi mockups og lavede dertil tekstforfatning og fandt passende billeder.</p>
+                </div>
+                <div class="case-study-image-block">
+                    <img src="../images/loop2.png" alt="Loop Fitness design">
+                </div>
+            </div>
+
+            <div class="case-study-conclusion">
+                <h3>Realisering</h3>
+                <p>Kodningsarbejdet blev løst ved brug af HTML og CSS.<br>Med mockups i hånden, gik vi i gang med at kode og lavede her et overordnet grid som kunne bruges til begge sider.<br>
+                    <a href="http://des-iis.ucn.dk/mmda0919/1081026/sem1/tema3/" target="_blank">Se løsningen her</a></p>
+                <div class="case-study-conclusion-image">
+                    <img src="../images/loop3.png" alt="Loop Fitness projekt">
+                </div>
+                <a href="projects.html" class="btn btn-secondary" style="margin-top: 24px;">
+                    <span>Se flere projekter</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-item">
+                <h3>Github</h3>
+                <a href="https://github.com/ucndaniel" target="_blank" rel="noopener noreferrer">
+                    <img src="../images/GitHub-Mark/PNG/GitHub-Mark-Light-64px.png" alt="GitHub" class="footer-icon">
+                </a>
+            </div>
+            <div class="footer-item">
+                <h3>Email</h3>
+                <a href="mailto:dangrunnet@outlook.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    dangrunnet@outlook.com
+                </a>
+            </div>
+            <div class="footer-item">
+                <h3>Linkedin</h3>
+                <a href="https://www.linkedin.com/in/daniel-grunnet-1a2a8a1a6/" target="_blank" rel="noopener noreferrer">
+                    <img src="../images/LI-Logo.png" alt="LinkedIn" class="footer-icon linkedin-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>
